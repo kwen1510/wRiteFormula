@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" href="data:,">
+  <title>wRiteFormula Prototype</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes fadeOut {
+      from {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      to {
+        opacity: 0;
+        transform: scale(0.5);
+      }
+    }
+
+    @keyframes bounceIn {
+      0% {
+        opacity: 0;
+        transform: scale(0.3) translateY(-30px);
+      }
+
+      50% {
+        opacity: 1;
+        transform: scale(1.1) translateY(0);
+      }
+
+      70% {
+        transform: scale(0.9);
+      }
+
+      100% {
+        transform: scale(1);
+      }
+    }
+
+    @keyframes explode {
+      0% {
+        opacity: 1;
+        transform: scale(1);
+      }
+
+      100% {
+        opacity: 0;
+        transform: scale(2);
+      }
+    }
+
+    @keyframes shake {
+
+      0%,
+      100% {
+        transform: translateX(0);
+      }
+
+      10%,
+      30%,
+      50%,
+      70%,
+      90% {
+        transform: translateX(-5px);
+      }
+
+      20%,
+      40%,
+      60%,
+      80% {
+        transform: translateX(5px);
+      }
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        transform: scale(1);
+      }
+
+      50% {
+        transform: scale(1.05);
+      }
+    }
+
+    @keyframes glow {
+
+      0%,
+      100% {
+        box-shadow: 0 0 5px rgba(132, 204, 22, 0.5);
+      }
+
+      50% {
+        box-shadow: 0 0 20px rgba(132, 204, 22, 0.8), 0 0 30px rgba(132, 204, 22, 0.6);
+      }
+    }
+
+    @keyframes float {
+
+      0%,
+      100% {
+        transform: translateY(0px);
+      }
+
+      50% {
+        transform: translateY(-5px);
+      }
+    }
+
+    @keyframes scorePopUp {
+      0% {
+        opacity: 0;
+        transform: translateY(0) scale(0.5);
+      }
+
+      50% {
+        opacity: 1;
+        transform: translateY(-40px) scale(1.2);
+      }
+
+      100% {
+        opacity: 0;
+        transform: translateY(-80px) scale(1);
+      }
+    }
+
+    .ion-button-appear {
+      animation: bounceIn 0.6s cubic-bezier(0.68, -0.55, 0.265, 1.55) forwards;
+    }
+
+    .ion-button-disappear {
+      animation: explode 0.5s ease-out forwards;
+    }
+
+    .ion-button:not(:disabled):hover {
+      transform: translateY(-2px);
+      transition: transform 0.2s ease-out;
+    }
+
+
+    .shake-error {
+      animation: shake 0.5s ease-in-out;
+    }
+
+    .selection-glow {
+      animation: glow 1s ease-in-out infinite;
+    }
+
+    .score-popup {
+      animation: scorePopUp 1.5s ease-out forwards;
+      position: absolute;
+      font-size: 2rem;
+      font-weight: bold;
+      color: #84cc16;
+      text-shadow: 0 0 10px rgba(132, 204, 22, 0.8);
+      pointer-events: none;
+      z-index: 100;
+    }
+
+    .start-animation-text {
+      text-shadow:
+        0 0 10px rgba(0, 0, 0, 0.45),
+        0 0 20px rgba(0, 0, 0, 0.35),
+        2px 2px 0 rgba(0, 0, 0, 0.35),
+        -2px -2px 0 rgba(0, 0, 0, 0.35);
+    }
+
+    #particle-canvas {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      pointer-events: none;
+      z-index: 9999;
+    }
+  </style>
+</head>
+
+<body class="min-h-screen bg-slate-900 text-slate-100 overflow-x-hidden">
+  <canvas id="particle-canvas"></canvas>
+  <div id="start-animation"
+    class="pointer-events-none fixed inset-0 z-40 flex items-center justify-center bg-slate-900/60 backdrop-blur-md text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[0.25em] sm:tracking-[0.3em] text-amber-100 drop-shadow-lg opacity-0 transition duration-300">
+    <span id="start-animation-text"
+      class="start-animation-text block px-6 py-3 text-center opacity-0 scale-75 transition duration-300 transform"></span>
+  </div>
+
+  <!-- Debug toggle -->
+  <button id="debug-toggle" type="button"
+    class="fixed right-3 top-3 z-50 rounded-full border border-slate-600 bg-slate-800 p-2 text-xs text-slate-200 shadow hover:bg-slate-700"
+    aria-pressed="true" aria-label="Toggle debug panel" title="Hide debug panel">
+    ⚙
+  </button>
+
+  <!-- Debug Panel (Phase 7) -->
+  <aside id="debug-panel"
+    class="fixed right-0 top-0 h-screen w-80 overflow-y-auto border-l border-slate-700 bg-slate-800 p-4 text-xs">
+    <h2 class="mb-4 text-lg font-bold text-amber-400">🔧 Debug Panel</h2>
+
+    <!-- Level Info -->
+    <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3">
+      <h3 class="mb-2 font-semibold text-sky-300">Level Info</h3>
+      <div class="space-y-1 text-slate-300">
+        <p>Current Level: <span id="debug-level" class="font-mono text-amber-200">-</span></p>
+        <p>Round: <span id="debug-round" class="font-mono text-amber-200">-</span></p>
+      </div>
+    </div>
+
+    <!-- Score & Streak -->
+    <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3">
+      <h3 class="mb-2 font-semibold text-sky-300">Score & Streak</h3>
+      <div class="space-y-1 text-slate-300">
+        <p>Score: <span id="debug-score" class="font-mono text-lime-400">-</span></p>
+        <p>Streak Count: <span id="debug-streak-count" class="font-mono text-lime-400">-</span></p>
+        <p>Multiplier: <span id="debug-multiplier" class="font-mono text-lime-400">-</span></p>
+      </div>
+    </div>
+
+    <!-- Level Species -->
+    <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3">
+      <h3 class="mb-2 font-semibold text-sky-300">Level Species</h3>
+      <div class="rounded-lg bg-slate-800/50 p-3 shadow-lg">
+        <div class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-amber-400">Compounds in this level
+        </div>
+        <div class="mb-2 text-xs text-slate-400">
+          Solved: <span id="debug-level-species-summary" class="font-mono text-lime-400">0/0</span>
+        </div>
+        <div id="debug-level-species-list"
+          class="max-h-48 space-y-1 overflow-y-auto rounded border border-slate-700 bg-slate-950 p-2 text-[10px]">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Level Objectives -->
+    <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3">
+      <h3 class="mb-2 font-semibold text-sky-300">Level Objectives</h3>
+      <div class="rounded-lg bg-slate-800/50 p-3 shadow-lg">
+        <div class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-amber-400">Criteria to Complete Level
+        </div>
+        <div class="mb-2 text-xs">
+          <span class="text-slate-400">Level Status:</span>
+          <span id="debug-level-status" class="font-mono font-bold">-</span>
+        </div>
+        <div id="debug-level-objectives" class="space-y-1 rounded border border-slate-700 bg-slate-950 p-2 text-[10px]">
+          <!-- Dynamically populated -->
+        </div>
+      </div>
+    </div>
+
+    <!-- Focus Compounds (HIDDEN per user request) -->
+    <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3 hidden">
+      <h3 class="mb-2 font-semibold text-sky-300">Focus Compounds</h3>
+      <div class="rounded-lg bg-slate-800/50 p-3 shadow-lg">
+        <div class="mb-2 text-[10px] font-semibold uppercase tracking-wider text-sky-400">Focus Compounds</div>
+        <div class="mb-1 text-xs">
+          <span class="text-slate-400">Progress:</span>
+          <span id="debug-focus-progress" class="font-mono text-lime-400">0% (0/0)</span>
+        </div>
+        <div id="debug-focus-list"
+          class="mt-3 max-h-48 space-y-1 overflow-y-auto rounded border border-slate-700 bg-slate-950 p-2 text-[10px]">
+        </div>
+      </div>
+
+      <!-- Solvable Compounds on Board -->
+      <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3">
+        <h3 class="mb-2 font-semibold text-sky-300">Solvable on Board</h3>
+        <div class="rounded-lg bg-slate-800/50 p-3 shadow-lg">
+          <div class="mb-2 text-xs">
+            <span class="text-slate-400">Count:</span>
+            <span id="debug-solvable-count" class="font-mono text-lime-400">0</span>
+          </div>
+          <div id="debug-solvable-list"
+            class="mt-2 max-h-32 space-y-1 overflow-y-auto rounded border border-slate-700 bg-slate-950 p-2 text-[10px]">
+            <!-- Dynamically populated -->
+          </div>
+        </div>
+      </div>
+
+      <!-- Session Stats -->
+      <div class="mb-4 rounded-lg border border-slate-600 bg-slate-900 p-3">
+        <h3 class="mb-2 font-semibold text-sky-300">Session Stats</h3>
+        <div class="space-y-1 text-slate-300">
+          <p>Completed (session): <span id="debug-session-completed" class="font-mono text-amber-200">-</span></p>
+          <p>Level Progress Saved: <span id="debug-level-progress" class="font-mono text-amber-200">-</span></p>
+        </div>
+      </div>
+  </aside>
+
+  <div class="mx-auto flex min-h-screen w-full max-w-2xl flex-col gap-2.5 px-3 sm:px-4 lg:px-5 py-3">
+    <header
+      class="rounded-3xl border border-amber-600/60 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-3 sm:p-4 shadow-lg">
+      <div class="flex flex-wrap items-center justify-between gap-3">
+        <div class="rounded-2xl border border-slate-800/60 bg-slate-900/90 px-4 sm:px-5 py-2.5 text-center text-amber-200">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">
+            Score
+          </p>
+          <p class="text-xl sm:text-2xl font-semibold" id="score-display">0</p>
+        </div>
+        <div class="rounded-full border border-slate-800/60 bg-slate-900/90 px-4 sm:px-5 py-2.5 text-center text-amber-200">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">
+            Streak
+          </p>
+          <p class="text-xl sm:text-2xl font-semibold" id="streak-display">0</p>
+        </div>
+      </div>
+      <div class="mt-2.5 flex items-center gap-3 text-xs text-slate-700">
+        <div class="h-2.5 flex-1 rounded-full border border-amber-500/60 bg-amber-200/60">
+          <div id="timer-bar" class="h-full rounded-full bg-lime-500 transition-all duration-200" style="width: 100%">
+          </div>
+        </div>
+        <span class="w-12 text-right font-semibold text-amber-700" id="timer-display">--</span>
+      </div>
+    </header>
+
+    <main
+      class="flex flex-col gap-2.5 rounded-3xl border border-amber-700/70 bg-gradient-to-b from-amber-100 via-amber-50 to-amber-100 p-3 sm:p-4 shadow-xl">
+      <div class="w-full" style="aspect-ratio: 1 / 1;">
+        <div class="grid h-full w-full grid-cols-4 gap-2 place-items-center" id="board-grid"></div>
+      </div>
+      <div class="flex flex-wrap items-center gap-3">
+        <div id="selection-tray"
+          class="flex min-w-[0] flex-1 flex-wrap items-center gap-2 rounded-3xl border border-amber-600/50 bg-amber-200/60 px-3 sm:px-4 py-2 text-sm font-semibold text-amber-700">
+          <span class="text-xs uppercase tracking-wide text-amber-500">
+            Tap ions to add or remove them
+          </span>
+        </div>
+        <button id="submit-selection"
+          class="w-full sm:w-auto rounded-full border border-slate-900 bg-slate-900 px-4 py-2.5 text-sm font-semibold uppercase tracking-wide text-amber-200 transition hover:bg-slate-800 disabled:cursor-not-allowed disabled:opacity-40"
+          disabled>
+          Submit
+        </button>
+      </div>
+    </main>
+  </div>
+
+  <div id="start-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/95 px-4"
+    aria-hidden="true">
+    <div
+      class="w-full max-w-lg rounded-3xl border border-amber-500/40 bg-gradient-to-b from-amber-100 via-amber-50 to-amber-100 p-8 text-center shadow-2xl">
+      <p class="text-xs font-semibold uppercase tracking-wide text-amber-500">
+        Welcome back
+      </p>
+      <h2 class="mt-2 text-3xl font-semibold text-slate-900">Ready to write formulas?</h2>
+      <!-- <p class="mt-3 text-sm text-slate-600">
+          Review the board, then press start to begin the countdown and streak tracking.
+        </p> -->
+      <button id="start-session-button"
+        class="mt-6 inline-flex items-center justify-center rounded-full border border-slate-900 bg-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-amber-100 transition hover:bg-slate-800">
+        Start
+      </button>
+    </div>
+  </div>
+
+  <div id="remediation-modal"
+    class="invisible fixed inset-0 z-50 flex items-center justify-center bg-slate-900/90 opacity-0 transition duration-300"
+    aria-hidden="true">
+    <div class="w-full max-w-3xl rounded-2xl border border-slate-700 bg-slate-800 p-6 shadow-xl">
+      <header class="mb-4 flex items-start justify-between gap-4">
+        <div>
+          <p class="text-sm uppercase tracking-wide text-slate-400">
+            Quick Check
+          </p>
+          <h2 class="text-2xl font-semibold" id="remediation-title">
+            Which pairing is correct?
+          </h2>
+          <p class="text-xs text-slate-400" id="remediation-subtitle">
+            Tap one formula and one name.
+          </p>
+        </div>
+        <button id="close-modal"
+          class="rounded-full border border-slate-600 bg-slate-900 px-3 py-1 text-xs uppercase tracking-wide text-slate-400 transition hover:border-rose-500 hover:text-rose-300">
+          Give Up
+        </button>
+      </header>
+
+      <div class="grid gap-4 md:grid-cols-2">
+        <div>
+          <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-sky-300">
+            Formula Options
+          </h3>
+          <div id="formula-options" class="space-y-2"></div>
+          <p id="formula-tries" class="mt-2 text-xs text-slate-400">
+            Tries remaining: 2
+          </p>
+        </div>
+        <div>
+          <h3 class="mb-2 text-sm font-semibold uppercase tracking-wide text-amber-200">
+            Name Options
+          </h3>
+          <div id="name-options" class="space-y-2"></div>
+          <p id="name-tries" class="mt-2 text-xs text-slate-400">
+            Tries remaining: 2
+          </p>
+        </div>
+      </div>
+
+      <footer class="mt-6 flex flex-wrap items-center justify-between gap-4 text-sm">
+        <p id="remediation-feedback" class="text-slate-400 whitespace-pre-line">
+          You have two attempts.
+        </p>
+        <button id="acknowledge-answer"
+          class="hidden rounded-lg bg-lime-400 px-4 py-2 text-slate-900 transition hover:bg-lime-300">
+          Back to board
+        </button>
+      </footer>
+    </div>
+  </div>
+
+  <div id="end-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/95 px-4"
+    aria-hidden="true">
+    <div
+      class="w-full max-w-lg rounded-3xl border border-amber-500/40 bg-gradient-to-b from-amber-100 via-amber-50 to-amber-100 p-8 text-center shadow-2xl">
+      <p class="text-xs font-semibold uppercase tracking-wide text-amber-500">
+        Time's Up!
+      </p>
+      <h2 class="mt-2 text-3xl font-semibold text-slate-900" id="end-modal-title">Game Over</h2>
+      <div class="mt-6 space-y-3 text-slate-700">
+        <div class="rounded-2xl border border-amber-300 bg-amber-50 p-4">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-600">Final Score</p>
+          <p class="text-4xl font-bold text-slate-900" id="final-score">0</p>
+        </div>
+        <div class="grid grid-cols-2 gap-3">
+          <div class="rounded-xl border border-amber-300 bg-amber-50 p-3">
+            <p class="text-xs font-semibold uppercase tracking-wide text-amber-600">Best Streak</p>
+            <p class="text-2xl font-bold text-slate-900" id="final-streak">0</p>
+          </div>
+          <div class="rounded-xl border border-amber-300 bg-amber-50 p-3">
+            <p class="text-xs font-semibold uppercase tracking-wide text-amber-600">Rounds</p>
+            <p class="text-2xl font-bold text-slate-900" id="final-rounds">0</p>
+          </div>
+        </div>
+      </div>
+      <div class="mt-6 flex gap-3">
+        <button id="play-again-button"
+          class="flex-1 rounded-full border border-slate-900 bg-slate-900 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-amber-100 transition hover:bg-slate-800">
+          Play Again
+        </button>
+        <button id="change-level-button"
+          class="flex-1 rounded-full border border-amber-600 bg-amber-100 px-6 py-3 text-sm font-semibold uppercase tracking-wide text-amber-800 transition hover:bg-amber-200">
+          Start Over
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <div id="error-modal"
+    class="invisible fixed inset-0 z-50 flex items-center justify-center bg-slate-900/90 opacity-0 transition duration-300 px-4"
+    aria-hidden="true">
+    <div
+      class="w-full max-w-md rounded-2xl border border-rose-500/40 bg-gradient-to-b from-rose-50 via-white to-rose-50 p-6 shadow-2xl">
+      <div class="flex items-start gap-4">
+        <div
+          class="flex h-10 w-10 flex-shrink-0 items-center justify-center rounded-full border-2 border-rose-400 bg-rose-100">
+          <span class="text-xl font-bold text-rose-600">!</span>
+        </div>
+        <div class="flex-1">
+          <h3 class="text-lg font-semibold text-slate-900">Invalid Selection</h3>
+          <p class="mt-2 text-sm text-slate-600" id="error-message">An error occurred.</p>
+        </div>
+      </div>
+      <div class="mt-5 flex justify-end">
+        <button id="error-modal-close"
+          class="rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-700 transition hover:bg-slate-50">
+          Got it
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script type="module" src="./main.js"></script>
+</body>
+
+</html>
