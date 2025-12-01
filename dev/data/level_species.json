@@ -1,0 +1,7759 @@
+{
+  "1": {
+    "level": 1,
+    "totalCompounds": 16,
+    "compounds": [
+      {
+        "key": "Li+|F-",
+        "cation": "Li+",
+        "anion": "F-",
+        "formula": "LiF",
+        "name": "lithium fluoride"
+      },
+      {
+        "key": "Li+|Cl-",
+        "cation": "Li+",
+        "anion": "Cl-",
+        "formula": "LiCl",
+        "name": "lithium chloride"
+      },
+      {
+        "key": "Li+|Br-",
+        "cation": "Li+",
+        "anion": "Br-",
+        "formula": "LiBr",
+        "name": "lithium bromide"
+      },
+      {
+        "key": "Li+|I-",
+        "cation": "Li+",
+        "anion": "I-",
+        "formula": "LiI",
+        "name": "lithium iodide"
+      },
+      {
+        "key": "Na+|F-",
+        "cation": "Na+",
+        "anion": "F-",
+        "formula": "NaF",
+        "name": "sodium fluoride"
+      },
+      {
+        "key": "Na+|Cl-",
+        "cation": "Na+",
+        "anion": "Cl-",
+        "formula": "NaCl",
+        "name": "sodium chloride"
+      },
+      {
+        "key": "Na+|Br-",
+        "cation": "Na+",
+        "anion": "Br-",
+        "formula": "NaBr",
+        "name": "sodium bromide"
+      },
+      {
+        "key": "Na+|I-",
+        "cation": "Na+",
+        "anion": "I-",
+        "formula": "NaI",
+        "name": "sodium iodide"
+      },
+      {
+        "key": "K+|F-",
+        "cation": "K+",
+        "anion": "F-",
+        "formula": "KF",
+        "name": "potassium fluoride"
+      },
+      {
+        "key": "K+|Cl-",
+        "cation": "K+",
+        "anion": "Cl-",
+        "formula": "KCl",
+        "name": "potassium chloride"
+      },
+      {
+        "key": "K+|Br-",
+        "cation": "K+",
+        "anion": "Br-",
+        "formula": "KBr",
+        "name": "potassium bromide"
+      },
+      {
+        "key": "K+|I-",
+        "cation": "K+",
+        "anion": "I-",
+        "formula": "KI",
+        "name": "potassium iodide"
+      },
+      {
+        "key": "Ag+|F-",
+        "cation": "Ag+",
+        "anion": "F-",
+        "formula": "AgF",
+        "name": "silver fluoride"
+      },
+      {
+        "key": "Ag+|Cl-",
+        "cation": "Ag+",
+        "anion": "Cl-",
+        "formula": "AgCl",
+        "name": "silver chloride"
+      },
+      {
+        "key": "Ag+|Br-",
+        "cation": "Ag+",
+        "anion": "Br-",
+        "formula": "AgBr",
+        "name": "silver bromide"
+      },
+      {
+        "key": "Ag+|I-",
+        "cation": "Ag+",
+        "anion": "I-",
+        "formula": "AgI",
+        "name": "silver iodide"
+      }
+    ]
+  },
+  "2": {
+    "level": 2,
+    "totalCompounds": 60,
+    "compounds": [
+      {
+        "key": "Li+|O2-",
+        "cation": "Li+",
+        "anion": "O2-",
+        "formula": "Li2O",
+        "name": "lithium oxide"
+      },
+      {
+        "key": "Li+|S2-",
+        "cation": "Li+",
+        "anion": "S2-",
+        "formula": "Li2S",
+        "name": "lithium sulfide"
+      },
+      {
+        "key": "Li+|F-",
+        "cation": "Li+",
+        "anion": "F-",
+        "formula": "LiF",
+        "name": "lithium fluoride"
+      },
+      {
+        "key": "Li+|Cl-",
+        "cation": "Li+",
+        "anion": "Cl-",
+        "formula": "LiCl",
+        "name": "lithium chloride"
+      },
+      {
+        "key": "Li+|Br-",
+        "cation": "Li+",
+        "anion": "Br-",
+        "formula": "LiBr",
+        "name": "lithium bromide"
+      },
+      {
+        "key": "Li+|I-",
+        "cation": "Li+",
+        "anion": "I-",
+        "formula": "LiI",
+        "name": "lithium iodide"
+      },
+      {
+        "key": "Na+|O2-",
+        "cation": "Na+",
+        "anion": "O2-",
+        "formula": "Na2O",
+        "name": "sodium oxide"
+      },
+      {
+        "key": "Na+|S2-",
+        "cation": "Na+",
+        "anion": "S2-",
+        "formula": "Na2S",
+        "name": "sodium sulfide"
+      },
+      {
+        "key": "Na+|F-",
+        "cation": "Na+",
+        "anion": "F-",
+        "formula": "NaF",
+        "name": "sodium fluoride"
+      },
+      {
+        "key": "Na+|Cl-",
+        "cation": "Na+",
+        "anion": "Cl-",
+        "formula": "NaCl",
+        "name": "sodium chloride"
+      },
+      {
+        "key": "Na+|Br-",
+        "cation": "Na+",
+        "anion": "Br-",
+        "formula": "NaBr",
+        "name": "sodium bromide"
+      },
+      {
+        "key": "Na+|I-",
+        "cation": "Na+",
+        "anion": "I-",
+        "formula": "NaI",
+        "name": "sodium iodide"
+      },
+      {
+        "key": "K+|O2-",
+        "cation": "K+",
+        "anion": "O2-",
+        "formula": "K2O",
+        "name": "potassium oxide"
+      },
+      {
+        "key": "K+|S2-",
+        "cation": "K+",
+        "anion": "S2-",
+        "formula": "K2S",
+        "name": "potassium sulfide"
+      },
+      {
+        "key": "K+|F-",
+        "cation": "K+",
+        "anion": "F-",
+        "formula": "KF",
+        "name": "potassium fluoride"
+      },
+      {
+        "key": "K+|Cl-",
+        "cation": "K+",
+        "anion": "Cl-",
+        "formula": "KCl",
+        "name": "potassium chloride"
+      },
+      {
+        "key": "K+|Br-",
+        "cation": "K+",
+        "anion": "Br-",
+        "formula": "KBr",
+        "name": "potassium bromide"
+      },
+      {
+        "key": "K+|I-",
+        "cation": "K+",
+        "anion": "I-",
+        "formula": "KI",
+        "name": "potassium iodide"
+      },
+      {
+        "key": "Ag+|O2-",
+        "cation": "Ag+",
+        "anion": "O2-",
+        "formula": "Ag2O",
+        "name": "silver oxide"
+      },
+      {
+        "key": "Ag+|S2-",
+        "cation": "Ag+",
+        "anion": "S2-",
+        "formula": "Ag2S",
+        "name": "silver sulfide"
+      },
+      {
+        "key": "Ag+|F-",
+        "cation": "Ag+",
+        "anion": "F-",
+        "formula": "AgF",
+        "name": "silver fluoride"
+      },
+      {
+        "key": "Ag+|Cl-",
+        "cation": "Ag+",
+        "anion": "Cl-",
+        "formula": "AgCl",
+        "name": "silver chloride"
+      },
+      {
+        "key": "Ag+|Br-",
+        "cation": "Ag+",
+        "anion": "Br-",
+        "formula": "AgBr",
+        "name": "silver bromide"
+      },
+      {
+        "key": "Ag+|I-",
+        "cation": "Ag+",
+        "anion": "I-",
+        "formula": "AgI",
+        "name": "silver iodide"
+      },
+      {
+        "key": "Be2+|O2-",
+        "cation": "Be2+",
+        "anion": "O2-",
+        "formula": "BeO",
+        "name": "beryllium oxide"
+      },
+      {
+        "key": "Be2+|S2-",
+        "cation": "Be2+",
+        "anion": "S2-",
+        "formula": "BeS",
+        "name": "beryllium sulfide"
+      },
+      {
+        "key": "Be2+|F-",
+        "cation": "Be2+",
+        "anion": "F-",
+        "formula": "BeF2",
+        "name": "beryllium fluoride"
+      },
+      {
+        "key": "Be2+|Cl-",
+        "cation": "Be2+",
+        "anion": "Cl-",
+        "formula": "BeCl2",
+        "name": "beryllium chloride"
+      },
+      {
+        "key": "Be2+|Br-",
+        "cation": "Be2+",
+        "anion": "Br-",
+        "formula": "BeBr2",
+        "name": "beryllium bromide"
+      },
+      {
+        "key": "Be2+|I-",
+        "cation": "Be2+",
+        "anion": "I-",
+        "formula": "BeI2",
+        "name": "beryllium iodide"
+      },
+      {
+        "key": "Mg2+|O2-",
+        "cation": "Mg2+",
+        "anion": "O2-",
+        "formula": "MgO",
+        "name": "magnesium oxide"
+      },
+      {
+        "key": "Mg2+|S2-",
+        "cation": "Mg2+",
+        "anion": "S2-",
+        "formula": "MgS",
+        "name": "magnesium sulfide"
+      },
+      {
+        "key": "Mg2+|F-",
+        "cation": "Mg2+",
+        "anion": "F-",
+        "formula": "MgF2",
+        "name": "magnesium fluoride"
+      },
+      {
+        "key": "Mg2+|Cl-",
+        "cation": "Mg2+",
+        "anion": "Cl-",
+        "formula": "MgCl2",
+        "name": "magnesium chloride"
+      },
+      {
+        "key": "Mg2+|Br-",
+        "cation": "Mg2+",
+        "anion": "Br-",
+        "formula": "MgBr2",
+        "name": "magnesium bromide"
+      },
+      {
+        "key": "Mg2+|I-",
+        "cation": "Mg2+",
+        "anion": "I-",
+        "formula": "MgI2",
+        "name": "magnesium iodide"
+      },
+      {
+        "key": "Ca2+|O2-",
+        "cation": "Ca2+",
+        "anion": "O2-",
+        "formula": "CaO",
+        "name": "calcium oxide"
+      },
+      {
+        "key": "Ca2+|S2-",
+        "cation": "Ca2+",
+        "anion": "S2-",
+        "formula": "CaS",
+        "name": "calcium sulfide"
+      },
+      {
+        "key": "Ca2+|F-",
+        "cation": "Ca2+",
+        "anion": "F-",
+        "formula": "CaF2",
+        "name": "calcium fluoride"
+      },
+      {
+        "key": "Ca2+|Cl-",
+        "cation": "Ca2+",
+        "anion": "Cl-",
+        "formula": "CaCl2",
+        "name": "calcium chloride"
+      },
+      {
+        "key": "Ca2+|Br-",
+        "cation": "Ca2+",
+        "anion": "Br-",
+        "formula": "CaBr2",
+        "name": "calcium bromide"
+      },
+      {
+        "key": "Ca2+|I-",
+        "cation": "Ca2+",
+        "anion": "I-",
+        "formula": "CaI2",
+        "name": "calcium iodide"
+      },
+      {
+        "key": "Sr2+|O2-",
+        "cation": "Sr2+",
+        "anion": "O2-",
+        "formula": "SrO",
+        "name": "strontium oxide"
+      },
+      {
+        "key": "Sr2+|S2-",
+        "cation": "Sr2+",
+        "anion": "S2-",
+        "formula": "SrS",
+        "name": "strontium sulfide"
+      },
+      {
+        "key": "Sr2+|F-",
+        "cation": "Sr2+",
+        "anion": "F-",
+        "formula": "SrF2",
+        "name": "strontium fluoride"
+      },
+      {
+        "key": "Sr2+|Cl-",
+        "cation": "Sr2+",
+        "anion": "Cl-",
+        "formula": "SrCl2",
+        "name": "strontium chloride"
+      },
+      {
+        "key": "Sr2+|Br-",
+        "cation": "Sr2+",
+        "anion": "Br-",
+        "formula": "SrBr2",
+        "name": "strontium bromide"
+      },
+      {
+        "key": "Sr2+|I-",
+        "cation": "Sr2+",
+        "anion": "I-",
+        "formula": "SrI2",
+        "name": "strontium iodide"
+      },
+      {
+        "key": "Ba2+|O2-",
+        "cation": "Ba2+",
+        "anion": "O2-",
+        "formula": "BaO",
+        "name": "barium oxide"
+      },
+      {
+        "key": "Ba2+|S2-",
+        "cation": "Ba2+",
+        "anion": "S2-",
+        "formula": "BaS",
+        "name": "barium sulfide"
+      },
+      {
+        "key": "Ba2+|F-",
+        "cation": "Ba2+",
+        "anion": "F-",
+        "formula": "BaF2",
+        "name": "barium fluoride"
+      },
+      {
+        "key": "Ba2+|Cl-",
+        "cation": "Ba2+",
+        "anion": "Cl-",
+        "formula": "BaCl2",
+        "name": "barium chloride"
+      },
+      {
+        "key": "Ba2+|Br-",
+        "cation": "Ba2+",
+        "anion": "Br-",
+        "formula": "BaBr2",
+        "name": "barium bromide"
+      },
+      {
+        "key": "Ba2+|I-",
+        "cation": "Ba2+",
+        "anion": "I-",
+        "formula": "BaI2",
+        "name": "barium iodide"
+      },
+      {
+        "key": "Zn2+|O2-",
+        "cation": "Zn2+",
+        "anion": "O2-",
+        "formula": "ZnO",
+        "name": "zinc oxide"
+      },
+      {
+        "key": "Zn2+|S2-",
+        "cation": "Zn2+",
+        "anion": "S2-",
+        "formula": "ZnS",
+        "name": "zinc sulfide"
+      },
+      {
+        "key": "Zn2+|F-",
+        "cation": "Zn2+",
+        "anion": "F-",
+        "formula": "ZnF2",
+        "name": "zinc fluoride"
+      },
+      {
+        "key": "Zn2+|Cl-",
+        "cation": "Zn2+",
+        "anion": "Cl-",
+        "formula": "ZnCl2",
+        "name": "zinc chloride"
+      },
+      {
+        "key": "Zn2+|Br-",
+        "cation": "Zn2+",
+        "anion": "Br-",
+        "formula": "ZnBr2",
+        "name": "zinc bromide"
+      },
+      {
+        "key": "Zn2+|I-",
+        "cation": "Zn2+",
+        "anion": "I-",
+        "formula": "ZnI2",
+        "name": "zinc iodide"
+      }
+    ]
+  },
+  "3": {
+    "level": 3,
+    "totalCompounds": 36,
+    "compounds": [
+      {
+        "key": "Be2+|N3-",
+        "cation": "Be2+",
+        "anion": "N3-",
+        "formula": "Be3N2",
+        "name": "beryllium nitride"
+      },
+      {
+        "key": "Be2+|P3-",
+        "cation": "Be2+",
+        "anion": "P3-",
+        "formula": "Be3P2",
+        "name": "beryllium phosphide"
+      },
+      {
+        "key": "Be2+|F-",
+        "cation": "Be2+",
+        "anion": "F-",
+        "formula": "BeF2",
+        "name": "beryllium fluoride"
+      },
+      {
+        "key": "Be2+|Cl-",
+        "cation": "Be2+",
+        "anion": "Cl-",
+        "formula": "BeCl2",
+        "name": "beryllium chloride"
+      },
+      {
+        "key": "Be2+|Br-",
+        "cation": "Be2+",
+        "anion": "Br-",
+        "formula": "BeBr2",
+        "name": "beryllium bromide"
+      },
+      {
+        "key": "Be2+|I-",
+        "cation": "Be2+",
+        "anion": "I-",
+        "formula": "BeI2",
+        "name": "beryllium iodide"
+      },
+      {
+        "key": "Mg2+|N3-",
+        "cation": "Mg2+",
+        "anion": "N3-",
+        "formula": "Mg3N2",
+        "name": "magnesium nitride"
+      },
+      {
+        "key": "Mg2+|P3-",
+        "cation": "Mg2+",
+        "anion": "P3-",
+        "formula": "Mg3P2",
+        "name": "magnesium phosphide"
+      },
+      {
+        "key": "Mg2+|F-",
+        "cation": "Mg2+",
+        "anion": "F-",
+        "formula": "MgF2",
+        "name": "magnesium fluoride"
+      },
+      {
+        "key": "Mg2+|Cl-",
+        "cation": "Mg2+",
+        "anion": "Cl-",
+        "formula": "MgCl2",
+        "name": "magnesium chloride"
+      },
+      {
+        "key": "Mg2+|Br-",
+        "cation": "Mg2+",
+        "anion": "Br-",
+        "formula": "MgBr2",
+        "name": "magnesium bromide"
+      },
+      {
+        "key": "Mg2+|I-",
+        "cation": "Mg2+",
+        "anion": "I-",
+        "formula": "MgI2",
+        "name": "magnesium iodide"
+      },
+      {
+        "key": "Ca2+|N3-",
+        "cation": "Ca2+",
+        "anion": "N3-",
+        "formula": "Ca3N2",
+        "name": "calcium nitride"
+      },
+      {
+        "key": "Ca2+|P3-",
+        "cation": "Ca2+",
+        "anion": "P3-",
+        "formula": "Ca3P2",
+        "name": "calcium phosphide"
+      },
+      {
+        "key": "Ca2+|F-",
+        "cation": "Ca2+",
+        "anion": "F-",
+        "formula": "CaF2",
+        "name": "calcium fluoride"
+      },
+      {
+        "key": "Ca2+|Cl-",
+        "cation": "Ca2+",
+        "anion": "Cl-",
+        "formula": "CaCl2",
+        "name": "calcium chloride"
+      },
+      {
+        "key": "Ca2+|Br-",
+        "cation": "Ca2+",
+        "anion": "Br-",
+        "formula": "CaBr2",
+        "name": "calcium bromide"
+      },
+      {
+        "key": "Ca2+|I-",
+        "cation": "Ca2+",
+        "anion": "I-",
+        "formula": "CaI2",
+        "name": "calcium iodide"
+      },
+      {
+        "key": "Sr2+|N3-",
+        "cation": "Sr2+",
+        "anion": "N3-",
+        "formula": "Sr3N2",
+        "name": "strontium nitride"
+      },
+      {
+        "key": "Sr2+|P3-",
+        "cation": "Sr2+",
+        "anion": "P3-",
+        "formula": "Sr3P2",
+        "name": "strontium phosphide"
+      },
+      {
+        "key": "Sr2+|F-",
+        "cation": "Sr2+",
+        "anion": "F-",
+        "formula": "SrF2",
+        "name": "strontium fluoride"
+      },
+      {
+        "key": "Sr2+|Cl-",
+        "cation": "Sr2+",
+        "anion": "Cl-",
+        "formula": "SrCl2",
+        "name": "strontium chloride"
+      },
+      {
+        "key": "Sr2+|Br-",
+        "cation": "Sr2+",
+        "anion": "Br-",
+        "formula": "SrBr2",
+        "name": "strontium bromide"
+      },
+      {
+        "key": "Sr2+|I-",
+        "cation": "Sr2+",
+        "anion": "I-",
+        "formula": "SrI2",
+        "name": "strontium iodide"
+      },
+      {
+        "key": "Ba2+|N3-",
+        "cation": "Ba2+",
+        "anion": "N3-",
+        "formula": "Ba3N2",
+        "name": "barium nitride"
+      },
+      {
+        "key": "Ba2+|P3-",
+        "cation": "Ba2+",
+        "anion": "P3-",
+        "formula": "Ba3P2",
+        "name": "barium phosphide"
+      },
+      {
+        "key": "Ba2+|F-",
+        "cation": "Ba2+",
+        "anion": "F-",
+        "formula": "BaF2",
+        "name": "barium fluoride"
+      },
+      {
+        "key": "Ba2+|Cl-",
+        "cation": "Ba2+",
+        "anion": "Cl-",
+        "formula": "BaCl2",
+        "name": "barium chloride"
+      },
+      {
+        "key": "Ba2+|Br-",
+        "cation": "Ba2+",
+        "anion": "Br-",
+        "formula": "BaBr2",
+        "name": "barium bromide"
+      },
+      {
+        "key": "Ba2+|I-",
+        "cation": "Ba2+",
+        "anion": "I-",
+        "formula": "BaI2",
+        "name": "barium iodide"
+      },
+      {
+        "key": "Zn2+|N3-",
+        "cation": "Zn2+",
+        "anion": "N3-",
+        "formula": "Zn3N2",
+        "name": "zinc nitride"
+      },
+      {
+        "key": "Zn2+|P3-",
+        "cation": "Zn2+",
+        "anion": "P3-",
+        "formula": "Zn3P2",
+        "name": "zinc phosphide"
+      },
+      {
+        "key": "Zn2+|F-",
+        "cation": "Zn2+",
+        "anion": "F-",
+        "formula": "ZnF2",
+        "name": "zinc fluoride"
+      },
+      {
+        "key": "Zn2+|Cl-",
+        "cation": "Zn2+",
+        "anion": "Cl-",
+        "formula": "ZnCl2",
+        "name": "zinc chloride"
+      },
+      {
+        "key": "Zn2+|Br-",
+        "cation": "Zn2+",
+        "anion": "Br-",
+        "formula": "ZnBr2",
+        "name": "zinc bromide"
+      },
+      {
+        "key": "Zn2+|I-",
+        "cation": "Zn2+",
+        "anion": "I-",
+        "formula": "ZnI2",
+        "name": "zinc iodide"
+      }
+    ]
+  },
+  "4": {
+    "level": 4,
+    "totalCompounds": 28,
+    "compounds": [
+      {
+        "key": "Be2+|N3-",
+        "cation": "Be2+",
+        "anion": "N3-",
+        "formula": "Be3N2",
+        "name": "beryllium nitride"
+      },
+      {
+        "key": "Be2+|P3-",
+        "cation": "Be2+",
+        "anion": "P3-",
+        "formula": "Be3P2",
+        "name": "beryllium phosphide"
+      },
+      {
+        "key": "Be2+|O2-",
+        "cation": "Be2+",
+        "anion": "O2-",
+        "formula": "BeO",
+        "name": "beryllium oxide"
+      },
+      {
+        "key": "Be2+|S2-",
+        "cation": "Be2+",
+        "anion": "S2-",
+        "formula": "BeS",
+        "name": "beryllium sulfide"
+      },
+      {
+        "key": "Mg2+|N3-",
+        "cation": "Mg2+",
+        "anion": "N3-",
+        "formula": "Mg3N2",
+        "name": "magnesium nitride"
+      },
+      {
+        "key": "Mg2+|P3-",
+        "cation": "Mg2+",
+        "anion": "P3-",
+        "formula": "Mg3P2",
+        "name": "magnesium phosphide"
+      },
+      {
+        "key": "Mg2+|O2-",
+        "cation": "Mg2+",
+        "anion": "O2-",
+        "formula": "MgO",
+        "name": "magnesium oxide"
+      },
+      {
+        "key": "Mg2+|S2-",
+        "cation": "Mg2+",
+        "anion": "S2-",
+        "formula": "MgS",
+        "name": "magnesium sulfide"
+      },
+      {
+        "key": "Ca2+|N3-",
+        "cation": "Ca2+",
+        "anion": "N3-",
+        "formula": "Ca3N2",
+        "name": "calcium nitride"
+      },
+      {
+        "key": "Ca2+|P3-",
+        "cation": "Ca2+",
+        "anion": "P3-",
+        "formula": "Ca3P2",
+        "name": "calcium phosphide"
+      },
+      {
+        "key": "Ca2+|O2-",
+        "cation": "Ca2+",
+        "anion": "O2-",
+        "formula": "CaO",
+        "name": "calcium oxide"
+      },
+      {
+        "key": "Ca2+|S2-",
+        "cation": "Ca2+",
+        "anion": "S2-",
+        "formula": "CaS",
+        "name": "calcium sulfide"
+      },
+      {
+        "key": "Sr2+|N3-",
+        "cation": "Sr2+",
+        "anion": "N3-",
+        "formula": "Sr3N2",
+        "name": "strontium nitride"
+      },
+      {
+        "key": "Sr2+|P3-",
+        "cation": "Sr2+",
+        "anion": "P3-",
+        "formula": "Sr3P2",
+        "name": "strontium phosphide"
+      },
+      {
+        "key": "Sr2+|O2-",
+        "cation": "Sr2+",
+        "anion": "O2-",
+        "formula": "SrO",
+        "name": "strontium oxide"
+      },
+      {
+        "key": "Sr2+|S2-",
+        "cation": "Sr2+",
+        "anion": "S2-",
+        "formula": "SrS",
+        "name": "strontium sulfide"
+      },
+      {
+        "key": "Ba2+|N3-",
+        "cation": "Ba2+",
+        "anion": "N3-",
+        "formula": "Ba3N2",
+        "name": "barium nitride"
+      },
+      {
+        "key": "Ba2+|P3-",
+        "cation": "Ba2+",
+        "anion": "P3-",
+        "formula": "Ba3P2",
+        "name": "barium phosphide"
+      },
+      {
+        "key": "Ba2+|O2-",
+        "cation": "Ba2+",
+        "anion": "O2-",
+        "formula": "BaO",
+        "name": "barium oxide"
+      },
+      {
+        "key": "Ba2+|S2-",
+        "cation": "Ba2+",
+        "anion": "S2-",
+        "formula": "BaS",
+        "name": "barium sulfide"
+      },
+      {
+        "key": "Zn2+|N3-",
+        "cation": "Zn2+",
+        "anion": "N3-",
+        "formula": "Zn3N2",
+        "name": "zinc nitride"
+      },
+      {
+        "key": "Zn2+|P3-",
+        "cation": "Zn2+",
+        "anion": "P3-",
+        "formula": "Zn3P2",
+        "name": "zinc phosphide"
+      },
+      {
+        "key": "Zn2+|O2-",
+        "cation": "Zn2+",
+        "anion": "O2-",
+        "formula": "ZnO",
+        "name": "zinc oxide"
+      },
+      {
+        "key": "Zn2+|S2-",
+        "cation": "Zn2+",
+        "anion": "S2-",
+        "formula": "ZnS",
+        "name": "zinc sulfide"
+      },
+      {
+        "key": "Al3+|N3-",
+        "cation": "Al3+",
+        "anion": "N3-",
+        "formula": "AlN",
+        "name": "aluminium nitride"
+      },
+      {
+        "key": "Al3+|P3-",
+        "cation": "Al3+",
+        "anion": "P3-",
+        "formula": "AlP",
+        "name": "aluminium phosphide"
+      },
+      {
+        "key": "Al3+|O2-",
+        "cation": "Al3+",
+        "anion": "O2-",
+        "formula": "Al2O3",
+        "name": "aluminium oxide"
+      },
+      {
+        "key": "Al3+|S2-",
+        "cation": "Al3+",
+        "anion": "S2-",
+        "formula": "Al2S3",
+        "name": "aluminium sulfide"
+      }
+    ]
+  },
+  "5": {
+    "level": 5,
+    "totalCompounds": 20,
+    "compounds": [
+      {
+        "key": "Cu+|F-",
+        "cation": "Cu+",
+        "anion": "F-",
+        "formula": "CuF",
+        "name": "copper(I) fluoride"
+      },
+      {
+        "key": "Cu+|Cl-",
+        "cation": "Cu+",
+        "anion": "Cl-",
+        "formula": "CuCl",
+        "name": "copper(I) chloride"
+      },
+      {
+        "key": "Cu+|Br-",
+        "cation": "Cu+",
+        "anion": "Br-",
+        "formula": "CuBr",
+        "name": "copper(I) bromide"
+      },
+      {
+        "key": "Cu+|I-",
+        "cation": "Cu+",
+        "anion": "I-",
+        "formula": "CuI",
+        "name": "copper(I) iodide"
+      },
+      {
+        "key": "Cu2+|F-",
+        "cation": "Cu2+",
+        "anion": "F-",
+        "formula": "CuF2",
+        "name": "copper(II) fluoride"
+      },
+      {
+        "key": "Cu2+|Cl-",
+        "cation": "Cu2+",
+        "anion": "Cl-",
+        "formula": "CuCl2",
+        "name": "copper(II) chloride"
+      },
+      {
+        "key": "Cu2+|Br-",
+        "cation": "Cu2+",
+        "anion": "Br-",
+        "formula": "CuBr2",
+        "name": "copper(II) bromide"
+      },
+      {
+        "key": "Cu2+|I-",
+        "cation": "Cu2+",
+        "anion": "I-",
+        "formula": "CuI2",
+        "name": "copper(II) iodide"
+      },
+      {
+        "key": "Fe2+|F-",
+        "cation": "Fe2+",
+        "anion": "F-",
+        "formula": "FeF2",
+        "name": "iron(II) fluoride"
+      },
+      {
+        "key": "Fe2+|Cl-",
+        "cation": "Fe2+",
+        "anion": "Cl-",
+        "formula": "FeCl2",
+        "name": "iron(II) chloride"
+      },
+      {
+        "key": "Fe2+|Br-",
+        "cation": "Fe2+",
+        "anion": "Br-",
+        "formula": "FeBr2",
+        "name": "iron(II) bromide"
+      },
+      {
+        "key": "Fe2+|I-",
+        "cation": "Fe2+",
+        "anion": "I-",
+        "formula": "FeI2",
+        "name": "iron(II) iodide"
+      },
+      {
+        "key": "Ni2+|F-",
+        "cation": "Ni2+",
+        "anion": "F-",
+        "formula": "NiF2",
+        "name": "nickel(II) fluoride"
+      },
+      {
+        "key": "Ni2+|Cl-",
+        "cation": "Ni2+",
+        "anion": "Cl-",
+        "formula": "NiCl2",
+        "name": "nickel(II) chloride"
+      },
+      {
+        "key": "Ni2+|Br-",
+        "cation": "Ni2+",
+        "anion": "Br-",
+        "formula": "NiBr2",
+        "name": "nickel(II) bromide"
+      },
+      {
+        "key": "Ni2+|I-",
+        "cation": "Ni2+",
+        "anion": "I-",
+        "formula": "NiI2",
+        "name": "nickel(II) iodide"
+      },
+      {
+        "key": "Pb2+|F-",
+        "cation": "Pb2+",
+        "anion": "F-",
+        "formula": "PbF2",
+        "name": "lead(II) fluoride"
+      },
+      {
+        "key": "Pb2+|Cl-",
+        "cation": "Pb2+",
+        "anion": "Cl-",
+        "formula": "PbCl2",
+        "name": "lead(II) chloride"
+      },
+      {
+        "key": "Pb2+|Br-",
+        "cation": "Pb2+",
+        "anion": "Br-",
+        "formula": "PbBr2",
+        "name": "lead(II) bromide"
+      },
+      {
+        "key": "Pb2+|I-",
+        "cation": "Pb2+",
+        "anion": "I-",
+        "formula": "PbI2",
+        "name": "lead(II) iodide"
+      }
+    ]
+  },
+  "6": {
+    "level": 6,
+    "totalCompounds": 30,
+    "compounds": [
+      {
+        "key": "Cu2+|O2-",
+        "cation": "Cu2+",
+        "anion": "O2-",
+        "formula": "CuO",
+        "name": "copper(II) oxide"
+      },
+      {
+        "key": "Cu2+|S2-",
+        "cation": "Cu2+",
+        "anion": "S2-",
+        "formula": "CuS",
+        "name": "copper(II) sulfide"
+      },
+      {
+        "key": "Cu2+|F-",
+        "cation": "Cu2+",
+        "anion": "F-",
+        "formula": "CuF2",
+        "name": "copper(II) fluoride"
+      },
+      {
+        "key": "Cu2+|Cl-",
+        "cation": "Cu2+",
+        "anion": "Cl-",
+        "formula": "CuCl2",
+        "name": "copper(II) chloride"
+      },
+      {
+        "key": "Cu2+|Br-",
+        "cation": "Cu2+",
+        "anion": "Br-",
+        "formula": "CuBr2",
+        "name": "copper(II) bromide"
+      },
+      {
+        "key": "Cu2+|I-",
+        "cation": "Cu2+",
+        "anion": "I-",
+        "formula": "CuI2",
+        "name": "copper(II) iodide"
+      },
+      {
+        "key": "Fe2+|O2-",
+        "cation": "Fe2+",
+        "anion": "O2-",
+        "formula": "FeO",
+        "name": "iron(II) oxide"
+      },
+      {
+        "key": "Fe2+|S2-",
+        "cation": "Fe2+",
+        "anion": "S2-",
+        "formula": "FeS",
+        "name": "iron(II) sulfide"
+      },
+      {
+        "key": "Fe2+|F-",
+        "cation": "Fe2+",
+        "anion": "F-",
+        "formula": "FeF2",
+        "name": "iron(II) fluoride"
+      },
+      {
+        "key": "Fe2+|Cl-",
+        "cation": "Fe2+",
+        "anion": "Cl-",
+        "formula": "FeCl2",
+        "name": "iron(II) chloride"
+      },
+      {
+        "key": "Fe2+|Br-",
+        "cation": "Fe2+",
+        "anion": "Br-",
+        "formula": "FeBr2",
+        "name": "iron(II) bromide"
+      },
+      {
+        "key": "Fe2+|I-",
+        "cation": "Fe2+",
+        "anion": "I-",
+        "formula": "FeI2",
+        "name": "iron(II) iodide"
+      },
+      {
+        "key": "Ni2+|O2-",
+        "cation": "Ni2+",
+        "anion": "O2-",
+        "formula": "NiO",
+        "name": "nickel(II) oxide"
+      },
+      {
+        "key": "Ni2+|S2-",
+        "cation": "Ni2+",
+        "anion": "S2-",
+        "formula": "NiS",
+        "name": "nickel(II) sulfide"
+      },
+      {
+        "key": "Ni2+|F-",
+        "cation": "Ni2+",
+        "anion": "F-",
+        "formula": "NiF2",
+        "name": "nickel(II) fluoride"
+      },
+      {
+        "key": "Ni2+|Cl-",
+        "cation": "Ni2+",
+        "anion": "Cl-",
+        "formula": "NiCl2",
+        "name": "nickel(II) chloride"
+      },
+      {
+        "key": "Ni2+|Br-",
+        "cation": "Ni2+",
+        "anion": "Br-",
+        "formula": "NiBr2",
+        "name": "nickel(II) bromide"
+      },
+      {
+        "key": "Ni2+|I-",
+        "cation": "Ni2+",
+        "anion": "I-",
+        "formula": "NiI2",
+        "name": "nickel(II) iodide"
+      },
+      {
+        "key": "Pb2+|O2-",
+        "cation": "Pb2+",
+        "anion": "O2-",
+        "formula": "PbO",
+        "name": "lead(II) oxide"
+      },
+      {
+        "key": "Pb2+|S2-",
+        "cation": "Pb2+",
+        "anion": "S2-",
+        "formula": "PbS",
+        "name": "lead(II) sulfide"
+      },
+      {
+        "key": "Pb2+|F-",
+        "cation": "Pb2+",
+        "anion": "F-",
+        "formula": "PbF2",
+        "name": "lead(II) fluoride"
+      },
+      {
+        "key": "Pb2+|Cl-",
+        "cation": "Pb2+",
+        "anion": "Cl-",
+        "formula": "PbCl2",
+        "name": "lead(II) chloride"
+      },
+      {
+        "key": "Pb2+|Br-",
+        "cation": "Pb2+",
+        "anion": "Br-",
+        "formula": "PbBr2",
+        "name": "lead(II) bromide"
+      },
+      {
+        "key": "Pb2+|I-",
+        "cation": "Pb2+",
+        "anion": "I-",
+        "formula": "PbI2",
+        "name": "lead(II) iodide"
+      },
+      {
+        "key": "Fe3+|O2-",
+        "cation": "Fe3+",
+        "anion": "O2-",
+        "formula": "Fe2O3",
+        "name": "iron(III) oxide"
+      },
+      {
+        "key": "Fe3+|S2-",
+        "cation": "Fe3+",
+        "anion": "S2-",
+        "formula": "Fe2S3",
+        "name": "iron(III) sulfide"
+      },
+      {
+        "key": "Fe3+|F-",
+        "cation": "Fe3+",
+        "anion": "F-",
+        "formula": "FeF3",
+        "name": "iron(III) fluoride"
+      },
+      {
+        "key": "Fe3+|Cl-",
+        "cation": "Fe3+",
+        "anion": "Cl-",
+        "formula": "FeCl3",
+        "name": "iron(III) chloride"
+      },
+      {
+        "key": "Fe3+|Br-",
+        "cation": "Fe3+",
+        "anion": "Br-",
+        "formula": "FeBr3",
+        "name": "iron(III) bromide"
+      },
+      {
+        "key": "Fe3+|I-",
+        "cation": "Fe3+",
+        "anion": "I-",
+        "formula": "FeI3",
+        "name": "iron(III) iodide"
+      }
+    ]
+  },
+  "7": {
+    "level": 7,
+    "totalCompounds": 24,
+    "compounds": [
+      {
+        "key": "Fe3+|N3-",
+        "cation": "Fe3+",
+        "anion": "N3-",
+        "formula": "FeN",
+        "name": "iron(III) nitride"
+      },
+      {
+        "key": "Fe3+|P3-",
+        "cation": "Fe3+",
+        "anion": "P3-",
+        "formula": "FeP",
+        "name": "iron(III) phosphide"
+      },
+      {
+        "key": "Fe3+|O2-",
+        "cation": "Fe3+",
+        "anion": "O2-",
+        "formula": "Fe2O3",
+        "name": "iron(III) oxide"
+      },
+      {
+        "key": "Fe3+|S2-",
+        "cation": "Fe3+",
+        "anion": "S2-",
+        "formula": "Fe2S3",
+        "name": "iron(III) sulfide"
+      },
+      {
+        "key": "Fe3+|F-",
+        "cation": "Fe3+",
+        "anion": "F-",
+        "formula": "FeF3",
+        "name": "iron(III) fluoride"
+      },
+      {
+        "key": "Fe3+|Cl-",
+        "cation": "Fe3+",
+        "anion": "Cl-",
+        "formula": "FeCl3",
+        "name": "iron(III) chloride"
+      },
+      {
+        "key": "Fe3+|Br-",
+        "cation": "Fe3+",
+        "anion": "Br-",
+        "formula": "FeBr3",
+        "name": "iron(III) bromide"
+      },
+      {
+        "key": "Fe3+|I-",
+        "cation": "Fe3+",
+        "anion": "I-",
+        "formula": "FeI3",
+        "name": "iron(III) iodide"
+      },
+      {
+        "key": "Ti4+|N3-",
+        "cation": "Ti4+",
+        "anion": "N3-",
+        "formula": "Ti3N4",
+        "name": "titanium(IV) nitride"
+      },
+      {
+        "key": "Ti4+|P3-",
+        "cation": "Ti4+",
+        "anion": "P3-",
+        "formula": "Ti3P4",
+        "name": "titanium(IV) phosphide"
+      },
+      {
+        "key": "Ti4+|O2-",
+        "cation": "Ti4+",
+        "anion": "O2-",
+        "formula": "TiO2",
+        "name": "titanium(IV) oxide"
+      },
+      {
+        "key": "Ti4+|S2-",
+        "cation": "Ti4+",
+        "anion": "S2-",
+        "formula": "TiS2",
+        "name": "titanium(IV) sulfide"
+      },
+      {
+        "key": "Ti4+|F-",
+        "cation": "Ti4+",
+        "anion": "F-",
+        "formula": "TiF4",
+        "name": "titanium(IV) fluoride"
+      },
+      {
+        "key": "Ti4+|Cl-",
+        "cation": "Ti4+",
+        "anion": "Cl-",
+        "formula": "TiCl4",
+        "name": "titanium(IV) chloride"
+      },
+      {
+        "key": "Ti4+|Br-",
+        "cation": "Ti4+",
+        "anion": "Br-",
+        "formula": "TiBr4",
+        "name": "titanium(IV) bromide"
+      },
+      {
+        "key": "Ti4+|I-",
+        "cation": "Ti4+",
+        "anion": "I-",
+        "formula": "TiI4",
+        "name": "titanium(IV) iodide"
+      },
+      {
+        "key": "Pb4+|N3-",
+        "cation": "Pb4+",
+        "anion": "N3-",
+        "formula": "Pb3N4",
+        "name": "lead(IV) nitride"
+      },
+      {
+        "key": "Pb4+|P3-",
+        "cation": "Pb4+",
+        "anion": "P3-",
+        "formula": "Pb3P4",
+        "name": "lead(IV) phosphide"
+      },
+      {
+        "key": "Pb4+|O2-",
+        "cation": "Pb4+",
+        "anion": "O2-",
+        "formula": "PbO2",
+        "name": "lead(IV) oxide"
+      },
+      {
+        "key": "Pb4+|S2-",
+        "cation": "Pb4+",
+        "anion": "S2-",
+        "formula": "PbS2",
+        "name": "lead(IV) sulfide"
+      },
+      {
+        "key": "Pb4+|F-",
+        "cation": "Pb4+",
+        "anion": "F-",
+        "formula": "PbF4",
+        "name": "lead(IV) fluoride"
+      },
+      {
+        "key": "Pb4+|Cl-",
+        "cation": "Pb4+",
+        "anion": "Cl-",
+        "formula": "PbCl4",
+        "name": "lead(IV) chloride"
+      },
+      {
+        "key": "Pb4+|Br-",
+        "cation": "Pb4+",
+        "anion": "Br-",
+        "formula": "PbBr4",
+        "name": "lead(IV) bromide"
+      },
+      {
+        "key": "Pb4+|I-",
+        "cation": "Pb4+",
+        "anion": "I-",
+        "formula": "PbI4",
+        "name": "lead(IV) iodide"
+      }
+    ]
+  },
+  "8": {
+    "level": 8,
+    "totalCompounds": 8,
+    "compounds": [
+      {
+        "key": "NH4+|N3-",
+        "cation": "NH4+",
+        "anion": "N3-",
+        "formula": "(NH4)3N",
+        "name": "ammonium nitride"
+      },
+      {
+        "key": "NH4+|P3-",
+        "cation": "NH4+",
+        "anion": "P3-",
+        "formula": "(NH4)3P",
+        "name": "ammonium phosphide"
+      },
+      {
+        "key": "NH4+|O2-",
+        "cation": "NH4+",
+        "anion": "O2-",
+        "formula": "(NH4)2O",
+        "name": "ammonium oxide"
+      },
+      {
+        "key": "NH4+|S2-",
+        "cation": "NH4+",
+        "anion": "S2-",
+        "formula": "(NH4)2S",
+        "name": "ammonium sulfide"
+      },
+      {
+        "key": "NH4+|F-",
+        "cation": "NH4+",
+        "anion": "F-",
+        "formula": "NH4F",
+        "name": "ammonium fluoride"
+      },
+      {
+        "key": "NH4+|Cl-",
+        "cation": "NH4+",
+        "anion": "Cl-",
+        "formula": "NH4Cl",
+        "name": "ammonium chloride"
+      },
+      {
+        "key": "NH4+|Br-",
+        "cation": "NH4+",
+        "anion": "Br-",
+        "formula": "NH4Br",
+        "name": "ammonium bromide"
+      },
+      {
+        "key": "NH4+|I-",
+        "cation": "NH4+",
+        "anion": "I-",
+        "formula": "NH4I",
+        "name": "ammonium iodide"
+      }
+    ]
+  },
+  "9": {
+    "level": 9,
+    "totalCompounds": 12,
+    "compounds": [
+      {
+        "key": "Be2+|CO32-",
+        "cation": "Be2+",
+        "anion": "CO32-",
+        "formula": "BeCO3",
+        "name": "beryllium carbonate"
+      },
+      {
+        "key": "Be2+|SO42-",
+        "cation": "Be2+",
+        "anion": "SO42-",
+        "formula": "BeSO4",
+        "name": "beryllium sulfate"
+      },
+      {
+        "key": "Mg2+|CO32-",
+        "cation": "Mg2+",
+        "anion": "CO32-",
+        "formula": "MgCO3",
+        "name": "magnesium carbonate"
+      },
+      {
+        "key": "Mg2+|SO42-",
+        "cation": "Mg2+",
+        "anion": "SO42-",
+        "formula": "MgSO4",
+        "name": "magnesium sulfate"
+      },
+      {
+        "key": "Ca2+|CO32-",
+        "cation": "Ca2+",
+        "anion": "CO32-",
+        "formula": "CaCO3",
+        "name": "calcium carbonate"
+      },
+      {
+        "key": "Ca2+|SO42-",
+        "cation": "Ca2+",
+        "anion": "SO42-",
+        "formula": "CaSO4",
+        "name": "calcium sulfate"
+      },
+      {
+        "key": "Sr2+|CO32-",
+        "cation": "Sr2+",
+        "anion": "CO32-",
+        "formula": "SrCO3",
+        "name": "strontium carbonate"
+      },
+      {
+        "key": "Sr2+|SO42-",
+        "cation": "Sr2+",
+        "anion": "SO42-",
+        "formula": "SrSO4",
+        "name": "strontium sulfate"
+      },
+      {
+        "key": "Ba2+|CO32-",
+        "cation": "Ba2+",
+        "anion": "CO32-",
+        "formula": "BaCO3",
+        "name": "barium carbonate"
+      },
+      {
+        "key": "Ba2+|SO42-",
+        "cation": "Ba2+",
+        "anion": "SO42-",
+        "formula": "BaSO4",
+        "name": "barium sulfate"
+      },
+      {
+        "key": "Zn2+|CO32-",
+        "cation": "Zn2+",
+        "anion": "CO32-",
+        "formula": "ZnCO3",
+        "name": "zinc carbonate"
+      },
+      {
+        "key": "Zn2+|SO42-",
+        "cation": "Zn2+",
+        "anion": "SO42-",
+        "formula": "ZnSO4",
+        "name": "zinc sulfate"
+      }
+    ]
+  },
+  "10": {
+    "level": 10,
+    "totalCompounds": 40,
+    "compounds": [
+      {
+        "key": "Li+|OH-",
+        "cation": "Li+",
+        "anion": "OH-",
+        "formula": "LiOH",
+        "name": "lithium hydroxide"
+      },
+      {
+        "key": "Li+|NO3-",
+        "cation": "Li+",
+        "anion": "NO3-",
+        "formula": "LiNO3",
+        "name": "lithium nitrate"
+      },
+      {
+        "key": "Li+|CO32-",
+        "cation": "Li+",
+        "anion": "CO32-",
+        "formula": "Li2CO3",
+        "name": "lithium carbonate"
+      },
+      {
+        "key": "Li+|SO42-",
+        "cation": "Li+",
+        "anion": "SO42-",
+        "formula": "Li2SO4",
+        "name": "lithium sulfate"
+      },
+      {
+        "key": "Na+|OH-",
+        "cation": "Na+",
+        "anion": "OH-",
+        "formula": "NaOH",
+        "name": "sodium hydroxide"
+      },
+      {
+        "key": "Na+|NO3-",
+        "cation": "Na+",
+        "anion": "NO3-",
+        "formula": "NaNO3",
+        "name": "sodium nitrate"
+      },
+      {
+        "key": "Na+|CO32-",
+        "cation": "Na+",
+        "anion": "CO32-",
+        "formula": "Na2CO3",
+        "name": "sodium carbonate"
+      },
+      {
+        "key": "Na+|SO42-",
+        "cation": "Na+",
+        "anion": "SO42-",
+        "formula": "Na2SO4",
+        "name": "sodium sulfate"
+      },
+      {
+        "key": "K+|OH-",
+        "cation": "K+",
+        "anion": "OH-",
+        "formula": "KOH",
+        "name": "potassium hydroxide"
+      },
+      {
+        "key": "K+|NO3-",
+        "cation": "K+",
+        "anion": "NO3-",
+        "formula": "KNO3",
+        "name": "potassium nitrate"
+      },
+      {
+        "key": "K+|CO32-",
+        "cation": "K+",
+        "anion": "CO32-",
+        "formula": "K2CO3",
+        "name": "potassium carbonate"
+      },
+      {
+        "key": "K+|SO42-",
+        "cation": "K+",
+        "anion": "SO42-",
+        "formula": "K2SO4",
+        "name": "potassium sulfate"
+      },
+      {
+        "key": "Ag+|OH-",
+        "cation": "Ag+",
+        "anion": "OH-",
+        "formula": "AgOH",
+        "name": "silver hydroxide"
+      },
+      {
+        "key": "Ag+|NO3-",
+        "cation": "Ag+",
+        "anion": "NO3-",
+        "formula": "AgNO3",
+        "name": "silver nitrate"
+      },
+      {
+        "key": "Ag+|CO32-",
+        "cation": "Ag+",
+        "anion": "CO32-",
+        "formula": "Ag2CO3",
+        "name": "silver carbonate"
+      },
+      {
+        "key": "Ag+|SO42-",
+        "cation": "Ag+",
+        "anion": "SO42-",
+        "formula": "Ag2SO4",
+        "name": "silver sulfate"
+      },
+      {
+        "key": "Be2+|OH-",
+        "cation": "Be2+",
+        "anion": "OH-",
+        "formula": "Be(OH)2",
+        "name": "beryllium hydroxide"
+      },
+      {
+        "key": "Be2+|NO3-",
+        "cation": "Be2+",
+        "anion": "NO3-",
+        "formula": "Be(NO3)2",
+        "name": "beryllium nitrate"
+      },
+      {
+        "key": "Be2+|CO32-",
+        "cation": "Be2+",
+        "anion": "CO32-",
+        "formula": "BeCO3",
+        "name": "beryllium carbonate"
+      },
+      {
+        "key": "Be2+|SO42-",
+        "cation": "Be2+",
+        "anion": "SO42-",
+        "formula": "BeSO4",
+        "name": "beryllium sulfate"
+      },
+      {
+        "key": "Mg2+|OH-",
+        "cation": "Mg2+",
+        "anion": "OH-",
+        "formula": "Mg(OH)2",
+        "name": "magnesium hydroxide"
+      },
+      {
+        "key": "Mg2+|NO3-",
+        "cation": "Mg2+",
+        "anion": "NO3-",
+        "formula": "Mg(NO3)2",
+        "name": "magnesium nitrate"
+      },
+      {
+        "key": "Mg2+|CO32-",
+        "cation": "Mg2+",
+        "anion": "CO32-",
+        "formula": "MgCO3",
+        "name": "magnesium carbonate"
+      },
+      {
+        "key": "Mg2+|SO42-",
+        "cation": "Mg2+",
+        "anion": "SO42-",
+        "formula": "MgSO4",
+        "name": "magnesium sulfate"
+      },
+      {
+        "key": "Ca2+|OH-",
+        "cation": "Ca2+",
+        "anion": "OH-",
+        "formula": "Ca(OH)2",
+        "name": "calcium hydroxide"
+      },
+      {
+        "key": "Ca2+|NO3-",
+        "cation": "Ca2+",
+        "anion": "NO3-",
+        "formula": "Ca(NO3)2",
+        "name": "calcium nitrate"
+      },
+      {
+        "key": "Ca2+|CO32-",
+        "cation": "Ca2+",
+        "anion": "CO32-",
+        "formula": "CaCO3",
+        "name": "calcium carbonate"
+      },
+      {
+        "key": "Ca2+|SO42-",
+        "cation": "Ca2+",
+        "anion": "SO42-",
+        "formula": "CaSO4",
+        "name": "calcium sulfate"
+      },
+      {
+        "key": "Sr2+|OH-",
+        "cation": "Sr2+",
+        "anion": "OH-",
+        "formula": "Sr(OH)2",
+        "name": "strontium hydroxide"
+      },
+      {
+        "key": "Sr2+|NO3-",
+        "cation": "Sr2+",
+        "anion": "NO3-",
+        "formula": "Sr(NO3)2",
+        "name": "strontium nitrate"
+      },
+      {
+        "key": "Sr2+|CO32-",
+        "cation": "Sr2+",
+        "anion": "CO32-",
+        "formula": "SrCO3",
+        "name": "strontium carbonate"
+      },
+      {
+        "key": "Sr2+|SO42-",
+        "cation": "Sr2+",
+        "anion": "SO42-",
+        "formula": "SrSO4",
+        "name": "strontium sulfate"
+      },
+      {
+        "key": "Ba2+|OH-",
+        "cation": "Ba2+",
+        "anion": "OH-",
+        "formula": "Ba(OH)2",
+        "name": "barium hydroxide"
+      },
+      {
+        "key": "Ba2+|NO3-",
+        "cation": "Ba2+",
+        "anion": "NO3-",
+        "formula": "Ba(NO3)2",
+        "name": "barium nitrate"
+      },
+      {
+        "key": "Ba2+|CO32-",
+        "cation": "Ba2+",
+        "anion": "CO32-",
+        "formula": "BaCO3",
+        "name": "barium carbonate"
+      },
+      {
+        "key": "Ba2+|SO42-",
+        "cation": "Ba2+",
+        "anion": "SO42-",
+        "formula": "BaSO4",
+        "name": "barium sulfate"
+      },
+      {
+        "key": "Zn2+|OH-",
+        "cation": "Zn2+",
+        "anion": "OH-",
+        "formula": "Zn(OH)2",
+        "name": "zinc hydroxide"
+      },
+      {
+        "key": "Zn2+|NO3-",
+        "cation": "Zn2+",
+        "anion": "NO3-",
+        "formula": "Zn(NO3)2",
+        "name": "zinc nitrate"
+      },
+      {
+        "key": "Zn2+|CO32-",
+        "cation": "Zn2+",
+        "anion": "CO32-",
+        "formula": "ZnCO3",
+        "name": "zinc carbonate"
+      },
+      {
+        "key": "Zn2+|SO42-",
+        "cation": "Zn2+",
+        "anion": "SO42-",
+        "formula": "ZnSO4",
+        "name": "zinc sulfate"
+      }
+    ]
+  },
+  "11": {
+    "level": 11,
+    "totalCompounds": 28,
+    "compounds": [
+      {
+        "key": "Be2+|OH-",
+        "cation": "Be2+",
+        "anion": "OH-",
+        "formula": "Be(OH)2",
+        "name": "beryllium hydroxide"
+      },
+      {
+        "key": "Be2+|NO3-",
+        "cation": "Be2+",
+        "anion": "NO3-",
+        "formula": "Be(NO3)2",
+        "name": "beryllium nitrate"
+      },
+      {
+        "key": "Be2+|CO32-",
+        "cation": "Be2+",
+        "anion": "CO32-",
+        "formula": "BeCO3",
+        "name": "beryllium carbonate"
+      },
+      {
+        "key": "Be2+|SO42-",
+        "cation": "Be2+",
+        "anion": "SO42-",
+        "formula": "BeSO4",
+        "name": "beryllium sulfate"
+      },
+      {
+        "key": "Mg2+|OH-",
+        "cation": "Mg2+",
+        "anion": "OH-",
+        "formula": "Mg(OH)2",
+        "name": "magnesium hydroxide"
+      },
+      {
+        "key": "Mg2+|NO3-",
+        "cation": "Mg2+",
+        "anion": "NO3-",
+        "formula": "Mg(NO3)2",
+        "name": "magnesium nitrate"
+      },
+      {
+        "key": "Mg2+|CO32-",
+        "cation": "Mg2+",
+        "anion": "CO32-",
+        "formula": "MgCO3",
+        "name": "magnesium carbonate"
+      },
+      {
+        "key": "Mg2+|SO42-",
+        "cation": "Mg2+",
+        "anion": "SO42-",
+        "formula": "MgSO4",
+        "name": "magnesium sulfate"
+      },
+      {
+        "key": "Ca2+|OH-",
+        "cation": "Ca2+",
+        "anion": "OH-",
+        "formula": "Ca(OH)2",
+        "name": "calcium hydroxide"
+      },
+      {
+        "key": "Ca2+|NO3-",
+        "cation": "Ca2+",
+        "anion": "NO3-",
+        "formula": "Ca(NO3)2",
+        "name": "calcium nitrate"
+      },
+      {
+        "key": "Ca2+|CO32-",
+        "cation": "Ca2+",
+        "anion": "CO32-",
+        "formula": "CaCO3",
+        "name": "calcium carbonate"
+      },
+      {
+        "key": "Ca2+|SO42-",
+        "cation": "Ca2+",
+        "anion": "SO42-",
+        "formula": "CaSO4",
+        "name": "calcium sulfate"
+      },
+      {
+        "key": "Sr2+|OH-",
+        "cation": "Sr2+",
+        "anion": "OH-",
+        "formula": "Sr(OH)2",
+        "name": "strontium hydroxide"
+      },
+      {
+        "key": "Sr2+|NO3-",
+        "cation": "Sr2+",
+        "anion": "NO3-",
+        "formula": "Sr(NO3)2",
+        "name": "strontium nitrate"
+      },
+      {
+        "key": "Sr2+|CO32-",
+        "cation": "Sr2+",
+        "anion": "CO32-",
+        "formula": "SrCO3",
+        "name": "strontium carbonate"
+      },
+      {
+        "key": "Sr2+|SO42-",
+        "cation": "Sr2+",
+        "anion": "SO42-",
+        "formula": "SrSO4",
+        "name": "strontium sulfate"
+      },
+      {
+        "key": "Ba2+|OH-",
+        "cation": "Ba2+",
+        "anion": "OH-",
+        "formula": "Ba(OH)2",
+        "name": "barium hydroxide"
+      },
+      {
+        "key": "Ba2+|NO3-",
+        "cation": "Ba2+",
+        "anion": "NO3-",
+        "formula": "Ba(NO3)2",
+        "name": "barium nitrate"
+      },
+      {
+        "key": "Ba2+|CO32-",
+        "cation": "Ba2+",
+        "anion": "CO32-",
+        "formula": "BaCO3",
+        "name": "barium carbonate"
+      },
+      {
+        "key": "Ba2+|SO42-",
+        "cation": "Ba2+",
+        "anion": "SO42-",
+        "formula": "BaSO4",
+        "name": "barium sulfate"
+      },
+      {
+        "key": "Zn2+|OH-",
+        "cation": "Zn2+",
+        "anion": "OH-",
+        "formula": "Zn(OH)2",
+        "name": "zinc hydroxide"
+      },
+      {
+        "key": "Zn2+|NO3-",
+        "cation": "Zn2+",
+        "anion": "NO3-",
+        "formula": "Zn(NO3)2",
+        "name": "zinc nitrate"
+      },
+      {
+        "key": "Zn2+|CO32-",
+        "cation": "Zn2+",
+        "anion": "CO32-",
+        "formula": "ZnCO3",
+        "name": "zinc carbonate"
+      },
+      {
+        "key": "Zn2+|SO42-",
+        "cation": "Zn2+",
+        "anion": "SO42-",
+        "formula": "ZnSO4",
+        "name": "zinc sulfate"
+      },
+      {
+        "key": "NH4+|OH-",
+        "cation": "NH4+",
+        "anion": "OH-",
+        "formula": "NH4OH",
+        "name": "ammonium hydroxide"
+      },
+      {
+        "key": "NH4+|NO3-",
+        "cation": "NH4+",
+        "anion": "NO3-",
+        "formula": "NH4NO3",
+        "name": "ammonium nitrate"
+      },
+      {
+        "key": "NH4+|CO32-",
+        "cation": "NH4+",
+        "anion": "CO32-",
+        "formula": "(NH4)2CO3",
+        "name": "ammonium carbonate"
+      },
+      {
+        "key": "NH4+|SO42-",
+        "cation": "NH4+",
+        "anion": "SO42-",
+        "formula": "(NH4)2SO4",
+        "name": "ammonium sulfate"
+      }
+    ]
+  },
+  "12": {
+    "level": 12,
+    "totalCompounds": 20,
+    "compounds": [
+      {
+        "key": "Cu2+|OH-",
+        "cation": "Cu2+",
+        "anion": "OH-",
+        "formula": "Cu(OH)2",
+        "name": "copper(II) hydroxide"
+      },
+      {
+        "key": "Cu2+|NO3-",
+        "cation": "Cu2+",
+        "anion": "NO3-",
+        "formula": "Cu(NO3)2",
+        "name": "copper(II) nitrate"
+      },
+      {
+        "key": "Cu2+|CO32-",
+        "cation": "Cu2+",
+        "anion": "CO32-",
+        "formula": "CuCO3",
+        "name": "copper(II) carbonate"
+      },
+      {
+        "key": "Cu2+|SO42-",
+        "cation": "Cu2+",
+        "anion": "SO42-",
+        "formula": "CuSO4",
+        "name": "copper(II) sulfate"
+      },
+      {
+        "key": "Fe2+|OH-",
+        "cation": "Fe2+",
+        "anion": "OH-",
+        "formula": "Fe(OH)2",
+        "name": "iron(II) hydroxide"
+      },
+      {
+        "key": "Fe2+|NO3-",
+        "cation": "Fe2+",
+        "anion": "NO3-",
+        "formula": "Fe(NO3)2",
+        "name": "iron(II) hydroxide"
+      },
+      {
+        "key": "Fe2+|CO32-",
+        "cation": "Fe2+",
+        "anion": "CO32-",
+        "formula": "FeCO3",
+        "name": "iron(II) carbonate"
+      },
+      {
+        "key": "Fe2+|SO42-",
+        "cation": "Fe2+",
+        "anion": "SO42-",
+        "formula": "FeSO4",
+        "name": "iron(II) sulfate"
+      },
+      {
+        "key": "Ni2+|OH-",
+        "cation": "Ni2+",
+        "anion": "OH-",
+        "formula": "Ni(OH)2",
+        "name": "nickel(II) hydroxide"
+      },
+      {
+        "key": "Ni2+|NO3-",
+        "cation": "Ni2+",
+        "anion": "NO3-",
+        "formula": "Ni(NO3)2",
+        "name": "nickel(II) nitrate"
+      },
+      {
+        "key": "Ni2+|CO32-",
+        "cation": "Ni2+",
+        "anion": "CO32-",
+        "formula": "NiCO3",
+        "name": "nickel(II) carbonate"
+      },
+      {
+        "key": "Ni2+|SO42-",
+        "cation": "Ni2+",
+        "anion": "SO42-",
+        "formula": "NiSO4",
+        "name": "nickel(II) sulfate"
+      },
+      {
+        "key": "Pb2+|OH-",
+        "cation": "Pb2+",
+        "anion": "OH-",
+        "formula": "Pb(OH)2",
+        "name": "lead(II) hydroxide"
+      },
+      {
+        "key": "Pb2+|NO3-",
+        "cation": "Pb2+",
+        "anion": "NO3-",
+        "formula": "Pb(NO3)2",
+        "name": "lead(II) nitrate"
+      },
+      {
+        "key": "Pb2+|CO32-",
+        "cation": "Pb2+",
+        "anion": "CO32-",
+        "formula": "PbCO3",
+        "name": "lead(II) carbonate"
+      },
+      {
+        "key": "Pb2+|SO42-",
+        "cation": "Pb2+",
+        "anion": "SO42-",
+        "formula": "PbSO4",
+        "name": "lead(II) sulfate"
+      },
+      {
+        "key": "Fe3+|OH-",
+        "cation": "Fe3+",
+        "anion": "OH-",
+        "formula": "Fe(OH)3",
+        "name": "iron(III) hydroxide"
+      },
+      {
+        "key": "Fe3+|NO3-",
+        "cation": "Fe3+",
+        "anion": "NO3-",
+        "formula": "Fe(NO3)3",
+        "name": "iron(III) nitrate"
+      },
+      {
+        "key": "Fe3+|CO32-",
+        "cation": "Fe3+",
+        "anion": "CO32-",
+        "formula": "Fe2(CO3)3",
+        "name": "iron(III) carbonate"
+      },
+      {
+        "key": "Fe3+|SO42-",
+        "cation": "Fe3+",
+        "anion": "SO42-",
+        "formula": "Fe2(SO4)3",
+        "name": "iron(III) sulfate"
+      }
+    ]
+  },
+  "13": {
+    "level": 13,
+    "totalCompounds": 55,
+    "compounds": [
+      {
+        "key": "Li+|OH-",
+        "cation": "Li+",
+        "anion": "OH-",
+        "formula": "LiOH",
+        "name": "lithium hydroxide"
+      },
+      {
+        "key": "Li+|NO3-",
+        "cation": "Li+",
+        "anion": "NO3-",
+        "formula": "LiNO3",
+        "name": "lithium nitrate"
+      },
+      {
+        "key": "Li+|CO32-",
+        "cation": "Li+",
+        "anion": "CO32-",
+        "formula": "Li2CO3",
+        "name": "lithium carbonate"
+      },
+      {
+        "key": "Li+|SO42-",
+        "cation": "Li+",
+        "anion": "SO42-",
+        "formula": "Li2SO4",
+        "name": "lithium sulfate"
+      },
+      {
+        "key": "Li+|PO43-",
+        "cation": "Li+",
+        "anion": "PO43-",
+        "formula": "Li3PO4",
+        "name": "lithium phosphate"
+      },
+      {
+        "key": "Na+|OH-",
+        "cation": "Na+",
+        "anion": "OH-",
+        "formula": "NaOH",
+        "name": "sodium hydroxide"
+      },
+      {
+        "key": "Na+|NO3-",
+        "cation": "Na+",
+        "anion": "NO3-",
+        "formula": "NaNO3",
+        "name": "sodium nitrate"
+      },
+      {
+        "key": "Na+|CO32-",
+        "cation": "Na+",
+        "anion": "CO32-",
+        "formula": "Na2CO3",
+        "name": "sodium carbonate"
+      },
+      {
+        "key": "Na+|SO42-",
+        "cation": "Na+",
+        "anion": "SO42-",
+        "formula": "Na2SO4",
+        "name": "sodium sulfate"
+      },
+      {
+        "key": "Na+|PO43-",
+        "cation": "Na+",
+        "anion": "PO43-",
+        "formula": "Na3PO4",
+        "name": "sodium phosphate"
+      },
+      {
+        "key": "K+|OH-",
+        "cation": "K+",
+        "anion": "OH-",
+        "formula": "KOH",
+        "name": "potassium hydroxide"
+      },
+      {
+        "key": "K+|NO3-",
+        "cation": "K+",
+        "anion": "NO3-",
+        "formula": "KNO3",
+        "name": "potassium nitrate"
+      },
+      {
+        "key": "K+|CO32-",
+        "cation": "K+",
+        "anion": "CO32-",
+        "formula": "K2CO3",
+        "name": "potassium carbonate"
+      },
+      {
+        "key": "K+|SO42-",
+        "cation": "K+",
+        "anion": "SO42-",
+        "formula": "K2SO4",
+        "name": "potassium sulfate"
+      },
+      {
+        "key": "K+|PO43-",
+        "cation": "K+",
+        "anion": "PO43-",
+        "formula": "K3PO4",
+        "name": "potassium phosphate"
+      },
+      {
+        "key": "Ag+|OH-",
+        "cation": "Ag+",
+        "anion": "OH-",
+        "formula": "AgOH",
+        "name": "silver hydroxide"
+      },
+      {
+        "key": "Ag+|NO3-",
+        "cation": "Ag+",
+        "anion": "NO3-",
+        "formula": "AgNO3",
+        "name": "silver nitrate"
+      },
+      {
+        "key": "Ag+|CO32-",
+        "cation": "Ag+",
+        "anion": "CO32-",
+        "formula": "Ag2CO3",
+        "name": "silver carbonate"
+      },
+      {
+        "key": "Ag+|SO42-",
+        "cation": "Ag+",
+        "anion": "SO42-",
+        "formula": "Ag2SO4",
+        "name": "silver sulfate"
+      },
+      {
+        "key": "Ag+|PO43-",
+        "cation": "Ag+",
+        "anion": "PO43-",
+        "formula": "Ag3PO4",
+        "name": "silver phosphate"
+      },
+      {
+        "key": "Be2+|OH-",
+        "cation": "Be2+",
+        "anion": "OH-",
+        "formula": "Be(OH)2",
+        "name": "beryllium hydroxide"
+      },
+      {
+        "key": "Be2+|NO3-",
+        "cation": "Be2+",
+        "anion": "NO3-",
+        "formula": "Be(NO3)2",
+        "name": "beryllium nitrate"
+      },
+      {
+        "key": "Be2+|CO32-",
+        "cation": "Be2+",
+        "anion": "CO32-",
+        "formula": "BeCO3",
+        "name": "beryllium carbonate"
+      },
+      {
+        "key": "Be2+|SO42-",
+        "cation": "Be2+",
+        "anion": "SO42-",
+        "formula": "BeSO4",
+        "name": "beryllium sulfate"
+      },
+      {
+        "key": "Be2+|PO43-",
+        "cation": "Be2+",
+        "anion": "PO43-",
+        "formula": "Be3(PO4)2",
+        "name": "beryllium phosphate"
+      },
+      {
+        "key": "Mg2+|OH-",
+        "cation": "Mg2+",
+        "anion": "OH-",
+        "formula": "Mg(OH)2",
+        "name": "magnesium hydroxide"
+      },
+      {
+        "key": "Mg2+|NO3-",
+        "cation": "Mg2+",
+        "anion": "NO3-",
+        "formula": "Mg(NO3)2",
+        "name": "magnesium nitrate"
+      },
+      {
+        "key": "Mg2+|CO32-",
+        "cation": "Mg2+",
+        "anion": "CO32-",
+        "formula": "MgCO3",
+        "name": "magnesium carbonate"
+      },
+      {
+        "key": "Mg2+|SO42-",
+        "cation": "Mg2+",
+        "anion": "SO42-",
+        "formula": "MgSO4",
+        "name": "magnesium sulfate"
+      },
+      {
+        "key": "Mg2+|PO43-",
+        "cation": "Mg2+",
+        "anion": "PO43-",
+        "formula": "Mg3(PO4)2",
+        "name": "magnesium phosphate"
+      },
+      {
+        "key": "Ca2+|OH-",
+        "cation": "Ca2+",
+        "anion": "OH-",
+        "formula": "Ca(OH)2",
+        "name": "calcium hydroxide"
+      },
+      {
+        "key": "Ca2+|NO3-",
+        "cation": "Ca2+",
+        "anion": "NO3-",
+        "formula": "Ca(NO3)2",
+        "name": "calcium nitrate"
+      },
+      {
+        "key": "Ca2+|CO32-",
+        "cation": "Ca2+",
+        "anion": "CO32-",
+        "formula": "CaCO3",
+        "name": "calcium carbonate"
+      },
+      {
+        "key": "Ca2+|SO42-",
+        "cation": "Ca2+",
+        "anion": "SO42-",
+        "formula": "CaSO4",
+        "name": "calcium sulfate"
+      },
+      {
+        "key": "Ca2+|PO43-",
+        "cation": "Ca2+",
+        "anion": "PO43-",
+        "formula": "Ca3(PO4)2",
+        "name": "calcium phosphate"
+      },
+      {
+        "key": "Sr2+|OH-",
+        "cation": "Sr2+",
+        "anion": "OH-",
+        "formula": "Sr(OH)2",
+        "name": "strontium hydroxide"
+      },
+      {
+        "key": "Sr2+|NO3-",
+        "cation": "Sr2+",
+        "anion": "NO3-",
+        "formula": "Sr(NO3)2",
+        "name": "strontium nitrate"
+      },
+      {
+        "key": "Sr2+|CO32-",
+        "cation": "Sr2+",
+        "anion": "CO32-",
+        "formula": "SrCO3",
+        "name": "strontium carbonate"
+      },
+      {
+        "key": "Sr2+|SO42-",
+        "cation": "Sr2+",
+        "anion": "SO42-",
+        "formula": "SrSO4",
+        "name": "strontium sulfate"
+      },
+      {
+        "key": "Sr2+|PO43-",
+        "cation": "Sr2+",
+        "anion": "PO43-",
+        "formula": "Sr3(PO4)2",
+        "name": "strontium phosphate"
+      },
+      {
+        "key": "Ba2+|OH-",
+        "cation": "Ba2+",
+        "anion": "OH-",
+        "formula": "Ba(OH)2",
+        "name": "barium hydroxide"
+      },
+      {
+        "key": "Ba2+|NO3-",
+        "cation": "Ba2+",
+        "anion": "NO3-",
+        "formula": "Ba(NO3)2",
+        "name": "barium nitrate"
+      },
+      {
+        "key": "Ba2+|CO32-",
+        "cation": "Ba2+",
+        "anion": "CO32-",
+        "formula": "BaCO3",
+        "name": "barium carbonate"
+      },
+      {
+        "key": "Ba2+|SO42-",
+        "cation": "Ba2+",
+        "anion": "SO42-",
+        "formula": "BaSO4",
+        "name": "barium sulfate"
+      },
+      {
+        "key": "Ba2+|PO43-",
+        "cation": "Ba2+",
+        "anion": "PO43-",
+        "formula": "Ba3(PO4)2",
+        "name": "barium phosphate"
+      },
+      {
+        "key": "Zn2+|OH-",
+        "cation": "Zn2+",
+        "anion": "OH-",
+        "formula": "Zn(OH)2",
+        "name": "zinc hydroxide"
+      },
+      {
+        "key": "Zn2+|NO3-",
+        "cation": "Zn2+",
+        "anion": "NO3-",
+        "formula": "Zn(NO3)2",
+        "name": "zinc nitrate"
+      },
+      {
+        "key": "Zn2+|CO32-",
+        "cation": "Zn2+",
+        "anion": "CO32-",
+        "formula": "ZnCO3",
+        "name": "zinc carbonate"
+      },
+      {
+        "key": "Zn2+|SO42-",
+        "cation": "Zn2+",
+        "anion": "SO42-",
+        "formula": "ZnSO4",
+        "name": "zinc sulfate"
+      },
+      {
+        "key": "Zn2+|PO43-",
+        "cation": "Zn2+",
+        "anion": "PO43-",
+        "formula": "Zn3(PO4)2",
+        "name": "zinc phosphate"
+      },
+      {
+        "key": "Al3+|OH-",
+        "cation": "Al3+",
+        "anion": "OH-",
+        "formula": "Al(OH)3",
+        "name": "aluminium hydroxide"
+      },
+      {
+        "key": "Al3+|NO3-",
+        "cation": "Al3+",
+        "anion": "NO3-",
+        "formula": "Al(NO3)3",
+        "name": "aluminium nitrate"
+      },
+      {
+        "key": "Al3+|CO32-",
+        "cation": "Al3+",
+        "anion": "CO32-",
+        "formula": "Al2(CO3)3",
+        "name": "aluminium carbonate"
+      },
+      {
+        "key": "Al3+|SO42-",
+        "cation": "Al3+",
+        "anion": "SO42-",
+        "formula": "Al2(SO4)3",
+        "name": "aluminium sulfate"
+      },
+      {
+        "key": "Al3+|PO43-",
+        "cation": "Al3+",
+        "anion": "PO43-",
+        "formula": "AlPO4",
+        "name": "aluminium phosphate"
+      }
+    ]
+  },
+  "14": {
+    "level": 14,
+    "totalCompounds": 40,
+    "compounds": [
+      {
+        "key": "Cu+|OH-",
+        "cation": "Cu+",
+        "anion": "OH-",
+        "formula": "CuOH",
+        "name": "copper(I) hydroxide"
+      },
+      {
+        "key": "Cu+|NO3-",
+        "cation": "Cu+",
+        "anion": "NO3-",
+        "formula": "CuNO3",
+        "name": "copper(I) nitrate"
+      },
+      {
+        "key": "Cu+|CO32-",
+        "cation": "Cu+",
+        "anion": "CO32-",
+        "formula": "Cu2CO3",
+        "name": "copper(I) carbonate"
+      },
+      {
+        "key": "Cu+|SO42-",
+        "cation": "Cu+",
+        "anion": "SO42-",
+        "formula": "Cu2SO4",
+        "name": "copper(I) sulfate"
+      },
+      {
+        "key": "Cu+|PO43-",
+        "cation": "Cu+",
+        "anion": "PO43-",
+        "formula": "Cu3PO4",
+        "name": "copper(I) phosphate"
+      },
+      {
+        "key": "Cu2+|OH-",
+        "cation": "Cu2+",
+        "anion": "OH-",
+        "formula": "Cu(OH)2",
+        "name": "copper(II) hydroxide"
+      },
+      {
+        "key": "Cu2+|NO3-",
+        "cation": "Cu2+",
+        "anion": "NO3-",
+        "formula": "Cu(NO3)2",
+        "name": "copper(II) nitrate"
+      },
+      {
+        "key": "Cu2+|CO32-",
+        "cation": "Cu2+",
+        "anion": "CO32-",
+        "formula": "CuCO3",
+        "name": "copper(II) carbonate"
+      },
+      {
+        "key": "Cu2+|SO42-",
+        "cation": "Cu2+",
+        "anion": "SO42-",
+        "formula": "CuSO4",
+        "name": "copper(II) sulfate"
+      },
+      {
+        "key": "Cu2+|PO43-",
+        "cation": "Cu2+",
+        "anion": "PO43-",
+        "formula": "Cu3(PO4)2",
+        "name": "copper(II) phosphate"
+      },
+      {
+        "key": "Fe2+|OH-",
+        "cation": "Fe2+",
+        "anion": "OH-",
+        "formula": "Fe(OH)2",
+        "name": "iron(II) hydroxide"
+      },
+      {
+        "key": "Fe2+|NO3-",
+        "cation": "Fe2+",
+        "anion": "NO3-",
+        "formula": "Fe(NO3)2",
+        "name": "iron(II) hydroxide"
+      },
+      {
+        "key": "Fe2+|CO32-",
+        "cation": "Fe2+",
+        "anion": "CO32-",
+        "formula": "FeCO3",
+        "name": "iron(II) carbonate"
+      },
+      {
+        "key": "Fe2+|SO42-",
+        "cation": "Fe2+",
+        "anion": "SO42-",
+        "formula": "FeSO4",
+        "name": "iron(II) sulfate"
+      },
+      {
+        "key": "Fe2+|PO43-",
+        "cation": "Fe2+",
+        "anion": "PO43-",
+        "formula": "Fe3(PO4)2",
+        "name": "iron(II) phosphate"
+      },
+      {
+        "key": "Ni2+|OH-",
+        "cation": "Ni2+",
+        "anion": "OH-",
+        "formula": "Ni(OH)2",
+        "name": "nickel(II) hydroxide"
+      },
+      {
+        "key": "Ni2+|NO3-",
+        "cation": "Ni2+",
+        "anion": "NO3-",
+        "formula": "Ni(NO3)2",
+        "name": "nickel(II) nitrate"
+      },
+      {
+        "key": "Ni2+|CO32-",
+        "cation": "Ni2+",
+        "anion": "CO32-",
+        "formula": "NiCO3",
+        "name": "nickel(II) carbonate"
+      },
+      {
+        "key": "Ni2+|SO42-",
+        "cation": "Ni2+",
+        "anion": "SO42-",
+        "formula": "NiSO4",
+        "name": "nickel(II) sulfate"
+      },
+      {
+        "key": "Ni2+|PO43-",
+        "cation": "Ni2+",
+        "anion": "PO43-",
+        "formula": "Ni3(PO4)2",
+        "name": "nickel(II) phosphate"
+      },
+      {
+        "key": "Pb2+|OH-",
+        "cation": "Pb2+",
+        "anion": "OH-",
+        "formula": "Pb(OH)2",
+        "name": "lead(II) hydroxide"
+      },
+      {
+        "key": "Pb2+|NO3-",
+        "cation": "Pb2+",
+        "anion": "NO3-",
+        "formula": "Pb(NO3)2",
+        "name": "lead(II) nitrate"
+      },
+      {
+        "key": "Pb2+|CO32-",
+        "cation": "Pb2+",
+        "anion": "CO32-",
+        "formula": "PbCO3",
+        "name": "lead(II) carbonate"
+      },
+      {
+        "key": "Pb2+|SO42-",
+        "cation": "Pb2+",
+        "anion": "SO42-",
+        "formula": "PbSO4",
+        "name": "lead(II) sulfate"
+      },
+      {
+        "key": "Pb2+|PO43-",
+        "cation": "Pb2+",
+        "anion": "PO43-",
+        "formula": "Pb3(PO4)2",
+        "name": "lead(II) phosphate"
+      },
+      {
+        "key": "Fe3+|OH-",
+        "cation": "Fe3+",
+        "anion": "OH-",
+        "formula": "Fe(OH)3",
+        "name": "iron(III) hydroxide"
+      },
+      {
+        "key": "Fe3+|NO3-",
+        "cation": "Fe3+",
+        "anion": "NO3-",
+        "formula": "Fe(NO3)3",
+        "name": "iron(III) nitrate"
+      },
+      {
+        "key": "Fe3+|CO32-",
+        "cation": "Fe3+",
+        "anion": "CO32-",
+        "formula": "Fe2(CO3)3",
+        "name": "iron(III) carbonate"
+      },
+      {
+        "key": "Fe3+|SO42-",
+        "cation": "Fe3+",
+        "anion": "SO42-",
+        "formula": "Fe2(SO4)3",
+        "name": "iron(III) sulfate"
+      },
+      {
+        "key": "Fe3+|PO43-",
+        "cation": "Fe3+",
+        "anion": "PO43-",
+        "formula": "FePO4",
+        "name": "iron(III) phosphate"
+      },
+      {
+        "key": "Ti4+|OH-",
+        "cation": "Ti4+",
+        "anion": "OH-",
+        "formula": "Ti(OH)4",
+        "name": "titanium(IV) hydroxide"
+      },
+      {
+        "key": "Ti4+|NO3-",
+        "cation": "Ti4+",
+        "anion": "NO3-",
+        "formula": "Ti(NO3)4",
+        "name": "titanium(IV) nitrate"
+      },
+      {
+        "key": "Ti4+|CO32-",
+        "cation": "Ti4+",
+        "anion": "CO32-",
+        "formula": "Ti(CO3)2",
+        "name": "titanium(IV) carbonate"
+      },
+      {
+        "key": "Ti4+|SO42-",
+        "cation": "Ti4+",
+        "anion": "SO42-",
+        "formula": "Ti(SO4)2",
+        "name": "titanium(IV) sulfate"
+      },
+      {
+        "key": "Ti4+|PO43-",
+        "cation": "Ti4+",
+        "anion": "PO43-",
+        "formula": "Ti3(PO4)4",
+        "name": "titanium(IV) phosphate"
+      },
+      {
+        "key": "Pb4+|OH-",
+        "cation": "Pb4+",
+        "anion": "OH-",
+        "formula": "Pb(OH)4",
+        "name": "lead(IV) hydroxide"
+      },
+      {
+        "key": "Pb4+|NO3-",
+        "cation": "Pb4+",
+        "anion": "NO3-",
+        "formula": "Pb(NO3)4",
+        "name": "lead(IV) nitrate"
+      },
+      {
+        "key": "Pb4+|CO32-",
+        "cation": "Pb4+",
+        "anion": "CO32-",
+        "formula": "Pb(CO3)2",
+        "name": "lead(IV) carbonate"
+      },
+      {
+        "key": "Pb4+|SO42-",
+        "cation": "Pb4+",
+        "anion": "SO42-",
+        "formula": "Pb(SO4)2",
+        "name": "lead(IV) sulfate"
+      },
+      {
+        "key": "Pb4+|PO43-",
+        "cation": "Pb4+",
+        "anion": "PO43-",
+        "formula": "Pb3(PO4)4",
+        "name": "lead(IV) phosphate"
+      }
+    ]
+  },
+  "15": {
+    "level": 15,
+    "totalCompounds": 117,
+    "compounds": [
+      {
+        "key": "Cu+|N3-",
+        "cation": "Cu+",
+        "anion": "N3-",
+        "formula": "Cu3N",
+        "name": "copper(I) nitride"
+      },
+      {
+        "key": "Cu+|P3-",
+        "cation": "Cu+",
+        "anion": "P3-",
+        "formula": "Cu3P",
+        "name": "copper(I) phosphide"
+      },
+      {
+        "key": "Cu+|O2-",
+        "cation": "Cu+",
+        "anion": "O2-",
+        "formula": "Cu2O",
+        "name": "copper(I) oxide"
+      },
+      {
+        "key": "Cu+|S2-",
+        "cation": "Cu+",
+        "anion": "S2-",
+        "formula": "Cu2S",
+        "name": "copper(I) sulfide"
+      },
+      {
+        "key": "Cu+|F-",
+        "cation": "Cu+",
+        "anion": "F-",
+        "formula": "CuF",
+        "name": "copper(I) fluoride"
+      },
+      {
+        "key": "Cu+|Cl-",
+        "cation": "Cu+",
+        "anion": "Cl-",
+        "formula": "CuCl",
+        "name": "copper(I) chloride"
+      },
+      {
+        "key": "Cu+|Br-",
+        "cation": "Cu+",
+        "anion": "Br-",
+        "formula": "CuBr",
+        "name": "copper(I) bromide"
+      },
+      {
+        "key": "Cu+|I-",
+        "cation": "Cu+",
+        "anion": "I-",
+        "formula": "CuI",
+        "name": "copper(I) iodide"
+      },
+      {
+        "key": "Cu+|OH-",
+        "cation": "Cu+",
+        "anion": "OH-",
+        "formula": "CuOH",
+        "name": "copper(I) hydroxide"
+      },
+      {
+        "key": "Cu+|NO3-",
+        "cation": "Cu+",
+        "anion": "NO3-",
+        "formula": "CuNO3",
+        "name": "copper(I) nitrate"
+      },
+      {
+        "key": "Cu+|CO32-",
+        "cation": "Cu+",
+        "anion": "CO32-",
+        "formula": "Cu2CO3",
+        "name": "copper(I) carbonate"
+      },
+      {
+        "key": "Cu+|SO42-",
+        "cation": "Cu+",
+        "anion": "SO42-",
+        "formula": "Cu2SO4",
+        "name": "copper(I) sulfate"
+      },
+      {
+        "key": "Cu+|PO43-",
+        "cation": "Cu+",
+        "anion": "PO43-",
+        "formula": "Cu3PO4",
+        "name": "copper(I) phosphate"
+      },
+      {
+        "key": "Cu2+|N3-",
+        "cation": "Cu2+",
+        "anion": "N3-",
+        "formula": "Cu3N2",
+        "name": "copper(II) nitride"
+      },
+      {
+        "key": "Cu2+|P3-",
+        "cation": "Cu2+",
+        "anion": "P3-",
+        "formula": "Cu3P2",
+        "name": "copper(II) phosphide"
+      },
+      {
+        "key": "Cu2+|O2-",
+        "cation": "Cu2+",
+        "anion": "O2-",
+        "formula": "CuO",
+        "name": "copper(II) oxide"
+      },
+      {
+        "key": "Cu2+|S2-",
+        "cation": "Cu2+",
+        "anion": "S2-",
+        "formula": "CuS",
+        "name": "copper(II) sulfide"
+      },
+      {
+        "key": "Cu2+|F-",
+        "cation": "Cu2+",
+        "anion": "F-",
+        "formula": "CuF2",
+        "name": "copper(II) fluoride"
+      },
+      {
+        "key": "Cu2+|Cl-",
+        "cation": "Cu2+",
+        "anion": "Cl-",
+        "formula": "CuCl2",
+        "name": "copper(II) chloride"
+      },
+      {
+        "key": "Cu2+|Br-",
+        "cation": "Cu2+",
+        "anion": "Br-",
+        "formula": "CuBr2",
+        "name": "copper(II) bromide"
+      },
+      {
+        "key": "Cu2+|I-",
+        "cation": "Cu2+",
+        "anion": "I-",
+        "formula": "CuI2",
+        "name": "copper(II) iodide"
+      },
+      {
+        "key": "Cu2+|OH-",
+        "cation": "Cu2+",
+        "anion": "OH-",
+        "formula": "Cu(OH)2",
+        "name": "copper(II) hydroxide"
+      },
+      {
+        "key": "Cu2+|NO3-",
+        "cation": "Cu2+",
+        "anion": "NO3-",
+        "formula": "Cu(NO3)2",
+        "name": "copper(II) nitrate"
+      },
+      {
+        "key": "Cu2+|CO32-",
+        "cation": "Cu2+",
+        "anion": "CO32-",
+        "formula": "CuCO3",
+        "name": "copper(II) carbonate"
+      },
+      {
+        "key": "Cu2+|SO42-",
+        "cation": "Cu2+",
+        "anion": "SO42-",
+        "formula": "CuSO4",
+        "name": "copper(II) sulfate"
+      },
+      {
+        "key": "Cu2+|PO43-",
+        "cation": "Cu2+",
+        "anion": "PO43-",
+        "formula": "Cu3(PO4)2",
+        "name": "copper(II) phosphate"
+      },
+      {
+        "key": "Fe2+|N3-",
+        "cation": "Fe2+",
+        "anion": "N3-",
+        "formula": "Fe3N2",
+        "name": "iron(II) nitride"
+      },
+      {
+        "key": "Fe2+|P3-",
+        "cation": "Fe2+",
+        "anion": "P3-",
+        "formula": "Fe3P2",
+        "name": "iron(II) phosphide"
+      },
+      {
+        "key": "Fe2+|O2-",
+        "cation": "Fe2+",
+        "anion": "O2-",
+        "formula": "FeO",
+        "name": "iron(II) oxide"
+      },
+      {
+        "key": "Fe2+|S2-",
+        "cation": "Fe2+",
+        "anion": "S2-",
+        "formula": "FeS",
+        "name": "iron(II) sulfide"
+      },
+      {
+        "key": "Fe2+|F-",
+        "cation": "Fe2+",
+        "anion": "F-",
+        "formula": "FeF2",
+        "name": "iron(II) fluoride"
+      },
+      {
+        "key": "Fe2+|Cl-",
+        "cation": "Fe2+",
+        "anion": "Cl-",
+        "formula": "FeCl2",
+        "name": "iron(II) chloride"
+      },
+      {
+        "key": "Fe2+|Br-",
+        "cation": "Fe2+",
+        "anion": "Br-",
+        "formula": "FeBr2",
+        "name": "iron(II) bromide"
+      },
+      {
+        "key": "Fe2+|I-",
+        "cation": "Fe2+",
+        "anion": "I-",
+        "formula": "FeI2",
+        "name": "iron(II) iodide"
+      },
+      {
+        "key": "Fe2+|OH-",
+        "cation": "Fe2+",
+        "anion": "OH-",
+        "formula": "Fe(OH)2",
+        "name": "iron(II) hydroxide"
+      },
+      {
+        "key": "Fe2+|NO3-",
+        "cation": "Fe2+",
+        "anion": "NO3-",
+        "formula": "Fe(NO3)2",
+        "name": "iron(II) hydroxide"
+      },
+      {
+        "key": "Fe2+|CO32-",
+        "cation": "Fe2+",
+        "anion": "CO32-",
+        "formula": "FeCO3",
+        "name": "iron(II) carbonate"
+      },
+      {
+        "key": "Fe2+|SO42-",
+        "cation": "Fe2+",
+        "anion": "SO42-",
+        "formula": "FeSO4",
+        "name": "iron(II) sulfate"
+      },
+      {
+        "key": "Fe2+|PO43-",
+        "cation": "Fe2+",
+        "anion": "PO43-",
+        "formula": "Fe3(PO4)2",
+        "name": "iron(II) phosphate"
+      },
+      {
+        "key": "Ni2+|N3-",
+        "cation": "Ni2+",
+        "anion": "N3-",
+        "formula": "Ni3N2",
+        "name": "nickel(II) nitride"
+      },
+      {
+        "key": "Ni2+|P3-",
+        "cation": "Ni2+",
+        "anion": "P3-",
+        "formula": "Ni3P2",
+        "name": "nickel(II) phosphide"
+      },
+      {
+        "key": "Ni2+|O2-",
+        "cation": "Ni2+",
+        "anion": "O2-",
+        "formula": "NiO",
+        "name": "nickel(II) oxide"
+      },
+      {
+        "key": "Ni2+|S2-",
+        "cation": "Ni2+",
+        "anion": "S2-",
+        "formula": "NiS",
+        "name": "nickel(II) sulfide"
+      },
+      {
+        "key": "Ni2+|F-",
+        "cation": "Ni2+",
+        "anion": "F-",
+        "formula": "NiF2",
+        "name": "nickel(II) fluoride"
+      },
+      {
+        "key": "Ni2+|Cl-",
+        "cation": "Ni2+",
+        "anion": "Cl-",
+        "formula": "NiCl2",
+        "name": "nickel(II) chloride"
+      },
+      {
+        "key": "Ni2+|Br-",
+        "cation": "Ni2+",
+        "anion": "Br-",
+        "formula": "NiBr2",
+        "name": "nickel(II) bromide"
+      },
+      {
+        "key": "Ni2+|I-",
+        "cation": "Ni2+",
+        "anion": "I-",
+        "formula": "NiI2",
+        "name": "nickel(II) iodide"
+      },
+      {
+        "key": "Ni2+|OH-",
+        "cation": "Ni2+",
+        "anion": "OH-",
+        "formula": "Ni(OH)2",
+        "name": "nickel(II) hydroxide"
+      },
+      {
+        "key": "Ni2+|NO3-",
+        "cation": "Ni2+",
+        "anion": "NO3-",
+        "formula": "Ni(NO3)2",
+        "name": "nickel(II) nitrate"
+      },
+      {
+        "key": "Ni2+|CO32-",
+        "cation": "Ni2+",
+        "anion": "CO32-",
+        "formula": "NiCO3",
+        "name": "nickel(II) carbonate"
+      },
+      {
+        "key": "Ni2+|SO42-",
+        "cation": "Ni2+",
+        "anion": "SO42-",
+        "formula": "NiSO4",
+        "name": "nickel(II) sulfate"
+      },
+      {
+        "key": "Ni2+|PO43-",
+        "cation": "Ni2+",
+        "anion": "PO43-",
+        "formula": "Ni3(PO4)2",
+        "name": "nickel(II) phosphate"
+      },
+      {
+        "key": "Pb2+|N3-",
+        "cation": "Pb2+",
+        "anion": "N3-",
+        "formula": "Pb3N2",
+        "name": "lead(II) nitride"
+      },
+      {
+        "key": "Pb2+|P3-",
+        "cation": "Pb2+",
+        "anion": "P3-",
+        "formula": "Pb3P2",
+        "name": "lead(II) phosphide"
+      },
+      {
+        "key": "Pb2+|O2-",
+        "cation": "Pb2+",
+        "anion": "O2-",
+        "formula": "PbO",
+        "name": "lead(II) oxide"
+      },
+      {
+        "key": "Pb2+|S2-",
+        "cation": "Pb2+",
+        "anion": "S2-",
+        "formula": "PbS",
+        "name": "lead(II) sulfide"
+      },
+      {
+        "key": "Pb2+|F-",
+        "cation": "Pb2+",
+        "anion": "F-",
+        "formula": "PbF2",
+        "name": "lead(II) fluoride"
+      },
+      {
+        "key": "Pb2+|Cl-",
+        "cation": "Pb2+",
+        "anion": "Cl-",
+        "formula": "PbCl2",
+        "name": "lead(II) chloride"
+      },
+      {
+        "key": "Pb2+|Br-",
+        "cation": "Pb2+",
+        "anion": "Br-",
+        "formula": "PbBr2",
+        "name": "lead(II) bromide"
+      },
+      {
+        "key": "Pb2+|I-",
+        "cation": "Pb2+",
+        "anion": "I-",
+        "formula": "PbI2",
+        "name": "lead(II) iodide"
+      },
+      {
+        "key": "Pb2+|OH-",
+        "cation": "Pb2+",
+        "anion": "OH-",
+        "formula": "Pb(OH)2",
+        "name": "lead(II) hydroxide"
+      },
+      {
+        "key": "Pb2+|NO3-",
+        "cation": "Pb2+",
+        "anion": "NO3-",
+        "formula": "Pb(NO3)2",
+        "name": "lead(II) nitrate"
+      },
+      {
+        "key": "Pb2+|CO32-",
+        "cation": "Pb2+",
+        "anion": "CO32-",
+        "formula": "PbCO3",
+        "name": "lead(II) carbonate"
+      },
+      {
+        "key": "Pb2+|SO42-",
+        "cation": "Pb2+",
+        "anion": "SO42-",
+        "formula": "PbSO4",
+        "name": "lead(II) sulfate"
+      },
+      {
+        "key": "Pb2+|PO43-",
+        "cation": "Pb2+",
+        "anion": "PO43-",
+        "formula": "Pb3(PO4)2",
+        "name": "lead(II) phosphate"
+      },
+      {
+        "key": "Fe3+|N3-",
+        "cation": "Fe3+",
+        "anion": "N3-",
+        "formula": "FeN",
+        "name": "iron(III) nitride"
+      },
+      {
+        "key": "Fe3+|P3-",
+        "cation": "Fe3+",
+        "anion": "P3-",
+        "formula": "FeP",
+        "name": "iron(III) phosphide"
+      },
+      {
+        "key": "Fe3+|O2-",
+        "cation": "Fe3+",
+        "anion": "O2-",
+        "formula": "Fe2O3",
+        "name": "iron(III) oxide"
+      },
+      {
+        "key": "Fe3+|S2-",
+        "cation": "Fe3+",
+        "anion": "S2-",
+        "formula": "Fe2S3",
+        "name": "iron(III) sulfide"
+      },
+      {
+        "key": "Fe3+|F-",
+        "cation": "Fe3+",
+        "anion": "F-",
+        "formula": "FeF3",
+        "name": "iron(III) fluoride"
+      },
+      {
+        "key": "Fe3+|Cl-",
+        "cation": "Fe3+",
+        "anion": "Cl-",
+        "formula": "FeCl3",
+        "name": "iron(III) chloride"
+      },
+      {
+        "key": "Fe3+|Br-",
+        "cation": "Fe3+",
+        "anion": "Br-",
+        "formula": "FeBr3",
+        "name": "iron(III) bromide"
+      },
+      {
+        "key": "Fe3+|I-",
+        "cation": "Fe3+",
+        "anion": "I-",
+        "formula": "FeI3",
+        "name": "iron(III) iodide"
+      },
+      {
+        "key": "Fe3+|OH-",
+        "cation": "Fe3+",
+        "anion": "OH-",
+        "formula": "Fe(OH)3",
+        "name": "iron(III) hydroxide"
+      },
+      {
+        "key": "Fe3+|NO3-",
+        "cation": "Fe3+",
+        "anion": "NO3-",
+        "formula": "Fe(NO3)3",
+        "name": "iron(III) nitrate"
+      },
+      {
+        "key": "Fe3+|CO32-",
+        "cation": "Fe3+",
+        "anion": "CO32-",
+        "formula": "Fe2(CO3)3",
+        "name": "iron(III) carbonate"
+      },
+      {
+        "key": "Fe3+|SO42-",
+        "cation": "Fe3+",
+        "anion": "SO42-",
+        "formula": "Fe2(SO4)3",
+        "name": "iron(III) sulfate"
+      },
+      {
+        "key": "Fe3+|PO43-",
+        "cation": "Fe3+",
+        "anion": "PO43-",
+        "formula": "FePO4",
+        "name": "iron(III) phosphate"
+      },
+      {
+        "key": "Ti4+|N3-",
+        "cation": "Ti4+",
+        "anion": "N3-",
+        "formula": "Ti3N4",
+        "name": "titanium(IV) nitride"
+      },
+      {
+        "key": "Ti4+|P3-",
+        "cation": "Ti4+",
+        "anion": "P3-",
+        "formula": "Ti3P4",
+        "name": "titanium(IV) phosphide"
+      },
+      {
+        "key": "Ti4+|O2-",
+        "cation": "Ti4+",
+        "anion": "O2-",
+        "formula": "TiO2",
+        "name": "titanium(IV) oxide"
+      },
+      {
+        "key": "Ti4+|S2-",
+        "cation": "Ti4+",
+        "anion": "S2-",
+        "formula": "TiS2",
+        "name": "titanium(IV) sulfide"
+      },
+      {
+        "key": "Ti4+|F-",
+        "cation": "Ti4+",
+        "anion": "F-",
+        "formula": "TiF4",
+        "name": "titanium(IV) fluoride"
+      },
+      {
+        "key": "Ti4+|Cl-",
+        "cation": "Ti4+",
+        "anion": "Cl-",
+        "formula": "TiCl4",
+        "name": "titanium(IV) chloride"
+      },
+      {
+        "key": "Ti4+|Br-",
+        "cation": "Ti4+",
+        "anion": "Br-",
+        "formula": "TiBr4",
+        "name": "titanium(IV) bromide"
+      },
+      {
+        "key": "Ti4+|I-",
+        "cation": "Ti4+",
+        "anion": "I-",
+        "formula": "TiI4",
+        "name": "titanium(IV) iodide"
+      },
+      {
+        "key": "Ti4+|OH-",
+        "cation": "Ti4+",
+        "anion": "OH-",
+        "formula": "Ti(OH)4",
+        "name": "titanium(IV) hydroxide"
+      },
+      {
+        "key": "Ti4+|NO3-",
+        "cation": "Ti4+",
+        "anion": "NO3-",
+        "formula": "Ti(NO3)4",
+        "name": "titanium(IV) nitrate"
+      },
+      {
+        "key": "Ti4+|CO32-",
+        "cation": "Ti4+",
+        "anion": "CO32-",
+        "formula": "Ti(CO3)2",
+        "name": "titanium(IV) carbonate"
+      },
+      {
+        "key": "Ti4+|SO42-",
+        "cation": "Ti4+",
+        "anion": "SO42-",
+        "formula": "Ti(SO4)2",
+        "name": "titanium(IV) sulfate"
+      },
+      {
+        "key": "Ti4+|PO43-",
+        "cation": "Ti4+",
+        "anion": "PO43-",
+        "formula": "Ti3(PO4)4",
+        "name": "titanium(IV) phosphate"
+      },
+      {
+        "key": "Pb4+|N3-",
+        "cation": "Pb4+",
+        "anion": "N3-",
+        "formula": "Pb3N4",
+        "name": "lead(IV) nitride"
+      },
+      {
+        "key": "Pb4+|P3-",
+        "cation": "Pb4+",
+        "anion": "P3-",
+        "formula": "Pb3P4",
+        "name": "lead(IV) phosphide"
+      },
+      {
+        "key": "Pb4+|O2-",
+        "cation": "Pb4+",
+        "anion": "O2-",
+        "formula": "PbO2",
+        "name": "lead(IV) oxide"
+      },
+      {
+        "key": "Pb4+|S2-",
+        "cation": "Pb4+",
+        "anion": "S2-",
+        "formula": "PbS2",
+        "name": "lead(IV) sulfide"
+      },
+      {
+        "key": "Pb4+|F-",
+        "cation": "Pb4+",
+        "anion": "F-",
+        "formula": "PbF4",
+        "name": "lead(IV) fluoride"
+      },
+      {
+        "key": "Pb4+|Cl-",
+        "cation": "Pb4+",
+        "anion": "Cl-",
+        "formula": "PbCl4",
+        "name": "lead(IV) chloride"
+      },
+      {
+        "key": "Pb4+|Br-",
+        "cation": "Pb4+",
+        "anion": "Br-",
+        "formula": "PbBr4",
+        "name": "lead(IV) bromide"
+      },
+      {
+        "key": "Pb4+|I-",
+        "cation": "Pb4+",
+        "anion": "I-",
+        "formula": "PbI4",
+        "name": "lead(IV) iodide"
+      },
+      {
+        "key": "Pb4+|OH-",
+        "cation": "Pb4+",
+        "anion": "OH-",
+        "formula": "Pb(OH)4",
+        "name": "lead(IV) hydroxide"
+      },
+      {
+        "key": "Pb4+|NO3-",
+        "cation": "Pb4+",
+        "anion": "NO3-",
+        "formula": "Pb(NO3)4",
+        "name": "lead(IV) nitrate"
+      },
+      {
+        "key": "Pb4+|CO32-",
+        "cation": "Pb4+",
+        "anion": "CO32-",
+        "formula": "Pb(CO3)2",
+        "name": "lead(IV) carbonate"
+      },
+      {
+        "key": "Pb4+|SO42-",
+        "cation": "Pb4+",
+        "anion": "SO42-",
+        "formula": "Pb(SO4)2",
+        "name": "lead(IV) sulfate"
+      },
+      {
+        "key": "Pb4+|PO43-",
+        "cation": "Pb4+",
+        "anion": "PO43-",
+        "formula": "Pb3(PO4)4",
+        "name": "lead(IV) phosphate"
+      },
+      {
+        "key": "NH4+|N3-",
+        "cation": "NH4+",
+        "anion": "N3-",
+        "formula": "(NH4)3N",
+        "name": "ammonium nitride"
+      },
+      {
+        "key": "NH4+|P3-",
+        "cation": "NH4+",
+        "anion": "P3-",
+        "formula": "(NH4)3P",
+        "name": "ammonium phosphide"
+      },
+      {
+        "key": "NH4+|O2-",
+        "cation": "NH4+",
+        "anion": "O2-",
+        "formula": "(NH4)2O",
+        "name": "ammonium oxide"
+      },
+      {
+        "key": "NH4+|S2-",
+        "cation": "NH4+",
+        "anion": "S2-",
+        "formula": "(NH4)2S",
+        "name": "ammonium sulfide"
+      },
+      {
+        "key": "NH4+|F-",
+        "cation": "NH4+",
+        "anion": "F-",
+        "formula": "NH4F",
+        "name": "ammonium fluoride"
+      },
+      {
+        "key": "NH4+|Cl-",
+        "cation": "NH4+",
+        "anion": "Cl-",
+        "formula": "NH4Cl",
+        "name": "ammonium chloride"
+      },
+      {
+        "key": "NH4+|Br-",
+        "cation": "NH4+",
+        "anion": "Br-",
+        "formula": "NH4Br",
+        "name": "ammonium bromide"
+      },
+      {
+        "key": "NH4+|I-",
+        "cation": "NH4+",
+        "anion": "I-",
+        "formula": "NH4I",
+        "name": "ammonium iodide"
+      },
+      {
+        "key": "NH4+|OH-",
+        "cation": "NH4+",
+        "anion": "OH-",
+        "formula": "NH4OH",
+        "name": "ammonium hydroxide"
+      },
+      {
+        "key": "NH4+|NO3-",
+        "cation": "NH4+",
+        "anion": "NO3-",
+        "formula": "NH4NO3",
+        "name": "ammonium nitrate"
+      },
+      {
+        "key": "NH4+|CO32-",
+        "cation": "NH4+",
+        "anion": "CO32-",
+        "formula": "(NH4)2CO3",
+        "name": "ammonium carbonate"
+      },
+      {
+        "key": "NH4+|SO42-",
+        "cation": "NH4+",
+        "anion": "SO42-",
+        "formula": "(NH4)2SO4",
+        "name": "ammonium sulfate"
+      },
+      {
+        "key": "NH4+|PO43-",
+        "cation": "NH4+",
+        "anion": "PO43-",
+        "formula": "(NH4)3PO4",
+        "name": "ammonium phosphate"
+      }
+    ]
+  },
+  "16": {
+    "level": 16,
+    "totalCompounds": 40,
+    "compounds": [
+      {
+        "key": "Mn2+|N3-",
+        "cation": "Mn2+",
+        "anion": "N3-",
+        "formula": "Mn3N2",
+        "name": "manganese(II) nitride"
+      },
+      {
+        "key": "Mn2+|P3-",
+        "cation": "Mn2+",
+        "anion": "P3-",
+        "formula": "Mn3P2",
+        "name": "manganese(II) phosphide"
+      },
+      {
+        "key": "Mn2+|O2-",
+        "cation": "Mn2+",
+        "anion": "O2-",
+        "formula": "MnO",
+        "name": "manganese(II) oxide"
+      },
+      {
+        "key": "Mn2+|S2-",
+        "cation": "Mn2+",
+        "anion": "S2-",
+        "formula": "MnS",
+        "name": "manganese(II) sulfide"
+      },
+      {
+        "key": "Mn2+|F-",
+        "cation": "Mn2+",
+        "anion": "F-",
+        "formula": "MnF2",
+        "name": "manganese(II) fluoride"
+      },
+      {
+        "key": "Mn2+|Cl-",
+        "cation": "Mn2+",
+        "anion": "Cl-",
+        "formula": "MnCl2",
+        "name": "manganese(II) chloride"
+      },
+      {
+        "key": "Mn2+|Br-",
+        "cation": "Mn2+",
+        "anion": "Br-",
+        "formula": "MnBr2",
+        "name": "manganese(II) bromide"
+      },
+      {
+        "key": "Mn2+|I-",
+        "cation": "Mn2+",
+        "anion": "I-",
+        "formula": "MnI2",
+        "name": "manganese(II) iodide"
+      },
+      {
+        "key": "Co2+|N3-",
+        "cation": "Co2+",
+        "anion": "N3-",
+        "formula": "Co3N2",
+        "name": "cobalt(II) nitride"
+      },
+      {
+        "key": "Co2+|P3-",
+        "cation": "Co2+",
+        "anion": "P3-",
+        "formula": "Co3P2",
+        "name": "cobalt(II) phosphide"
+      },
+      {
+        "key": "Co2+|O2-",
+        "cation": "Co2+",
+        "anion": "O2-",
+        "formula": "CoO",
+        "name": "cobalt(II) oxide"
+      },
+      {
+        "key": "Co2+|S2-",
+        "cation": "Co2+",
+        "anion": "S2-",
+        "formula": "CoS",
+        "name": "cobalt(II) sulfide"
+      },
+      {
+        "key": "Co2+|F-",
+        "cation": "Co2+",
+        "anion": "F-",
+        "formula": "CoF2",
+        "name": "cobalt(II) fluoride"
+      },
+      {
+        "key": "Co2+|Cl-",
+        "cation": "Co2+",
+        "anion": "Cl-",
+        "formula": "CoCl2",
+        "name": "cobalt(II) chloride"
+      },
+      {
+        "key": "Co2+|Br-",
+        "cation": "Co2+",
+        "anion": "Br-",
+        "formula": "CoBr2",
+        "name": "cobalt(II) bromide"
+      },
+      {
+        "key": "Co2+|I-",
+        "cation": "Co2+",
+        "anion": "I-",
+        "formula": "CoI2",
+        "name": "cobalt(II) iodide"
+      },
+      {
+        "key": "Pt2+|N3-",
+        "cation": "Pt2+",
+        "anion": "N3-",
+        "formula": "Pt3N2",
+        "name": "platinum(II) nitride"
+      },
+      {
+        "key": "Pt2+|P3-",
+        "cation": "Pt2+",
+        "anion": "P3-",
+        "formula": "Pt3P2",
+        "name": "platinum(II) phosphide"
+      },
+      {
+        "key": "Pt2+|O2-",
+        "cation": "Pt2+",
+        "anion": "O2-",
+        "formula": "PtO",
+        "name": "platinum(II) oxide"
+      },
+      {
+        "key": "Pt2+|S2-",
+        "cation": "Pt2+",
+        "anion": "S2-",
+        "formula": "PtS",
+        "name": "platinum(II) sulfide"
+      },
+      {
+        "key": "Pt2+|F-",
+        "cation": "Pt2+",
+        "anion": "F-",
+        "formula": "PtF2",
+        "name": "platinum(II) fluoride"
+      },
+      {
+        "key": "Pt2+|Cl-",
+        "cation": "Pt2+",
+        "anion": "Cl-",
+        "formula": "PtCl2",
+        "name": "platinum(II) chloride"
+      },
+      {
+        "key": "Pt2+|Br-",
+        "cation": "Pt2+",
+        "anion": "Br-",
+        "formula": "PtBr2",
+        "name": "platinum(II) bromide"
+      },
+      {
+        "key": "Pt2+|I-",
+        "cation": "Pt2+",
+        "anion": "I-",
+        "formula": "PtI2",
+        "name": "platinum(II) iodide"
+      },
+      {
+        "key": "Hg2+|N3-",
+        "cation": "Hg2+",
+        "anion": "N3-",
+        "formula": "Hg3N2",
+        "name": "mercury(II) nitride"
+      },
+      {
+        "key": "Hg2+|P3-",
+        "cation": "Hg2+",
+        "anion": "P3-",
+        "formula": "Hg3P2",
+        "name": "mercury(II) phosphide"
+      },
+      {
+        "key": "Hg2+|O2-",
+        "cation": "Hg2+",
+        "anion": "O2-",
+        "formula": "HgO",
+        "name": "mercury(II) oxide"
+      },
+      {
+        "key": "Hg2+|S2-",
+        "cation": "Hg2+",
+        "anion": "S2-",
+        "formula": "HgS",
+        "name": "mercury(II) sulfide"
+      },
+      {
+        "key": "Hg2+|F-",
+        "cation": "Hg2+",
+        "anion": "F-",
+        "formula": "HgF2",
+        "name": "mercury(II) fluoride"
+      },
+      {
+        "key": "Hg2+|Cl-",
+        "cation": "Hg2+",
+        "anion": "Cl-",
+        "formula": "HgCl2",
+        "name": "mercury(II) chloride"
+      },
+      {
+        "key": "Hg2+|Br-",
+        "cation": "Hg2+",
+        "anion": "Br-",
+        "formula": "HgBr2",
+        "name": "mercury(II) bromide"
+      },
+      {
+        "key": "Hg2+|I-",
+        "cation": "Hg2+",
+        "anion": "I-",
+        "formula": "HgI2",
+        "name": "mercury(II) iodide"
+      },
+      {
+        "key": "Sn2+|N3-",
+        "cation": "Sn2+",
+        "anion": "N3-",
+        "formula": "Sn3N2",
+        "name": "tin(II) nitride"
+      },
+      {
+        "key": "Sn2+|P3-",
+        "cation": "Sn2+",
+        "anion": "P3-",
+        "formula": "Sn3P2",
+        "name": "tin(II) phosphide"
+      },
+      {
+        "key": "Sn2+|O2-",
+        "cation": "Sn2+",
+        "anion": "O2-",
+        "formula": "SnO",
+        "name": "tin(II) oxide"
+      },
+      {
+        "key": "Sn2+|S2-",
+        "cation": "Sn2+",
+        "anion": "S2-",
+        "formula": "SnS",
+        "name": "tin(II) sulfide"
+      },
+      {
+        "key": "Sn2+|F-",
+        "cation": "Sn2+",
+        "anion": "F-",
+        "formula": "SnF2",
+        "name": "tin(II) fluoride"
+      },
+      {
+        "key": "Sn2+|Cl-",
+        "cation": "Sn2+",
+        "anion": "Cl-",
+        "formula": "SnCl2",
+        "name": "tin(II) chloride"
+      },
+      {
+        "key": "Sn2+|Br-",
+        "cation": "Sn2+",
+        "anion": "Br-",
+        "formula": "SnBr2",
+        "name": "tin(II) bromide"
+      },
+      {
+        "key": "Sn2+|I-",
+        "cation": "Sn2+",
+        "anion": "I-",
+        "formula": "SnI2",
+        "name": "tin(II) iodide"
+      }
+    ]
+  },
+  "17": {
+    "level": 17,
+    "totalCompounds": 143,
+    "compounds": [
+      {
+        "key": "Mn2+|N3-",
+        "cation": "Mn2+",
+        "anion": "N3-",
+        "formula": "Mn3N2",
+        "name": "manganese(II) nitride"
+      },
+      {
+        "key": "Mn2+|P3-",
+        "cation": "Mn2+",
+        "anion": "P3-",
+        "formula": "Mn3P2",
+        "name": "manganese(II) phosphide"
+      },
+      {
+        "key": "Mn2+|O2-",
+        "cation": "Mn2+",
+        "anion": "O2-",
+        "formula": "MnO",
+        "name": "manganese(II) oxide"
+      },
+      {
+        "key": "Mn2+|S2-",
+        "cation": "Mn2+",
+        "anion": "S2-",
+        "formula": "MnS",
+        "name": "manganese(II) sulfide"
+      },
+      {
+        "key": "Mn2+|F-",
+        "cation": "Mn2+",
+        "anion": "F-",
+        "formula": "MnF2",
+        "name": "manganese(II) fluoride"
+      },
+      {
+        "key": "Mn2+|Cl-",
+        "cation": "Mn2+",
+        "anion": "Cl-",
+        "formula": "MnCl2",
+        "name": "manganese(II) chloride"
+      },
+      {
+        "key": "Mn2+|Br-",
+        "cation": "Mn2+",
+        "anion": "Br-",
+        "formula": "MnBr2",
+        "name": "manganese(II) bromide"
+      },
+      {
+        "key": "Mn2+|I-",
+        "cation": "Mn2+",
+        "anion": "I-",
+        "formula": "MnI2",
+        "name": "manganese(II) iodide"
+      },
+      {
+        "key": "Mn2+|OH-",
+        "cation": "Mn2+",
+        "anion": "OH-",
+        "formula": "Mn(OH)2",
+        "name": "manganese(II) hydroxide"
+      },
+      {
+        "key": "Mn2+|NO3-",
+        "cation": "Mn2+",
+        "anion": "NO3-",
+        "formula": "Mn(NO3)2",
+        "name": "manganese(II) nitrate"
+      },
+      {
+        "key": "Mn2+|CO32-",
+        "cation": "Mn2+",
+        "anion": "CO32-",
+        "formula": "MnCO3",
+        "name": "manganese(II) carbonate"
+      },
+      {
+        "key": "Mn2+|SO42-",
+        "cation": "Mn2+",
+        "anion": "SO42-",
+        "formula": "MnSO4",
+        "name": "manganese(II) sulfate"
+      },
+      {
+        "key": "Mn2+|PO43-",
+        "cation": "Mn2+",
+        "anion": "PO43-",
+        "formula": "Mn3(PO4)2",
+        "name": "manganese(II) phosphate"
+      },
+      {
+        "key": "Co2+|N3-",
+        "cation": "Co2+",
+        "anion": "N3-",
+        "formula": "Co3N2",
+        "name": "cobalt(II) nitride"
+      },
+      {
+        "key": "Co2+|P3-",
+        "cation": "Co2+",
+        "anion": "P3-",
+        "formula": "Co3P2",
+        "name": "cobalt(II) phosphide"
+      },
+      {
+        "key": "Co2+|O2-",
+        "cation": "Co2+",
+        "anion": "O2-",
+        "formula": "CoO",
+        "name": "cobalt(II) oxide"
+      },
+      {
+        "key": "Co2+|S2-",
+        "cation": "Co2+",
+        "anion": "S2-",
+        "formula": "CoS",
+        "name": "cobalt(II) sulfide"
+      },
+      {
+        "key": "Co2+|F-",
+        "cation": "Co2+",
+        "anion": "F-",
+        "formula": "CoF2",
+        "name": "cobalt(II) fluoride"
+      },
+      {
+        "key": "Co2+|Cl-",
+        "cation": "Co2+",
+        "anion": "Cl-",
+        "formula": "CoCl2",
+        "name": "cobalt(II) chloride"
+      },
+      {
+        "key": "Co2+|Br-",
+        "cation": "Co2+",
+        "anion": "Br-",
+        "formula": "CoBr2",
+        "name": "cobalt(II) bromide"
+      },
+      {
+        "key": "Co2+|I-",
+        "cation": "Co2+",
+        "anion": "I-",
+        "formula": "CoI2",
+        "name": "cobalt(II) iodide"
+      },
+      {
+        "key": "Co2+|OH-",
+        "cation": "Co2+",
+        "anion": "OH-",
+        "formula": "Co(OH)2",
+        "name": "cobalt(II) hydroxide"
+      },
+      {
+        "key": "Co2+|NO3-",
+        "cation": "Co2+",
+        "anion": "NO3-",
+        "formula": "Co(NO3)2",
+        "name": "cobalt(II) nitrate"
+      },
+      {
+        "key": "Co2+|CO32-",
+        "cation": "Co2+",
+        "anion": "CO32-",
+        "formula": "CoCO3",
+        "name": "cobalt(II) carbonate"
+      },
+      {
+        "key": "Co2+|SO42-",
+        "cation": "Co2+",
+        "anion": "SO42-",
+        "formula": "CoSO4",
+        "name": "cobalt(II) sulfate"
+      },
+      {
+        "key": "Co2+|PO43-",
+        "cation": "Co2+",
+        "anion": "PO43-",
+        "formula": "Co3(PO4)2",
+        "name": "cobalt(II) phosphate"
+      },
+      {
+        "key": "Pt2+|N3-",
+        "cation": "Pt2+",
+        "anion": "N3-",
+        "formula": "Pt3N2",
+        "name": "platinum(II) nitride"
+      },
+      {
+        "key": "Pt2+|P3-",
+        "cation": "Pt2+",
+        "anion": "P3-",
+        "formula": "Pt3P2",
+        "name": "platinum(II) phosphide"
+      },
+      {
+        "key": "Pt2+|O2-",
+        "cation": "Pt2+",
+        "anion": "O2-",
+        "formula": "PtO",
+        "name": "platinum(II) oxide"
+      },
+      {
+        "key": "Pt2+|S2-",
+        "cation": "Pt2+",
+        "anion": "S2-",
+        "formula": "PtS",
+        "name": "platinum(II) sulfide"
+      },
+      {
+        "key": "Pt2+|F-",
+        "cation": "Pt2+",
+        "anion": "F-",
+        "formula": "PtF2",
+        "name": "platinum(II) fluoride"
+      },
+      {
+        "key": "Pt2+|Cl-",
+        "cation": "Pt2+",
+        "anion": "Cl-",
+        "formula": "PtCl2",
+        "name": "platinum(II) chloride"
+      },
+      {
+        "key": "Pt2+|Br-",
+        "cation": "Pt2+",
+        "anion": "Br-",
+        "formula": "PtBr2",
+        "name": "platinum(II) bromide"
+      },
+      {
+        "key": "Pt2+|I-",
+        "cation": "Pt2+",
+        "anion": "I-",
+        "formula": "PtI2",
+        "name": "platinum(II) iodide"
+      },
+      {
+        "key": "Pt2+|OH-",
+        "cation": "Pt2+",
+        "anion": "OH-",
+        "formula": "Pt(OH)2",
+        "name": "platinum(II) hydroxide"
+      },
+      {
+        "key": "Pt2+|NO3-",
+        "cation": "Pt2+",
+        "anion": "NO3-",
+        "formula": "Pt(NO3)2",
+        "name": "platinum(II) nitrate"
+      },
+      {
+        "key": "Pt2+|CO32-",
+        "cation": "Pt2+",
+        "anion": "CO32-",
+        "formula": "PtCO3",
+        "name": "platinum(II) carbonate"
+      },
+      {
+        "key": "Pt2+|SO42-",
+        "cation": "Pt2+",
+        "anion": "SO42-",
+        "formula": "PtSO4",
+        "name": "platinum(II) sulfate"
+      },
+      {
+        "key": "Pt2+|PO43-",
+        "cation": "Pt2+",
+        "anion": "PO43-",
+        "formula": "Pt3(PO4)2",
+        "name": "platinum(II) phosphate"
+      },
+      {
+        "key": "Hg2+|N3-",
+        "cation": "Hg2+",
+        "anion": "N3-",
+        "formula": "Hg3N2",
+        "name": "mercury(II) nitride"
+      },
+      {
+        "key": "Hg2+|P3-",
+        "cation": "Hg2+",
+        "anion": "P3-",
+        "formula": "Hg3P2",
+        "name": "mercury(II) phosphide"
+      },
+      {
+        "key": "Hg2+|O2-",
+        "cation": "Hg2+",
+        "anion": "O2-",
+        "formula": "HgO",
+        "name": "mercury(II) oxide"
+      },
+      {
+        "key": "Hg2+|S2-",
+        "cation": "Hg2+",
+        "anion": "S2-",
+        "formula": "HgS",
+        "name": "mercury(II) sulfide"
+      },
+      {
+        "key": "Hg2+|F-",
+        "cation": "Hg2+",
+        "anion": "F-",
+        "formula": "HgF2",
+        "name": "mercury(II) fluoride"
+      },
+      {
+        "key": "Hg2+|Cl-",
+        "cation": "Hg2+",
+        "anion": "Cl-",
+        "formula": "HgCl2",
+        "name": "mercury(II) chloride"
+      },
+      {
+        "key": "Hg2+|Br-",
+        "cation": "Hg2+",
+        "anion": "Br-",
+        "formula": "HgBr2",
+        "name": "mercury(II) bromide"
+      },
+      {
+        "key": "Hg2+|I-",
+        "cation": "Hg2+",
+        "anion": "I-",
+        "formula": "HgI2",
+        "name": "mercury(II) iodide"
+      },
+      {
+        "key": "Hg2+|OH-",
+        "cation": "Hg2+",
+        "anion": "OH-",
+        "formula": "Hg(OH)2",
+        "name": "mercury(II) hydroxide"
+      },
+      {
+        "key": "Hg2+|NO3-",
+        "cation": "Hg2+",
+        "anion": "NO3-",
+        "formula": "Hg(NO3)2",
+        "name": "mercury(II) nitrate"
+      },
+      {
+        "key": "Hg2+|CO32-",
+        "cation": "Hg2+",
+        "anion": "CO32-",
+        "formula": "HgCO3",
+        "name": "mercury(II) carbonate"
+      },
+      {
+        "key": "Hg2+|SO42-",
+        "cation": "Hg2+",
+        "anion": "SO42-",
+        "formula": "HgSO4",
+        "name": "mercury(II) sulfate"
+      },
+      {
+        "key": "Hg2+|PO43-",
+        "cation": "Hg2+",
+        "anion": "PO43-",
+        "formula": "Hg3(PO4)2",
+        "name": "mercury(II) phosphate"
+      },
+      {
+        "key": "Sn2+|N3-",
+        "cation": "Sn2+",
+        "anion": "N3-",
+        "formula": "Sn3N2",
+        "name": "tin(II) nitride"
+      },
+      {
+        "key": "Sn2+|P3-",
+        "cation": "Sn2+",
+        "anion": "P3-",
+        "formula": "Sn3P2",
+        "name": "tin(II) phosphide"
+      },
+      {
+        "key": "Sn2+|O2-",
+        "cation": "Sn2+",
+        "anion": "O2-",
+        "formula": "SnO",
+        "name": "tin(II) oxide"
+      },
+      {
+        "key": "Sn2+|S2-",
+        "cation": "Sn2+",
+        "anion": "S2-",
+        "formula": "SnS",
+        "name": "tin(II) sulfide"
+      },
+      {
+        "key": "Sn2+|F-",
+        "cation": "Sn2+",
+        "anion": "F-",
+        "formula": "SnF2",
+        "name": "tin(II) fluoride"
+      },
+      {
+        "key": "Sn2+|Cl-",
+        "cation": "Sn2+",
+        "anion": "Cl-",
+        "formula": "SnCl2",
+        "name": "tin(II) chloride"
+      },
+      {
+        "key": "Sn2+|Br-",
+        "cation": "Sn2+",
+        "anion": "Br-",
+        "formula": "SnBr2",
+        "name": "tin(II) bromide"
+      },
+      {
+        "key": "Sn2+|I-",
+        "cation": "Sn2+",
+        "anion": "I-",
+        "formula": "SnI2",
+        "name": "tin(II) iodide"
+      },
+      {
+        "key": "Sn2+|OH-",
+        "cation": "Sn2+",
+        "anion": "OH-",
+        "formula": "Sn(OH)2",
+        "name": "tin(II) hydroxide"
+      },
+      {
+        "key": "Sn2+|NO3-",
+        "cation": "Sn2+",
+        "anion": "NO3-",
+        "formula": "Sn(NO3)2",
+        "name": "tin(II) nitrate"
+      },
+      {
+        "key": "Sn2+|CO32-",
+        "cation": "Sn2+",
+        "anion": "CO32-",
+        "formula": "SnCO3",
+        "name": "tin(II) carbonate"
+      },
+      {
+        "key": "Sn2+|SO42-",
+        "cation": "Sn2+",
+        "anion": "SO42-",
+        "formula": "SnSO4",
+        "name": "tin(II) sulfate"
+      },
+      {
+        "key": "Sn2+|PO43-",
+        "cation": "Sn2+",
+        "anion": "PO43-",
+        "formula": "Sn3(PO4)2",
+        "name": "tin(II) phosphate"
+      },
+      {
+        "key": "V3+|N3-",
+        "cation": "V3+",
+        "anion": "N3-",
+        "formula": "VN",
+        "name": "vanadium(III) nitride"
+      },
+      {
+        "key": "V3+|P3-",
+        "cation": "V3+",
+        "anion": "P3-",
+        "formula": "VP",
+        "name": "vanadium(III) phosphide"
+      },
+      {
+        "key": "V3+|O2-",
+        "cation": "V3+",
+        "anion": "O2-",
+        "formula": "V2O3",
+        "name": "vanadium(III) oxide"
+      },
+      {
+        "key": "V3+|S2-",
+        "cation": "V3+",
+        "anion": "S2-",
+        "formula": "V2S3",
+        "name": "vanadium(III) sulfide"
+      },
+      {
+        "key": "V3+|F-",
+        "cation": "V3+",
+        "anion": "F-",
+        "formula": "VF3",
+        "name": "vanadium(III) fluoride"
+      },
+      {
+        "key": "V3+|Cl-",
+        "cation": "V3+",
+        "anion": "Cl-",
+        "formula": "VCl3",
+        "name": "vanadium(III) chloride"
+      },
+      {
+        "key": "V3+|Br-",
+        "cation": "V3+",
+        "anion": "Br-",
+        "formula": "VBr3",
+        "name": "vanadium(III) bromide"
+      },
+      {
+        "key": "V3+|I-",
+        "cation": "V3+",
+        "anion": "I-",
+        "formula": "VI3",
+        "name": "vanadium(III) iodide"
+      },
+      {
+        "key": "V3+|OH-",
+        "cation": "V3+",
+        "anion": "OH-",
+        "formula": "V(OH)3",
+        "name": "vanadium(III) hydroxide"
+      },
+      {
+        "key": "V3+|NO3-",
+        "cation": "V3+",
+        "anion": "NO3-",
+        "formula": "V(NO3)3",
+        "name": "vanadium(III) nitrate"
+      },
+      {
+        "key": "V3+|CO32-",
+        "cation": "V3+",
+        "anion": "CO32-",
+        "formula": "V2(CO3)3",
+        "name": "vanadium(III) carbonate"
+      },
+      {
+        "key": "V3+|SO42-",
+        "cation": "V3+",
+        "anion": "SO42-",
+        "formula": "V2(SO4)3",
+        "name": "vanadium(III) sulfate"
+      },
+      {
+        "key": "V3+|PO43-",
+        "cation": "V3+",
+        "anion": "PO43-",
+        "formula": "VPO4",
+        "name": "vanadium(III) phosphate"
+      },
+      {
+        "key": "Cr3+|N3-",
+        "cation": "Cr3+",
+        "anion": "N3-",
+        "formula": "CrN",
+        "name": "chromium(III) nitride"
+      },
+      {
+        "key": "Cr3+|P3-",
+        "cation": "Cr3+",
+        "anion": "P3-",
+        "formula": "CrP",
+        "name": "chromium(III) phosphide"
+      },
+      {
+        "key": "Cr3+|O2-",
+        "cation": "Cr3+",
+        "anion": "O2-",
+        "formula": "Cr2O3",
+        "name": "chromium(III) oxide"
+      },
+      {
+        "key": "Cr3+|S2-",
+        "cation": "Cr3+",
+        "anion": "S2-",
+        "formula": "Cr2S3",
+        "name": "chromium(III) sulfide"
+      },
+      {
+        "key": "Cr3+|F-",
+        "cation": "Cr3+",
+        "anion": "F-",
+        "formula": "CrF3",
+        "name": "chromium(III) fluoride"
+      },
+      {
+        "key": "Cr3+|Cl-",
+        "cation": "Cr3+",
+        "anion": "Cl-",
+        "formula": "CrCl3",
+        "name": "chromium(III) chloride"
+      },
+      {
+        "key": "Cr3+|Br-",
+        "cation": "Cr3+",
+        "anion": "Br-",
+        "formula": "CrBr3",
+        "name": "chromium(III) bromide"
+      },
+      {
+        "key": "Cr3+|I-",
+        "cation": "Cr3+",
+        "anion": "I-",
+        "formula": "CrI3",
+        "name": "chromium(III) iodide"
+      },
+      {
+        "key": "Cr3+|OH-",
+        "cation": "Cr3+",
+        "anion": "OH-",
+        "formula": "Cr(OH)3",
+        "name": "chromium(III) hydroxide"
+      },
+      {
+        "key": "Cr3+|NO3-",
+        "cation": "Cr3+",
+        "anion": "NO3-",
+        "formula": "Cr(NO3)3",
+        "name": "chromium(III) nitrate"
+      },
+      {
+        "key": "Cr3+|CO32-",
+        "cation": "Cr3+",
+        "anion": "CO32-",
+        "formula": "Cr2(CO3)3",
+        "name": "chromium(III) carbonate"
+      },
+      {
+        "key": "Cr3+|SO42-",
+        "cation": "Cr3+",
+        "anion": "SO42-",
+        "formula": "Cr2(SO4)3",
+        "name": "chromium(III) sulfate"
+      },
+      {
+        "key": "Cr3+|PO43-",
+        "cation": "Cr3+",
+        "anion": "PO43-",
+        "formula": "CrPO4",
+        "name": "chromium(III) phosphate"
+      },
+      {
+        "key": "Co3+|N3-",
+        "cation": "Co3+",
+        "anion": "N3-",
+        "formula": "CoN",
+        "name": "cobalt(III) nitride"
+      },
+      {
+        "key": "Co3+|P3-",
+        "cation": "Co3+",
+        "anion": "P3-",
+        "formula": "CoP",
+        "name": "cobalt(III) phosphide"
+      },
+      {
+        "key": "Co3+|O2-",
+        "cation": "Co3+",
+        "anion": "O2-",
+        "formula": "Co2O3",
+        "name": "cobalt(III) oxide"
+      },
+      {
+        "key": "Co3+|S2-",
+        "cation": "Co3+",
+        "anion": "S2-",
+        "formula": "Co2S3",
+        "name": "cobalt(III) sulfide"
+      },
+      {
+        "key": "Co3+|F-",
+        "cation": "Co3+",
+        "anion": "F-",
+        "formula": "CoF3",
+        "name": "cobalt(III) fluoride"
+      },
+      {
+        "key": "Co3+|Cl-",
+        "cation": "Co3+",
+        "anion": "Cl-",
+        "formula": "CoCl3",
+        "name": "cobalt(III) chloride"
+      },
+      {
+        "key": "Co3+|Br-",
+        "cation": "Co3+",
+        "anion": "Br-",
+        "formula": "CoBr3",
+        "name": "cobalt(III) bromide"
+      },
+      {
+        "key": "Co3+|I-",
+        "cation": "Co3+",
+        "anion": "I-",
+        "formula": "CoI3",
+        "name": "cobalt(III) iodide"
+      },
+      {
+        "key": "Co3+|OH-",
+        "cation": "Co3+",
+        "anion": "OH-",
+        "formula": "Co(OH)3",
+        "name": "cobalt(III) hydroxide"
+      },
+      {
+        "key": "Co3+|NO3-",
+        "cation": "Co3+",
+        "anion": "NO3-",
+        "formula": "Co(NO3)3",
+        "name": "cobalt(III) nitrate"
+      },
+      {
+        "key": "Co3+|CO32-",
+        "cation": "Co3+",
+        "anion": "CO32-",
+        "formula": "Co2(CO3)3",
+        "name": "cobalt(III) carbonate"
+      },
+      {
+        "key": "Co3+|SO42-",
+        "cation": "Co3+",
+        "anion": "SO42-",
+        "formula": "Co2(SO4)3",
+        "name": "cobalt(III) sulfate"
+      },
+      {
+        "key": "Co3+|PO43-",
+        "cation": "Co3+",
+        "anion": "PO43-",
+        "formula": "CoPO4",
+        "name": "cobalt(III) phosphate"
+      },
+      {
+        "key": "Mn4+|N3-",
+        "cation": "Mn4+",
+        "anion": "N3-",
+        "formula": "Mn3N4",
+        "name": "manganese(IV) nitride"
+      },
+      {
+        "key": "Mn4+|P3-",
+        "cation": "Mn4+",
+        "anion": "P3-",
+        "formula": "Mn3P4",
+        "name": "manganese(IV) phosphide"
+      },
+      {
+        "key": "Mn4+|O2-",
+        "cation": "Mn4+",
+        "anion": "O2-",
+        "formula": "MnO2",
+        "name": "manganese(IV) oxide"
+      },
+      {
+        "key": "Mn4+|S2-",
+        "cation": "Mn4+",
+        "anion": "S2-",
+        "formula": "MnS2",
+        "name": "manganese(IV) sulfide"
+      },
+      {
+        "key": "Mn4+|F-",
+        "cation": "Mn4+",
+        "anion": "F-",
+        "formula": "MnF4",
+        "name": "manganese(IV) fluoride"
+      },
+      {
+        "key": "Mn4+|Cl-",
+        "cation": "Mn4+",
+        "anion": "Cl-",
+        "formula": "MnCl4",
+        "name": "manganese(IV) chloride"
+      },
+      {
+        "key": "Mn4+|Br-",
+        "cation": "Mn4+",
+        "anion": "Br-",
+        "formula": "MnBr4",
+        "name": "manganese(IV) bromide"
+      },
+      {
+        "key": "Mn4+|I-",
+        "cation": "Mn4+",
+        "anion": "I-",
+        "formula": "MnI4",
+        "name": "manganese(IV) iodide"
+      },
+      {
+        "key": "Mn4+|OH-",
+        "cation": "Mn4+",
+        "anion": "OH-",
+        "formula": "Mn(OH)4",
+        "name": "manganese(IV) hydroxide"
+      },
+      {
+        "key": "Mn4+|NO3-",
+        "cation": "Mn4+",
+        "anion": "NO3-",
+        "formula": "Mn(NO3)4",
+        "name": "manganese(IV) nitrate"
+      },
+      {
+        "key": "Mn4+|CO32-",
+        "cation": "Mn4+",
+        "anion": "CO32-",
+        "formula": "Mn(CO3)2",
+        "name": "manganese(IV) carbonate"
+      },
+      {
+        "key": "Mn4+|SO42-",
+        "cation": "Mn4+",
+        "anion": "SO42-",
+        "formula": "Mn(SO4)2",
+        "name": "manganese(IV) sulfate"
+      },
+      {
+        "key": "Mn4+|PO43-",
+        "cation": "Mn4+",
+        "anion": "PO43-",
+        "formula": "Mn3(PO4)4",
+        "name": "manganese(IV) phosphate"
+      },
+      {
+        "key": "Pt4+|N3-",
+        "cation": "Pt4+",
+        "anion": "N3-",
+        "formula": "Pt3N4",
+        "name": "platinum(IV) nitride"
+      },
+      {
+        "key": "Pt4+|P3-",
+        "cation": "Pt4+",
+        "anion": "P3-",
+        "formula": "Pt3P4",
+        "name": "platinum(IV) phosphide"
+      },
+      {
+        "key": "Pt4+|O2-",
+        "cation": "Pt4+",
+        "anion": "O2-",
+        "formula": "PtO2",
+        "name": "platinum(IV) oxide"
+      },
+      {
+        "key": "Pt4+|S2-",
+        "cation": "Pt4+",
+        "anion": "S2-",
+        "formula": "PtS2",
+        "name": "platinum(IV) sulfide"
+      },
+      {
+        "key": "Pt4+|F-",
+        "cation": "Pt4+",
+        "anion": "F-",
+        "formula": "PtF4",
+        "name": "platinum(IV) fluoride"
+      },
+      {
+        "key": "Pt4+|Cl-",
+        "cation": "Pt4+",
+        "anion": "Cl-",
+        "formula": "PtCl4",
+        "name": "platinum(IV) chloride"
+      },
+      {
+        "key": "Pt4+|Br-",
+        "cation": "Pt4+",
+        "anion": "Br-",
+        "formula": "PtBr4",
+        "name": "platinum(IV) bromide"
+      },
+      {
+        "key": "Pt4+|I-",
+        "cation": "Pt4+",
+        "anion": "I-",
+        "formula": "PtI4",
+        "name": "platinum(IV) iodide"
+      },
+      {
+        "key": "Pt4+|OH-",
+        "cation": "Pt4+",
+        "anion": "OH-",
+        "formula": "Pt(OH)4",
+        "name": "platinum(IV) hydroxide"
+      },
+      {
+        "key": "Pt4+|NO3-",
+        "cation": "Pt4+",
+        "anion": "NO3-",
+        "formula": "Pt(NO3)4",
+        "name": "platinum(IV) nitrate"
+      },
+      {
+        "key": "Pt4+|CO32-",
+        "cation": "Pt4+",
+        "anion": "CO32-",
+        "formula": "Pt(CO3)2",
+        "name": "platinum(IV) carbonate"
+      },
+      {
+        "key": "Pt4+|SO42-",
+        "cation": "Pt4+",
+        "anion": "SO42-",
+        "formula": "Pt(SO4)2",
+        "name": "platinum(IV) sulfate"
+      },
+      {
+        "key": "Pt4+|PO43-",
+        "cation": "Pt4+",
+        "anion": "PO43-",
+        "formula": "Pt3(PO4)4",
+        "name": "platinum(IV) phosphate"
+      },
+      {
+        "key": "Sn4+|N3-",
+        "cation": "Sn4+",
+        "anion": "N3-",
+        "formula": "Sn3N4",
+        "name": "tin(IV) nitride"
+      },
+      {
+        "key": "Sn4+|P3-",
+        "cation": "Sn4+",
+        "anion": "P3-",
+        "formula": "Sn3P4",
+        "name": "tin(IV) phosphide"
+      },
+      {
+        "key": "Sn4+|O2-",
+        "cation": "Sn4+",
+        "anion": "O2-",
+        "formula": "SnO2",
+        "name": "tin(IV) oxide"
+      },
+      {
+        "key": "Sn4+|S2-",
+        "cation": "Sn4+",
+        "anion": "S2-",
+        "formula": "SnS2",
+        "name": "tin(IV) sulfide"
+      },
+      {
+        "key": "Sn4+|F-",
+        "cation": "Sn4+",
+        "anion": "F-",
+        "formula": "SnF4",
+        "name": "tin(IV) fluoride"
+      },
+      {
+        "key": "Sn4+|Cl-",
+        "cation": "Sn4+",
+        "anion": "Cl-",
+        "formula": "SnCl4",
+        "name": "tin(IV) chloride"
+      },
+      {
+        "key": "Sn4+|Br-",
+        "cation": "Sn4+",
+        "anion": "Br-",
+        "formula": "SnBr4",
+        "name": "tin(IV) bromide"
+      },
+      {
+        "key": "Sn4+|I-",
+        "cation": "Sn4+",
+        "anion": "I-",
+        "formula": "SnI4",
+        "name": "tin(IV) iodide"
+      },
+      {
+        "key": "Sn4+|OH-",
+        "cation": "Sn4+",
+        "anion": "OH-",
+        "formula": "Sn(OH)4",
+        "name": "tin(IV) hydroxide"
+      },
+      {
+        "key": "Sn4+|NO3-",
+        "cation": "Sn4+",
+        "anion": "NO3-",
+        "formula": "Sn(NO3)4",
+        "name": "tin(IV) nitrate"
+      },
+      {
+        "key": "Sn4+|CO32-",
+        "cation": "Sn4+",
+        "anion": "CO32-",
+        "formula": "Sn(CO3)2",
+        "name": "tin(IV) carbonate"
+      },
+      {
+        "key": "Sn4+|SO42-",
+        "cation": "Sn4+",
+        "anion": "SO42-",
+        "formula": "Sn(SO4)2",
+        "name": "tin(IV) sulfate"
+      },
+      {
+        "key": "Sn4+|PO43-",
+        "cation": "Sn4+",
+        "anion": "PO43-",
+        "formula": "Sn3(PO4)4",
+        "name": "tin(IV) phosphate"
+      }
+    ]
+  },
+  "18": {
+    "level": 18,
+    "totalCompounds": 66,
+    "compounds": [
+      {
+        "key": "Li+|CN-",
+        "cation": "Li+",
+        "anion": "CN-",
+        "formula": "LiCN",
+        "name": "lithium cyanide"
+      },
+      {
+        "key": "Li+|SCN-",
+        "cation": "Li+",
+        "anion": "SCN-",
+        "formula": "LiSCN",
+        "name": "lithium thiocyanate"
+      },
+      {
+        "key": "Li+|NO2-",
+        "cation": "Li+",
+        "anion": "NO2-",
+        "formula": "LiNO2",
+        "name": "lithium nitrite"
+      },
+      {
+        "key": "Li+|BrO3-",
+        "cation": "Li+",
+        "anion": "BrO3-",
+        "formula": "LiBrO3",
+        "name": "lithium bromate"
+      },
+      {
+        "key": "Li+|ClO3-",
+        "cation": "Li+",
+        "anion": "ClO3-",
+        "formula": "LiClO3",
+        "name": "lithium chlorate"
+      },
+      {
+        "key": "Li+|IO3-",
+        "cation": "Li+",
+        "anion": "IO3-",
+        "formula": "LiIO3",
+        "name": "lithium iodate"
+      },
+      {
+        "key": "Na+|CN-",
+        "cation": "Na+",
+        "anion": "CN-",
+        "formula": "NaCN",
+        "name": "sodium cyanide"
+      },
+      {
+        "key": "Na+|SCN-",
+        "cation": "Na+",
+        "anion": "SCN-",
+        "formula": "NaSCN",
+        "name": "sodium thiocyanate"
+      },
+      {
+        "key": "Na+|NO2-",
+        "cation": "Na+",
+        "anion": "NO2-",
+        "formula": "NaNO2",
+        "name": "sodium nitrite"
+      },
+      {
+        "key": "Na+|BrO3-",
+        "cation": "Na+",
+        "anion": "BrO3-",
+        "formula": "NaBrO3",
+        "name": "sodium bromate"
+      },
+      {
+        "key": "Na+|ClO3-",
+        "cation": "Na+",
+        "anion": "ClO3-",
+        "formula": "NaClO3",
+        "name": "sodium chlorate"
+      },
+      {
+        "key": "Na+|IO3-",
+        "cation": "Na+",
+        "anion": "IO3-",
+        "formula": "NaIO3",
+        "name": "sodium iodate"
+      },
+      {
+        "key": "K+|CN-",
+        "cation": "K+",
+        "anion": "CN-",
+        "formula": "KCN",
+        "name": "potassium cyanide"
+      },
+      {
+        "key": "K+|SCN-",
+        "cation": "K+",
+        "anion": "SCN-",
+        "formula": "KSCN",
+        "name": "potassium thiocyanate"
+      },
+      {
+        "key": "K+|NO2-",
+        "cation": "K+",
+        "anion": "NO2-",
+        "formula": "KNO2",
+        "name": "potassium nitrite"
+      },
+      {
+        "key": "K+|BrO3-",
+        "cation": "K+",
+        "anion": "BrO3-",
+        "formula": "KBrO3",
+        "name": "potassium bromate"
+      },
+      {
+        "key": "K+|ClO3-",
+        "cation": "K+",
+        "anion": "ClO3-",
+        "formula": "KClO3",
+        "name": "potassium chlorate"
+      },
+      {
+        "key": "K+|IO3-",
+        "cation": "K+",
+        "anion": "IO3-",
+        "formula": "KIO3",
+        "name": "potassium iodate"
+      },
+      {
+        "key": "Ag+|CN-",
+        "cation": "Ag+",
+        "anion": "CN-",
+        "formula": "AgCN",
+        "name": "silver cyanide"
+      },
+      {
+        "key": "Ag+|SCN-",
+        "cation": "Ag+",
+        "anion": "SCN-",
+        "formula": "AgSCN",
+        "name": "silver thiocyanate"
+      },
+      {
+        "key": "Ag+|NO2-",
+        "cation": "Ag+",
+        "anion": "NO2-",
+        "formula": "AgNO2",
+        "name": "silver nitrite"
+      },
+      {
+        "key": "Ag+|BrO3-",
+        "cation": "Ag+",
+        "anion": "BrO3-",
+        "formula": "AgBrO3",
+        "name": "silver bromate"
+      },
+      {
+        "key": "Ag+|ClO3-",
+        "cation": "Ag+",
+        "anion": "ClO3-",
+        "formula": "AgClO3",
+        "name": "silver chlorate"
+      },
+      {
+        "key": "Ag+|IO3-",
+        "cation": "Ag+",
+        "anion": "IO3-",
+        "formula": "AgIO3",
+        "name": "silver iodate"
+      },
+      {
+        "key": "Be2+|CN-",
+        "cation": "Be2+",
+        "anion": "CN-",
+        "formula": "Be(CN)2",
+        "name": "beryllium cyanide"
+      },
+      {
+        "key": "Be2+|SCN-",
+        "cation": "Be2+",
+        "anion": "SCN-",
+        "formula": "Be(SCN)2",
+        "name": "beryllium thiocyanate"
+      },
+      {
+        "key": "Be2+|NO2-",
+        "cation": "Be2+",
+        "anion": "NO2-",
+        "formula": "Be(NO2)2",
+        "name": "beryllium nitrite"
+      },
+      {
+        "key": "Be2+|BrO3-",
+        "cation": "Be2+",
+        "anion": "BrO3-",
+        "formula": "Be(BrO3)2",
+        "name": "beryllium bromate"
+      },
+      {
+        "key": "Be2+|ClO3-",
+        "cation": "Be2+",
+        "anion": "ClO3-",
+        "formula": "Be(ClO3)2",
+        "name": "beryllium chlorate"
+      },
+      {
+        "key": "Be2+|IO3-",
+        "cation": "Be2+",
+        "anion": "IO3-",
+        "formula": "Be(IO3)2",
+        "name": "beryllium iodate"
+      },
+      {
+        "key": "Mg2+|CN-",
+        "cation": "Mg2+",
+        "anion": "CN-",
+        "formula": "Mg(CN)2",
+        "name": "magnesium cyanide"
+      },
+      {
+        "key": "Mg2+|SCN-",
+        "cation": "Mg2+",
+        "anion": "SCN-",
+        "formula": "Mg(SCN)2",
+        "name": "magnesium thiocyanate"
+      },
+      {
+        "key": "Mg2+|NO2-",
+        "cation": "Mg2+",
+        "anion": "NO2-",
+        "formula": "Mg(NO2)2",
+        "name": "magnesium nitrite"
+      },
+      {
+        "key": "Mg2+|BrO3-",
+        "cation": "Mg2+",
+        "anion": "BrO3-",
+        "formula": "Mg(BrO3)2",
+        "name": "magnesium bromate"
+      },
+      {
+        "key": "Mg2+|ClO3-",
+        "cation": "Mg2+",
+        "anion": "ClO3-",
+        "formula": "Mg(ClO3)2",
+        "name": "magnesium chlorate"
+      },
+      {
+        "key": "Mg2+|IO3-",
+        "cation": "Mg2+",
+        "anion": "IO3-",
+        "formula": "Mg(IO3)2",
+        "name": "magnesium iodate"
+      },
+      {
+        "key": "Ca2+|CN-",
+        "cation": "Ca2+",
+        "anion": "CN-",
+        "formula": "Ca(CN)2",
+        "name": "calcium cyanide"
+      },
+      {
+        "key": "Ca2+|SCN-",
+        "cation": "Ca2+",
+        "anion": "SCN-",
+        "formula": "Ca(SCN)2",
+        "name": "calcium thiocyanate"
+      },
+      {
+        "key": "Ca2+|NO2-",
+        "cation": "Ca2+",
+        "anion": "NO2-",
+        "formula": "Ca(NO2)2",
+        "name": "calcium nitrite"
+      },
+      {
+        "key": "Ca2+|BrO3-",
+        "cation": "Ca2+",
+        "anion": "BrO3-",
+        "formula": "Ca(BrO3)2",
+        "name": "calcium bromate"
+      },
+      {
+        "key": "Ca2+|ClO3-",
+        "cation": "Ca2+",
+        "anion": "ClO3-",
+        "formula": "Ca(ClO3)2",
+        "name": "calcium chlorate"
+      },
+      {
+        "key": "Ca2+|IO3-",
+        "cation": "Ca2+",
+        "anion": "IO3-",
+        "formula": "Ca(IO3)2",
+        "name": "calcium iodate"
+      },
+      {
+        "key": "Sr2+|CN-",
+        "cation": "Sr2+",
+        "anion": "CN-",
+        "formula": "Sr(CN)2",
+        "name": "strontium cyanide"
+      },
+      {
+        "key": "Sr2+|SCN-",
+        "cation": "Sr2+",
+        "anion": "SCN-",
+        "formula": "Sr(SCN)2",
+        "name": "strontium thiocyanate"
+      },
+      {
+        "key": "Sr2+|NO2-",
+        "cation": "Sr2+",
+        "anion": "NO2-",
+        "formula": "Sr(NO2)2",
+        "name": "strontium nitrite"
+      },
+      {
+        "key": "Sr2+|BrO3-",
+        "cation": "Sr2+",
+        "anion": "BrO3-",
+        "formula": "Sr(BrO3)2",
+        "name": "strontium bromate"
+      },
+      {
+        "key": "Sr2+|ClO3-",
+        "cation": "Sr2+",
+        "anion": "ClO3-",
+        "formula": "Sr(ClO3)2",
+        "name": "strontium chlorate"
+      },
+      {
+        "key": "Sr2+|IO3-",
+        "cation": "Sr2+",
+        "anion": "IO3-",
+        "formula": "Sr(IO3)2",
+        "name": "strontium iodate"
+      },
+      {
+        "key": "Ba2+|CN-",
+        "cation": "Ba2+",
+        "anion": "CN-",
+        "formula": "Ba(CN)2",
+        "name": "barium cyanide"
+      },
+      {
+        "key": "Ba2+|SCN-",
+        "cation": "Ba2+",
+        "anion": "SCN-",
+        "formula": "Ba(SCN)2",
+        "name": "barium thiocyanate"
+      },
+      {
+        "key": "Ba2+|NO2-",
+        "cation": "Ba2+",
+        "anion": "NO2-",
+        "formula": "Ba(NO2)2",
+        "name": "barium nitrite"
+      },
+      {
+        "key": "Ba2+|BrO3-",
+        "cation": "Ba2+",
+        "anion": "BrO3-",
+        "formula": "Ba(BrO3)2",
+        "name": "barium bromate"
+      },
+      {
+        "key": "Ba2+|ClO3-",
+        "cation": "Ba2+",
+        "anion": "ClO3-",
+        "formula": "Ba(ClO3)2",
+        "name": "barium chlorate"
+      },
+      {
+        "key": "Ba2+|IO3-",
+        "cation": "Ba2+",
+        "anion": "IO3-",
+        "formula": "Ba(IO3)2",
+        "name": "barium iodate"
+      },
+      {
+        "key": "Zn2+|CN-",
+        "cation": "Zn2+",
+        "anion": "CN-",
+        "formula": "Zn(CN)2",
+        "name": "zinc cyanide"
+      },
+      {
+        "key": "Zn2+|SCN-",
+        "cation": "Zn2+",
+        "anion": "SCN-",
+        "formula": "Zn(SCN)2",
+        "name": "zinc thiocyanate"
+      },
+      {
+        "key": "Zn2+|NO2-",
+        "cation": "Zn2+",
+        "anion": "NO2-",
+        "formula": "Zn(NO2)2",
+        "name": "zinc nitrite"
+      },
+      {
+        "key": "Zn2+|BrO3-",
+        "cation": "Zn2+",
+        "anion": "BrO3-",
+        "formula": "Zn(BrO3)2",
+        "name": "zinc bromate"
+      },
+      {
+        "key": "Zn2+|ClO3-",
+        "cation": "Zn2+",
+        "anion": "ClO3-",
+        "formula": "Zn(ClO3)2",
+        "name": "zinc chlorate"
+      },
+      {
+        "key": "Zn2+|IO3-",
+        "cation": "Zn2+",
+        "anion": "IO3-",
+        "formula": "Zn(IO3)2",
+        "name": "zinc iodate"
+      },
+      {
+        "key": "Al3+|CN-",
+        "cation": "Al3+",
+        "anion": "CN-",
+        "formula": "Al(CN)3",
+        "name": "aluminium cyanide"
+      },
+      {
+        "key": "Al3+|SCN-",
+        "cation": "Al3+",
+        "anion": "SCN-",
+        "formula": "Al(SCN)3",
+        "name": "aluminium thiocyanate"
+      },
+      {
+        "key": "Al3+|NO2-",
+        "cation": "Al3+",
+        "anion": "NO2-",
+        "formula": "Al(NO2)3",
+        "name": "aluminium nitrite"
+      },
+      {
+        "key": "Al3+|BrO3-",
+        "cation": "Al3+",
+        "anion": "BrO3-",
+        "formula": "Al(BrO3)3",
+        "name": "aluminium bromate"
+      },
+      {
+        "key": "Al3+|ClO3-",
+        "cation": "Al3+",
+        "anion": "ClO3-",
+        "formula": "Al(ClO3)3",
+        "name": "aluminium chlorate"
+      },
+      {
+        "key": "Al3+|IO3-",
+        "cation": "Al3+",
+        "anion": "IO3-",
+        "formula": "Al(IO3)3",
+        "name": "aluminium iodate"
+      }
+    ]
+  },
+  "19": {
+    "level": 19,
+    "totalCompounds": 110,
+    "compounds": [
+      {
+        "key": "Li+|CN-",
+        "cation": "Li+",
+        "anion": "CN-",
+        "formula": "LiCN",
+        "name": "lithium cyanide"
+      },
+      {
+        "key": "Li+|SCN-",
+        "cation": "Li+",
+        "anion": "SCN-",
+        "formula": "LiSCN",
+        "name": "lithium thiocyanate"
+      },
+      {
+        "key": "Li+|NO2-",
+        "cation": "Li+",
+        "anion": "NO2-",
+        "formula": "LiNO2",
+        "name": "lithium nitrite"
+      },
+      {
+        "key": "Li+|BrO3-",
+        "cation": "Li+",
+        "anion": "BrO3-",
+        "formula": "LiBrO3",
+        "name": "lithium bromate"
+      },
+      {
+        "key": "Li+|ClO3-",
+        "cation": "Li+",
+        "anion": "ClO3-",
+        "formula": "LiClO3",
+        "name": "lithium chlorate"
+      },
+      {
+        "key": "Li+|IO3-",
+        "cation": "Li+",
+        "anion": "IO3-",
+        "formula": "LiIO3",
+        "name": "lithium iodate"
+      },
+      {
+        "key": "Li+|CrO42-",
+        "cation": "Li+",
+        "anion": "CrO42-",
+        "formula": "Li2CrO4",
+        "name": "lithium chromate"
+      },
+      {
+        "key": "Li+|Cr2O72-",
+        "cation": "Li+",
+        "anion": "Cr2O72-",
+        "formula": "Li2Cr2O7",
+        "name": "lithium dichromate"
+      },
+      {
+        "key": "Li+|SO32-",
+        "cation": "Li+",
+        "anion": "SO32-",
+        "formula": "Li2SO3",
+        "name": "lithium sulfite"
+      },
+      {
+        "key": "Li+|S2O32-",
+        "cation": "Li+",
+        "anion": "S2O32-",
+        "formula": "Li2S2O3",
+        "name": "lithium thiosulfate"
+      },
+      {
+        "key": "Na+|CN-",
+        "cation": "Na+",
+        "anion": "CN-",
+        "formula": "NaCN",
+        "name": "sodium cyanide"
+      },
+      {
+        "key": "Na+|SCN-",
+        "cation": "Na+",
+        "anion": "SCN-",
+        "formula": "NaSCN",
+        "name": "sodium thiocyanate"
+      },
+      {
+        "key": "Na+|NO2-",
+        "cation": "Na+",
+        "anion": "NO2-",
+        "formula": "NaNO2",
+        "name": "sodium nitrite"
+      },
+      {
+        "key": "Na+|BrO3-",
+        "cation": "Na+",
+        "anion": "BrO3-",
+        "formula": "NaBrO3",
+        "name": "sodium bromate"
+      },
+      {
+        "key": "Na+|ClO3-",
+        "cation": "Na+",
+        "anion": "ClO3-",
+        "formula": "NaClO3",
+        "name": "sodium chlorate"
+      },
+      {
+        "key": "Na+|IO3-",
+        "cation": "Na+",
+        "anion": "IO3-",
+        "formula": "NaIO3",
+        "name": "sodium iodate"
+      },
+      {
+        "key": "Na+|CrO42-",
+        "cation": "Na+",
+        "anion": "CrO42-",
+        "formula": "Na2CrO4",
+        "name": "sodium chromate"
+      },
+      {
+        "key": "Na+|Cr2O72-",
+        "cation": "Na+",
+        "anion": "Cr2O72-",
+        "formula": "Na2Cr2O7",
+        "name": "sodium dichromate"
+      },
+      {
+        "key": "Na+|SO32-",
+        "cation": "Na+",
+        "anion": "SO32-",
+        "formula": "Na2SO3",
+        "name": "sodium sulfite"
+      },
+      {
+        "key": "Na+|S2O32-",
+        "cation": "Na+",
+        "anion": "S2O32-",
+        "formula": "Na2S2O3",
+        "name": "sodium thiosulfate"
+      },
+      {
+        "key": "K+|CN-",
+        "cation": "K+",
+        "anion": "CN-",
+        "formula": "KCN",
+        "name": "potassium cyanide"
+      },
+      {
+        "key": "K+|SCN-",
+        "cation": "K+",
+        "anion": "SCN-",
+        "formula": "KSCN",
+        "name": "potassium thiocyanate"
+      },
+      {
+        "key": "K+|NO2-",
+        "cation": "K+",
+        "anion": "NO2-",
+        "formula": "KNO2",
+        "name": "potassium nitrite"
+      },
+      {
+        "key": "K+|BrO3-",
+        "cation": "K+",
+        "anion": "BrO3-",
+        "formula": "KBrO3",
+        "name": "potassium bromate"
+      },
+      {
+        "key": "K+|ClO3-",
+        "cation": "K+",
+        "anion": "ClO3-",
+        "formula": "KClO3",
+        "name": "potassium chlorate"
+      },
+      {
+        "key": "K+|IO3-",
+        "cation": "K+",
+        "anion": "IO3-",
+        "formula": "KIO3",
+        "name": "potassium iodate"
+      },
+      {
+        "key": "K+|CrO42-",
+        "cation": "K+",
+        "anion": "CrO42-",
+        "formula": "K2CrO4",
+        "name": "potassium chromate"
+      },
+      {
+        "key": "K+|Cr2O72-",
+        "cation": "K+",
+        "anion": "Cr2O72-",
+        "formula": "K2Cr2O7",
+        "name": "potassium dichromate"
+      },
+      {
+        "key": "K+|SO32-",
+        "cation": "K+",
+        "anion": "SO32-",
+        "formula": "K2SO3",
+        "name": "potassium sulfite"
+      },
+      {
+        "key": "K+|S2O32-",
+        "cation": "K+",
+        "anion": "S2O32-",
+        "formula": "K2S2O3",
+        "name": "potassium thiosulfate"
+      },
+      {
+        "key": "Ag+|CN-",
+        "cation": "Ag+",
+        "anion": "CN-",
+        "formula": "AgCN",
+        "name": "silver cyanide"
+      },
+      {
+        "key": "Ag+|SCN-",
+        "cation": "Ag+",
+        "anion": "SCN-",
+        "formula": "AgSCN",
+        "name": "silver thiocyanate"
+      },
+      {
+        "key": "Ag+|NO2-",
+        "cation": "Ag+",
+        "anion": "NO2-",
+        "formula": "AgNO2",
+        "name": "silver nitrite"
+      },
+      {
+        "key": "Ag+|BrO3-",
+        "cation": "Ag+",
+        "anion": "BrO3-",
+        "formula": "AgBrO3",
+        "name": "silver bromate"
+      },
+      {
+        "key": "Ag+|ClO3-",
+        "cation": "Ag+",
+        "anion": "ClO3-",
+        "formula": "AgClO3",
+        "name": "silver chlorate"
+      },
+      {
+        "key": "Ag+|IO3-",
+        "cation": "Ag+",
+        "anion": "IO3-",
+        "formula": "AgIO3",
+        "name": "silver iodate"
+      },
+      {
+        "key": "Ag+|CrO42-",
+        "cation": "Ag+",
+        "anion": "CrO42-",
+        "formula": "Ag2CrO4",
+        "name": "silver chromate"
+      },
+      {
+        "key": "Ag+|Cr2O72-",
+        "cation": "Ag+",
+        "anion": "Cr2O72-",
+        "formula": "Ag2Cr2O7",
+        "name": "silver dichromate"
+      },
+      {
+        "key": "Ag+|SO32-",
+        "cation": "Ag+",
+        "anion": "SO32-",
+        "formula": "Ag2SO3",
+        "name": "silver sulfite"
+      },
+      {
+        "key": "Ag+|S2O32-",
+        "cation": "Ag+",
+        "anion": "S2O32-",
+        "formula": "Ag2S2O3",
+        "name": "silver thiosulfate"
+      },
+      {
+        "key": "Be2+|CN-",
+        "cation": "Be2+",
+        "anion": "CN-",
+        "formula": "Be(CN)2",
+        "name": "beryllium cyanide"
+      },
+      {
+        "key": "Be2+|SCN-",
+        "cation": "Be2+",
+        "anion": "SCN-",
+        "formula": "Be(SCN)2",
+        "name": "beryllium thiocyanate"
+      },
+      {
+        "key": "Be2+|NO2-",
+        "cation": "Be2+",
+        "anion": "NO2-",
+        "formula": "Be(NO2)2",
+        "name": "beryllium nitrite"
+      },
+      {
+        "key": "Be2+|BrO3-",
+        "cation": "Be2+",
+        "anion": "BrO3-",
+        "formula": "Be(BrO3)2",
+        "name": "beryllium bromate"
+      },
+      {
+        "key": "Be2+|ClO3-",
+        "cation": "Be2+",
+        "anion": "ClO3-",
+        "formula": "Be(ClO3)2",
+        "name": "beryllium chlorate"
+      },
+      {
+        "key": "Be2+|IO3-",
+        "cation": "Be2+",
+        "anion": "IO3-",
+        "formula": "Be(IO3)2",
+        "name": "beryllium iodate"
+      },
+      {
+        "key": "Be2+|CrO42-",
+        "cation": "Be2+",
+        "anion": "CrO42-",
+        "formula": "BeCrO4",
+        "name": "beryllium chromate"
+      },
+      {
+        "key": "Be2+|Cr2O72-",
+        "cation": "Be2+",
+        "anion": "Cr2O72-",
+        "formula": "BeCr2O7",
+        "name": "beryllium dichromate"
+      },
+      {
+        "key": "Be2+|SO32-",
+        "cation": "Be2+",
+        "anion": "SO32-",
+        "formula": "BeSO3",
+        "name": "beryllium sulfite"
+      },
+      {
+        "key": "Be2+|S2O32-",
+        "cation": "Be2+",
+        "anion": "S2O32-",
+        "formula": "BeS2O3",
+        "name": "beryllium thiosulfate"
+      },
+      {
+        "key": "Mg2+|CN-",
+        "cation": "Mg2+",
+        "anion": "CN-",
+        "formula": "Mg(CN)2",
+        "name": "magnesium cyanide"
+      },
+      {
+        "key": "Mg2+|SCN-",
+        "cation": "Mg2+",
+        "anion": "SCN-",
+        "formula": "Mg(SCN)2",
+        "name": "magnesium thiocyanate"
+      },
+      {
+        "key": "Mg2+|NO2-",
+        "cation": "Mg2+",
+        "anion": "NO2-",
+        "formula": "Mg(NO2)2",
+        "name": "magnesium nitrite"
+      },
+      {
+        "key": "Mg2+|BrO3-",
+        "cation": "Mg2+",
+        "anion": "BrO3-",
+        "formula": "Mg(BrO3)2",
+        "name": "magnesium bromate"
+      },
+      {
+        "key": "Mg2+|ClO3-",
+        "cation": "Mg2+",
+        "anion": "ClO3-",
+        "formula": "Mg(ClO3)2",
+        "name": "magnesium chlorate"
+      },
+      {
+        "key": "Mg2+|IO3-",
+        "cation": "Mg2+",
+        "anion": "IO3-",
+        "formula": "Mg(IO3)2",
+        "name": "magnesium iodate"
+      },
+      {
+        "key": "Mg2+|CrO42-",
+        "cation": "Mg2+",
+        "anion": "CrO42-",
+        "formula": "MgCrO4",
+        "name": "magnesium chromate"
+      },
+      {
+        "key": "Mg2+|Cr2O72-",
+        "cation": "Mg2+",
+        "anion": "Cr2O72-",
+        "formula": "MgCr2O7",
+        "name": "magnesium dichromate"
+      },
+      {
+        "key": "Mg2+|SO32-",
+        "cation": "Mg2+",
+        "anion": "SO32-",
+        "formula": "MgSO3",
+        "name": "magnesium sulfite"
+      },
+      {
+        "key": "Mg2+|S2O32-",
+        "cation": "Mg2+",
+        "anion": "S2O32-",
+        "formula": "MgS2O3",
+        "name": "magnesium thiosulfate"
+      },
+      {
+        "key": "Ca2+|CN-",
+        "cation": "Ca2+",
+        "anion": "CN-",
+        "formula": "Ca(CN)2",
+        "name": "calcium cyanide"
+      },
+      {
+        "key": "Ca2+|SCN-",
+        "cation": "Ca2+",
+        "anion": "SCN-",
+        "formula": "Ca(SCN)2",
+        "name": "calcium thiocyanate"
+      },
+      {
+        "key": "Ca2+|NO2-",
+        "cation": "Ca2+",
+        "anion": "NO2-",
+        "formula": "Ca(NO2)2",
+        "name": "calcium nitrite"
+      },
+      {
+        "key": "Ca2+|BrO3-",
+        "cation": "Ca2+",
+        "anion": "BrO3-",
+        "formula": "Ca(BrO3)2",
+        "name": "calcium bromate"
+      },
+      {
+        "key": "Ca2+|ClO3-",
+        "cation": "Ca2+",
+        "anion": "ClO3-",
+        "formula": "Ca(ClO3)2",
+        "name": "calcium chlorate"
+      },
+      {
+        "key": "Ca2+|IO3-",
+        "cation": "Ca2+",
+        "anion": "IO3-",
+        "formula": "Ca(IO3)2",
+        "name": "calcium iodate"
+      },
+      {
+        "key": "Ca2+|CrO42-",
+        "cation": "Ca2+",
+        "anion": "CrO42-",
+        "formula": "CaCrO4",
+        "name": "calcium chromate"
+      },
+      {
+        "key": "Ca2+|Cr2O72-",
+        "cation": "Ca2+",
+        "anion": "Cr2O72-",
+        "formula": "CaCr2O7",
+        "name": "calcium dichromate"
+      },
+      {
+        "key": "Ca2+|SO32-",
+        "cation": "Ca2+",
+        "anion": "SO32-",
+        "formula": "CaSO3",
+        "name": "calcium sulfite"
+      },
+      {
+        "key": "Ca2+|S2O32-",
+        "cation": "Ca2+",
+        "anion": "S2O32-",
+        "formula": "CaS2O3",
+        "name": "calcium thiosulfate"
+      },
+      {
+        "key": "Sr2+|CN-",
+        "cation": "Sr2+",
+        "anion": "CN-",
+        "formula": "Sr(CN)2",
+        "name": "strontium cyanide"
+      },
+      {
+        "key": "Sr2+|SCN-",
+        "cation": "Sr2+",
+        "anion": "SCN-",
+        "formula": "Sr(SCN)2",
+        "name": "strontium thiocyanate"
+      },
+      {
+        "key": "Sr2+|NO2-",
+        "cation": "Sr2+",
+        "anion": "NO2-",
+        "formula": "Sr(NO2)2",
+        "name": "strontium nitrite"
+      },
+      {
+        "key": "Sr2+|BrO3-",
+        "cation": "Sr2+",
+        "anion": "BrO3-",
+        "formula": "Sr(BrO3)2",
+        "name": "strontium bromate"
+      },
+      {
+        "key": "Sr2+|ClO3-",
+        "cation": "Sr2+",
+        "anion": "ClO3-",
+        "formula": "Sr(ClO3)2",
+        "name": "strontium chlorate"
+      },
+      {
+        "key": "Sr2+|IO3-",
+        "cation": "Sr2+",
+        "anion": "IO3-",
+        "formula": "Sr(IO3)2",
+        "name": "strontium iodate"
+      },
+      {
+        "key": "Sr2+|CrO42-",
+        "cation": "Sr2+",
+        "anion": "CrO42-",
+        "formula": "SrCrO4",
+        "name": "strontium chromate"
+      },
+      {
+        "key": "Sr2+|Cr2O72-",
+        "cation": "Sr2+",
+        "anion": "Cr2O72-",
+        "formula": "SrCr2O7",
+        "name": "strontium dichromate"
+      },
+      {
+        "key": "Sr2+|SO32-",
+        "cation": "Sr2+",
+        "anion": "SO32-",
+        "formula": "SrSO3",
+        "name": "strontium sulfite"
+      },
+      {
+        "key": "Sr2+|S2O32-",
+        "cation": "Sr2+",
+        "anion": "S2O32-",
+        "formula": "SrS2O3",
+        "name": "strontium thiosulfate"
+      },
+      {
+        "key": "Ba2+|CN-",
+        "cation": "Ba2+",
+        "anion": "CN-",
+        "formula": "Ba(CN)2",
+        "name": "barium cyanide"
+      },
+      {
+        "key": "Ba2+|SCN-",
+        "cation": "Ba2+",
+        "anion": "SCN-",
+        "formula": "Ba(SCN)2",
+        "name": "barium thiocyanate"
+      },
+      {
+        "key": "Ba2+|NO2-",
+        "cation": "Ba2+",
+        "anion": "NO2-",
+        "formula": "Ba(NO2)2",
+        "name": "barium nitrite"
+      },
+      {
+        "key": "Ba2+|BrO3-",
+        "cation": "Ba2+",
+        "anion": "BrO3-",
+        "formula": "Ba(BrO3)2",
+        "name": "barium bromate"
+      },
+      {
+        "key": "Ba2+|ClO3-",
+        "cation": "Ba2+",
+        "anion": "ClO3-",
+        "formula": "Ba(ClO3)2",
+        "name": "barium chlorate"
+      },
+      {
+        "key": "Ba2+|IO3-",
+        "cation": "Ba2+",
+        "anion": "IO3-",
+        "formula": "Ba(IO3)2",
+        "name": "barium iodate"
+      },
+      {
+        "key": "Ba2+|CrO42-",
+        "cation": "Ba2+",
+        "anion": "CrO42-",
+        "formula": "BaCrO4",
+        "name": "barium chromate"
+      },
+      {
+        "key": "Ba2+|Cr2O72-",
+        "cation": "Ba2+",
+        "anion": "Cr2O72-",
+        "formula": "BaCr2O7",
+        "name": "barium dichromate"
+      },
+      {
+        "key": "Ba2+|SO32-",
+        "cation": "Ba2+",
+        "anion": "SO32-",
+        "formula": "BaSO3",
+        "name": "barium sulfite"
+      },
+      {
+        "key": "Ba2+|S2O32-",
+        "cation": "Ba2+",
+        "anion": "S2O32-",
+        "formula": "BaS2O3",
+        "name": "barium thiosulfate"
+      },
+      {
+        "key": "Zn2+|CN-",
+        "cation": "Zn2+",
+        "anion": "CN-",
+        "formula": "Zn(CN)2",
+        "name": "zinc cyanide"
+      },
+      {
+        "key": "Zn2+|SCN-",
+        "cation": "Zn2+",
+        "anion": "SCN-",
+        "formula": "Zn(SCN)2",
+        "name": "zinc thiocyanate"
+      },
+      {
+        "key": "Zn2+|NO2-",
+        "cation": "Zn2+",
+        "anion": "NO2-",
+        "formula": "Zn(NO2)2",
+        "name": "zinc nitrite"
+      },
+      {
+        "key": "Zn2+|BrO3-",
+        "cation": "Zn2+",
+        "anion": "BrO3-",
+        "formula": "Zn(BrO3)2",
+        "name": "zinc bromate"
+      },
+      {
+        "key": "Zn2+|ClO3-",
+        "cation": "Zn2+",
+        "anion": "ClO3-",
+        "formula": "Zn(ClO3)2",
+        "name": "zinc chlorate"
+      },
+      {
+        "key": "Zn2+|IO3-",
+        "cation": "Zn2+",
+        "anion": "IO3-",
+        "formula": "Zn(IO3)2",
+        "name": "zinc iodate"
+      },
+      {
+        "key": "Zn2+|CrO42-",
+        "cation": "Zn2+",
+        "anion": "CrO42-",
+        "formula": "ZnCrO4",
+        "name": "zinc chromate"
+      },
+      {
+        "key": "Zn2+|Cr2O72-",
+        "cation": "Zn2+",
+        "anion": "Cr2O72-",
+        "formula": "ZnCr2O7",
+        "name": "zinc dichromate"
+      },
+      {
+        "key": "Zn2+|SO32-",
+        "cation": "Zn2+",
+        "anion": "SO32-",
+        "formula": "ZnSO3",
+        "name": "zinc sulfite"
+      },
+      {
+        "key": "Zn2+|S2O32-",
+        "cation": "Zn2+",
+        "anion": "S2O32-",
+        "formula": "ZnS2O3",
+        "name": "zinc thiosulfate"
+      },
+      {
+        "key": "Al3+|CN-",
+        "cation": "Al3+",
+        "anion": "CN-",
+        "formula": "Al(CN)3",
+        "name": "aluminium cyanide"
+      },
+      {
+        "key": "Al3+|SCN-",
+        "cation": "Al3+",
+        "anion": "SCN-",
+        "formula": "Al(SCN)3",
+        "name": "aluminium thiocyanate"
+      },
+      {
+        "key": "Al3+|NO2-",
+        "cation": "Al3+",
+        "anion": "NO2-",
+        "formula": "Al(NO2)3",
+        "name": "aluminium nitrite"
+      },
+      {
+        "key": "Al3+|BrO3-",
+        "cation": "Al3+",
+        "anion": "BrO3-",
+        "formula": "Al(BrO3)3",
+        "name": "aluminium bromate"
+      },
+      {
+        "key": "Al3+|ClO3-",
+        "cation": "Al3+",
+        "anion": "ClO3-",
+        "formula": "Al(ClO3)3",
+        "name": "aluminium chlorate"
+      },
+      {
+        "key": "Al3+|IO3-",
+        "cation": "Al3+",
+        "anion": "IO3-",
+        "formula": "Al(IO3)3",
+        "name": "aluminium iodate"
+      },
+      {
+        "key": "Al3+|CrO42-",
+        "cation": "Al3+",
+        "anion": "CrO42-",
+        "formula": "Al2(CrO4)3",
+        "name": "aluminium chromate"
+      },
+      {
+        "key": "Al3+|Cr2O72-",
+        "cation": "Al3+",
+        "anion": "Cr2O72-",
+        "formula": "Al2(Cr2O7)3",
+        "name": "aluminium dichromate"
+      },
+      {
+        "key": "Al3+|SO32-",
+        "cation": "Al3+",
+        "anion": "SO32-",
+        "formula": "Al2(SO3)3",
+        "name": "aluminium sulfite"
+      },
+      {
+        "key": "Al3+|S2O32-",
+        "cation": "Al3+",
+        "anion": "S2O32-",
+        "formula": "Al2(S2O3)3",
+        "name": "aluminium thiosulfate"
+      }
+    ]
+  },
+  "20": {
+    "level": 20,
+    "totalCompounds": 198,
+    "compounds": [
+      {
+        "key": "Cu+|CN-",
+        "cation": "Cu+",
+        "anion": "CN-",
+        "formula": "CuCN",
+        "name": "copper(I) cyanide"
+      },
+      {
+        "key": "Cu+|SCN-",
+        "cation": "Cu+",
+        "anion": "SCN-",
+        "formula": "CuSCN",
+        "name": "copper(I) thiocyanate"
+      },
+      {
+        "key": "Cu+|NO2-",
+        "cation": "Cu+",
+        "anion": "NO2-",
+        "formula": "CuNO2",
+        "name": "copper(I) nitrite"
+      },
+      {
+        "key": "Cu+|BrO3-",
+        "cation": "Cu+",
+        "anion": "BrO3-",
+        "formula": "CuBrO3",
+        "name": "copper(I) bromate"
+      },
+      {
+        "key": "Cu+|ClO3-",
+        "cation": "Cu+",
+        "anion": "ClO3-",
+        "formula": "CuClO3",
+        "name": "copper(I) chlorate"
+      },
+      {
+        "key": "Cu+|IO3-",
+        "cation": "Cu+",
+        "anion": "IO3-",
+        "formula": "CuIO3",
+        "name": "copper(I) iodate"
+      },
+      {
+        "key": "Cu+|CrO42-",
+        "cation": "Cu+",
+        "anion": "CrO42-",
+        "formula": "Cu2CrO4",
+        "name": "copper(I) chromate"
+      },
+      {
+        "key": "Cu+|Cr2O72-",
+        "cation": "Cu+",
+        "anion": "Cr2O72-",
+        "formula": "Cu2Cr2O7",
+        "name": "copper(I) dichromate"
+      },
+      {
+        "key": "Cu+|SO32-",
+        "cation": "Cu+",
+        "anion": "SO32-",
+        "formula": "Cu2SO3",
+        "name": "copper(I) sulfite"
+      },
+      {
+        "key": "Cu+|S2O32-",
+        "cation": "Cu+",
+        "anion": "S2O32-",
+        "formula": "Cu2S2O3",
+        "name": "copper(I) thiosulfate"
+      },
+      {
+        "key": "Cu2+|CN-",
+        "cation": "Cu2+",
+        "anion": "CN-",
+        "formula": "Cu(CN)2",
+        "name": "copper(II) cyanide"
+      },
+      {
+        "key": "Cu2+|SCN-",
+        "cation": "Cu2+",
+        "anion": "SCN-",
+        "formula": "Cu(SCN)2",
+        "name": "copper(II) thiocyanate"
+      },
+      {
+        "key": "Cu2+|NO2-",
+        "cation": "Cu2+",
+        "anion": "NO2-",
+        "formula": "Cu(NO2)2",
+        "name": "copper(II) nitrite"
+      },
+      {
+        "key": "Cu2+|BrO3-",
+        "cation": "Cu2+",
+        "anion": "BrO3-",
+        "formula": "Cu(BrO3)2",
+        "name": "copper(II) bromate"
+      },
+      {
+        "key": "Cu2+|ClO3-",
+        "cation": "Cu2+",
+        "anion": "ClO3-",
+        "formula": "Cu(ClO3)2",
+        "name": "copper(II) chlorate"
+      },
+      {
+        "key": "Cu2+|IO3-",
+        "cation": "Cu2+",
+        "anion": "IO3-",
+        "formula": "Cu(IO3)2",
+        "name": "copper(II) iodate"
+      },
+      {
+        "key": "Cu2+|CrO42-",
+        "cation": "Cu2+",
+        "anion": "CrO42-",
+        "formula": "CuCrO4",
+        "name": "copper(II) chromate"
+      },
+      {
+        "key": "Cu2+|Cr2O72-",
+        "cation": "Cu2+",
+        "anion": "Cr2O72-",
+        "formula": "CuCr2O7",
+        "name": "copper(II) dichromate"
+      },
+      {
+        "key": "Cu2+|SO32-",
+        "cation": "Cu2+",
+        "anion": "SO32-",
+        "formula": "CuSO3",
+        "name": "copper(II) sulfite"
+      },
+      {
+        "key": "Cu2+|S2O32-",
+        "cation": "Cu2+",
+        "anion": "S2O32-",
+        "formula": "CuS2O3",
+        "name": "copper(II) thiosulfate"
+      },
+      {
+        "key": "Fe2+|CN-",
+        "cation": "Fe2+",
+        "anion": "CN-",
+        "formula": "Fe(CN)2",
+        "name": "iron(II) cyanide"
+      },
+      {
+        "key": "Fe2+|SCN-",
+        "cation": "Fe2+",
+        "anion": "SCN-",
+        "formula": "Fe(SCN)2",
+        "name": "iron(II) thiocyanate"
+      },
+      {
+        "key": "Fe2+|NO2-",
+        "cation": "Fe2+",
+        "anion": "NO2-",
+        "formula": "Fe(NO2)2",
+        "name": "iron(II) nitrite"
+      },
+      {
+        "key": "Fe2+|BrO3-",
+        "cation": "Fe2+",
+        "anion": "BrO3-",
+        "formula": "Fe(BrO3)2",
+        "name": "iron(II) bromate"
+      },
+      {
+        "key": "Fe2+|ClO3-",
+        "cation": "Fe2+",
+        "anion": "ClO3-",
+        "formula": "Fe(ClO3)2",
+        "name": "iron(II) chlorate"
+      },
+      {
+        "key": "Fe2+|IO3-",
+        "cation": "Fe2+",
+        "anion": "IO3-",
+        "formula": "Fe(IO3)2",
+        "name": "iron(II) iodate"
+      },
+      {
+        "key": "Fe2+|CrO42-",
+        "cation": "Fe2+",
+        "anion": "CrO42-",
+        "formula": "FeCrO4",
+        "name": "iron(II) chromate"
+      },
+      {
+        "key": "Fe2+|Cr2O72-",
+        "cation": "Fe2+",
+        "anion": "Cr2O72-",
+        "formula": "FeCr2O7",
+        "name": "iron(II) dichromate"
+      },
+      {
+        "key": "Fe2+|SO32-",
+        "cation": "Fe2+",
+        "anion": "SO32-",
+        "formula": "FeSO3",
+        "name": "iron(II) sulfite"
+      },
+      {
+        "key": "Fe2+|S2O32-",
+        "cation": "Fe2+",
+        "anion": "S2O32-",
+        "formula": "FeS2O3",
+        "name": "iron(II) thiosulfate"
+      },
+      {
+        "key": "Ni2+|CN-",
+        "cation": "Ni2+",
+        "anion": "CN-",
+        "formula": "Ni(CN)2",
+        "name": "nickel(II) cyanide"
+      },
+      {
+        "key": "Ni2+|SCN-",
+        "cation": "Ni2+",
+        "anion": "SCN-",
+        "formula": "Ni(SCN)2",
+        "name": "nickel(II) thiocyanate"
+      },
+      {
+        "key": "Ni2+|NO2-",
+        "cation": "Ni2+",
+        "anion": "NO2-",
+        "formula": "Ni(NO2)2",
+        "name": "nickel(II) nitrite"
+      },
+      {
+        "key": "Ni2+|BrO3-",
+        "cation": "Ni2+",
+        "anion": "BrO3-",
+        "formula": "Ni(BrO3)2",
+        "name": "nickel(II) bromate"
+      },
+      {
+        "key": "Ni2+|ClO3-",
+        "cation": "Ni2+",
+        "anion": "ClO3-",
+        "formula": "Ni(ClO3)2",
+        "name": "nickel(II) chlorate"
+      },
+      {
+        "key": "Ni2+|IO3-",
+        "cation": "Ni2+",
+        "anion": "IO3-",
+        "formula": "Ni(IO3)2",
+        "name": "nickel(II) iodate"
+      },
+      {
+        "key": "Ni2+|CrO42-",
+        "cation": "Ni2+",
+        "anion": "CrO42-",
+        "formula": "NiCrO4",
+        "name": "nickel(II) chromate"
+      },
+      {
+        "key": "Ni2+|Cr2O72-",
+        "cation": "Ni2+",
+        "anion": "Cr2O72-",
+        "formula": "NiCr2O7",
+        "name": "nickel(II) dichromate"
+      },
+      {
+        "key": "Ni2+|SO32-",
+        "cation": "Ni2+",
+        "anion": "SO32-",
+        "formula": "NiSO3",
+        "name": "nickel(II) sulfite"
+      },
+      {
+        "key": "Ni2+|S2O32-",
+        "cation": "Ni2+",
+        "anion": "S2O32-",
+        "formula": "NiS2O3",
+        "name": "nickel(II) thiosulfate"
+      },
+      {
+        "key": "Pb2+|CN-",
+        "cation": "Pb2+",
+        "anion": "CN-",
+        "formula": "Pb(CN)2",
+        "name": "lead(II) cyanide"
+      },
+      {
+        "key": "Pb2+|SCN-",
+        "cation": "Pb2+",
+        "anion": "SCN-",
+        "formula": "Pb(SCN)2",
+        "name": "lead(II) thiocyanate"
+      },
+      {
+        "key": "Pb2+|NO2-",
+        "cation": "Pb2+",
+        "anion": "NO2-",
+        "formula": "Pb(NO2)2",
+        "name": "lead(II) nitrite"
+      },
+      {
+        "key": "Pb2+|BrO3-",
+        "cation": "Pb2+",
+        "anion": "BrO3-",
+        "formula": "Pb(BrO3)2",
+        "name": "lead(II) bromate"
+      },
+      {
+        "key": "Pb2+|ClO3-",
+        "cation": "Pb2+",
+        "anion": "ClO3-",
+        "formula": "Pb(ClO3)2",
+        "name": "lead(II) chlorate"
+      },
+      {
+        "key": "Pb2+|IO3-",
+        "cation": "Pb2+",
+        "anion": "IO3-",
+        "formula": "Pb(IO3)2",
+        "name": "lead(II) iodate"
+      },
+      {
+        "key": "Pb2+|CrO42-",
+        "cation": "Pb2+",
+        "anion": "CrO42-",
+        "formula": "PbCrO4",
+        "name": "lead(II) chromate"
+      },
+      {
+        "key": "Pb2+|Cr2O72-",
+        "cation": "Pb2+",
+        "anion": "Cr2O72-",
+        "formula": "PbCr2O7",
+        "name": "lead(II) dichromate"
+      },
+      {
+        "key": "Pb2+|SO32-",
+        "cation": "Pb2+",
+        "anion": "SO32-",
+        "formula": "PbSO3",
+        "name": "lead(II) sulfite"
+      },
+      {
+        "key": "Pb2+|S2O32-",
+        "cation": "Pb2+",
+        "anion": "S2O32-",
+        "formula": "PbS2O3",
+        "name": "lead(II) thiosulfate"
+      },
+      {
+        "key": "Fe3+|CN-",
+        "cation": "Fe3+",
+        "anion": "CN-",
+        "formula": "Fe(CN)3",
+        "name": "iron(III) cyanide"
+      },
+      {
+        "key": "Fe3+|SCN-",
+        "cation": "Fe3+",
+        "anion": "SCN-",
+        "formula": "Fe(SCN)3",
+        "name": "iron(III) thiocyanate"
+      },
+      {
+        "key": "Fe3+|NO2-",
+        "cation": "Fe3+",
+        "anion": "NO2-",
+        "formula": "Fe(NO2)3",
+        "name": "iron(III) nitrite"
+      },
+      {
+        "key": "Fe3+|BrO3-",
+        "cation": "Fe3+",
+        "anion": "BrO3-",
+        "formula": "Fe(BrO3)3",
+        "name": "iron(III) bromate"
+      },
+      {
+        "key": "Fe3+|ClO3-",
+        "cation": "Fe3+",
+        "anion": "ClO3-",
+        "formula": "Fe(ClO3)3",
+        "name": "iron(III) chlorate"
+      },
+      {
+        "key": "Fe3+|IO3-",
+        "cation": "Fe3+",
+        "anion": "IO3-",
+        "formula": "Fe(IO3)3",
+        "name": "iron(III) iodate"
+      },
+      {
+        "key": "Fe3+|CrO42-",
+        "cation": "Fe3+",
+        "anion": "CrO42-",
+        "formula": "Fe2(CrO4)3",
+        "name": "iron(III) chromate"
+      },
+      {
+        "key": "Fe3+|Cr2O72-",
+        "cation": "Fe3+",
+        "anion": "Cr2O72-",
+        "formula": "Fe2(Cr2O7)3",
+        "name": "iron(III) dichromate"
+      },
+      {
+        "key": "Fe3+|SO32-",
+        "cation": "Fe3+",
+        "anion": "SO32-",
+        "formula": "Fe2(SO3)3",
+        "name": "iron(III) sulfite"
+      },
+      {
+        "key": "Fe3+|S2O32-",
+        "cation": "Fe3+",
+        "anion": "S2O32-",
+        "formula": "Fe2(S2O3)3",
+        "name": "iron(III) thiosulfate"
+      },
+      {
+        "key": "Ti4+|CN-",
+        "cation": "Ti4+",
+        "anion": "CN-",
+        "formula": "Ti(CN)4",
+        "name": "titanium(IV) cyanide"
+      },
+      {
+        "key": "Ti4+|SCN-",
+        "cation": "Ti4+",
+        "anion": "SCN-",
+        "formula": "Ti(SCN)4",
+        "name": "titanium(IV) thiocyanate"
+      },
+      {
+        "key": "Ti4+|NO2-",
+        "cation": "Ti4+",
+        "anion": "NO2-",
+        "formula": "Ti(NO2)4",
+        "name": "titanium(IV) nitrite"
+      },
+      {
+        "key": "Ti4+|BrO3-",
+        "cation": "Ti4+",
+        "anion": "BrO3-",
+        "formula": "Ti(BrO3)4",
+        "name": "titanium(IV) bromate"
+      },
+      {
+        "key": "Ti4+|ClO3-",
+        "cation": "Ti4+",
+        "anion": "ClO3-",
+        "formula": "Ti(ClO3)4",
+        "name": "titanium(IV) chlorate"
+      },
+      {
+        "key": "Ti4+|IO3-",
+        "cation": "Ti4+",
+        "anion": "IO3-",
+        "formula": "Ti(IO3)4",
+        "name": "titanium(IV) iodate"
+      },
+      {
+        "key": "Ti4+|CrO42-",
+        "cation": "Ti4+",
+        "anion": "CrO42-",
+        "formula": "Ti(CrO4)2",
+        "name": "titanium(IV) chromate"
+      },
+      {
+        "key": "Ti4+|Cr2O72-",
+        "cation": "Ti4+",
+        "anion": "Cr2O72-",
+        "formula": "Ti(Cr2O7)2",
+        "name": "titanium(IV) dichromate"
+      },
+      {
+        "key": "Ti4+|SO32-",
+        "cation": "Ti4+",
+        "anion": "SO32-",
+        "formula": "Ti(SO3)2",
+        "name": "titanium(IV) sulfite"
+      },
+      {
+        "key": "Ti4+|S2O32-",
+        "cation": "Ti4+",
+        "anion": "S2O32-",
+        "formula": "Ti(S2O3)2",
+        "name": "titanium(IV) thiosulfate"
+      },
+      {
+        "key": "Pb4+|CN-",
+        "cation": "Pb4+",
+        "anion": "CN-",
+        "formula": "Pb(CN)4",
+        "name": "lead(IV) cyanide"
+      },
+      {
+        "key": "Pb4+|SCN-",
+        "cation": "Pb4+",
+        "anion": "SCN-",
+        "formula": "Pb(SCN)4",
+        "name": "lead(IV) thiocyanate"
+      },
+      {
+        "key": "Pb4+|NO2-",
+        "cation": "Pb4+",
+        "anion": "NO2-",
+        "formula": "Pb(NO2)4",
+        "name": "lead(IV) nitrite"
+      },
+      {
+        "key": "Pb4+|BrO3-",
+        "cation": "Pb4+",
+        "anion": "BrO3-",
+        "formula": "Pb(BrO3)4",
+        "name": "lead(IV) bromate"
+      },
+      {
+        "key": "Pb4+|ClO3-",
+        "cation": "Pb4+",
+        "anion": "ClO3-",
+        "formula": "Pb(ClO3)4",
+        "name": "lead(IV) chlorate"
+      },
+      {
+        "key": "Pb4+|IO3-",
+        "cation": "Pb4+",
+        "anion": "IO3-",
+        "formula": "Pb(IO3)4",
+        "name": "lead(IV) iodate"
+      },
+      {
+        "key": "Pb4+|CrO42-",
+        "cation": "Pb4+",
+        "anion": "CrO42-",
+        "formula": "Pb(CrO4)2",
+        "name": "lead(IV) chromate"
+      },
+      {
+        "key": "Pb4+|Cr2O72-",
+        "cation": "Pb4+",
+        "anion": "Cr2O72-",
+        "formula": "Pb(Cr2O7)2",
+        "name": "lead(IV) dichromate"
+      },
+      {
+        "key": "Pb4+|SO32-",
+        "cation": "Pb4+",
+        "anion": "SO32-",
+        "formula": "Pb(SO3)2",
+        "name": "lead(IV) sulfite"
+      },
+      {
+        "key": "Pb4+|S2O32-",
+        "cation": "Pb4+",
+        "anion": "S2O32-",
+        "formula": "Pb(S2O3)2",
+        "name": "lead(IV) thiosulfate"
+      },
+      {
+        "key": "NH4+|CN-",
+        "cation": "NH4+",
+        "anion": "CN-",
+        "formula": "NH4CN",
+        "name": "ammonium cyanide"
+      },
+      {
+        "key": "NH4+|SCN-",
+        "cation": "NH4+",
+        "anion": "SCN-",
+        "formula": "NH4SCN",
+        "name": "ammonium thiocyanate"
+      },
+      {
+        "key": "NH4+|NO2-",
+        "cation": "NH4+",
+        "anion": "NO2-",
+        "formula": "NH4NO2",
+        "name": "ammonium nitrite"
+      },
+      {
+        "key": "NH4+|BrO3-",
+        "cation": "NH4+",
+        "anion": "BrO3-",
+        "formula": "NH4BrO3",
+        "name": "ammonium bromate"
+      },
+      {
+        "key": "NH4+|ClO3-",
+        "cation": "NH4+",
+        "anion": "ClO3-",
+        "formula": "NH4ClO3",
+        "name": "ammonium chlorate"
+      },
+      {
+        "key": "NH4+|IO3-",
+        "cation": "NH4+",
+        "anion": "IO3-",
+        "formula": "NH4IO3",
+        "name": "ammonium iodate"
+      },
+      {
+        "key": "NH4+|CrO42-",
+        "cation": "NH4+",
+        "anion": "CrO42-",
+        "formula": "(NH4)2CrO4",
+        "name": "ammonium chromate"
+      },
+      {
+        "key": "NH4+|Cr2O72-",
+        "cation": "NH4+",
+        "anion": "Cr2O72-",
+        "formula": "(NH4)2Cr2O7",
+        "name": "ammonium dichromate"
+      },
+      {
+        "key": "NH4+|SO32-",
+        "cation": "NH4+",
+        "anion": "SO32-",
+        "formula": "(NH4)2SO3",
+        "name": "ammonium sulfite"
+      },
+      {
+        "key": "NH4+|S2O32-",
+        "cation": "NH4+",
+        "anion": "S2O32-",
+        "formula": "(NH4)2S2O3",
+        "name": "ammonium thiosulfate"
+      },
+      {
+        "key": "Mn2+|CN-",
+        "cation": "Mn2+",
+        "anion": "CN-",
+        "formula": "Mn(CN)2",
+        "name": "manganese(II) cyanide"
+      },
+      {
+        "key": "Mn2+|SCN-",
+        "cation": "Mn2+",
+        "anion": "SCN-",
+        "formula": "Mn(SCN)2",
+        "name": "manganese(II) thiocyanate"
+      },
+      {
+        "key": "Mn2+|NO2-",
+        "cation": "Mn2+",
+        "anion": "NO2-",
+        "formula": "Mn(NO2)2",
+        "name": "manganese(II) nitrite"
+      },
+      {
+        "key": "Mn2+|BrO3-",
+        "cation": "Mn2+",
+        "anion": "BrO3-",
+        "formula": "Mn(BrO3)2",
+        "name": "manganese(II) bromate"
+      },
+      {
+        "key": "Mn2+|ClO3-",
+        "cation": "Mn2+",
+        "anion": "ClO3-",
+        "formula": "Mn(ClO3)2",
+        "name": "manganese(II) chlorate"
+      },
+      {
+        "key": "Mn2+|IO3-",
+        "cation": "Mn2+",
+        "anion": "IO3-",
+        "formula": "Mn(IO3)2",
+        "name": "manganese(II) iodate"
+      },
+      {
+        "key": "Mn2+|CrO42-",
+        "cation": "Mn2+",
+        "anion": "CrO42-",
+        "formula": "MnCrO4",
+        "name": "manganese(II) chromate"
+      },
+      {
+        "key": "Mn2+|Cr2O72-",
+        "cation": "Mn2+",
+        "anion": "Cr2O72-",
+        "formula": "MnCr2O7",
+        "name": "manganese(II) dichromate"
+      },
+      {
+        "key": "Mn2+|SO32-",
+        "cation": "Mn2+",
+        "anion": "SO32-",
+        "formula": "MnSO3",
+        "name": "manganese(II) sulfite"
+      },
+      {
+        "key": "Mn2+|S2O32-",
+        "cation": "Mn2+",
+        "anion": "S2O32-",
+        "formula": "MnS2O3",
+        "name": "manganese(II) thiosulfate"
+      },
+      {
+        "key": "Co2+|CN-",
+        "cation": "Co2+",
+        "anion": "CN-",
+        "formula": "Co(CN)2",
+        "name": "cobalt(II) cyanide"
+      },
+      {
+        "key": "Co2+|SCN-",
+        "cation": "Co2+",
+        "anion": "SCN-",
+        "formula": "Co(SCN)2",
+        "name": "cobalt(II) thiocyanate"
+      },
+      {
+        "key": "Co2+|NO2-",
+        "cation": "Co2+",
+        "anion": "NO2-",
+        "formula": "Co(NO2)2",
+        "name": "cobalt(II) nitrite"
+      },
+      {
+        "key": "Co2+|BrO3-",
+        "cation": "Co2+",
+        "anion": "BrO3-",
+        "formula": "Co(BrO3)2",
+        "name": "cobalt(II) bromate"
+      },
+      {
+        "key": "Co2+|ClO3-",
+        "cation": "Co2+",
+        "anion": "ClO3-",
+        "formula": "Co(ClO3)2",
+        "name": "cobalt(II) chlorate"
+      },
+      {
+        "key": "Co2+|IO3-",
+        "cation": "Co2+",
+        "anion": "IO3-",
+        "formula": "Co(IO3)2",
+        "name": "cobalt(II) iodate"
+      },
+      {
+        "key": "Co2+|CrO42-",
+        "cation": "Co2+",
+        "anion": "CrO42-",
+        "formula": "CoCrO4",
+        "name": "cobalt(II) chromate"
+      },
+      {
+        "key": "Co2+|Cr2O72-",
+        "cation": "Co2+",
+        "anion": "Cr2O72-",
+        "formula": "CoCr2O7",
+        "name": "cobalt(II) dichromate"
+      },
+      {
+        "key": "Co2+|SO32-",
+        "cation": "Co2+",
+        "anion": "SO32-",
+        "formula": "CoSO3",
+        "name": "cobalt(II) sulfite"
+      },
+      {
+        "key": "Co2+|S2O32-",
+        "cation": "Co2+",
+        "anion": "S2O32-",
+        "formula": "CoS2O3",
+        "name": "cobalt(II) thiosulfate"
+      },
+      {
+        "key": "Pt2+|CN-",
+        "cation": "Pt2+",
+        "anion": "CN-",
+        "formula": "Pt(CN)2",
+        "name": "platinum(II) cyanide"
+      },
+      {
+        "key": "Pt2+|SCN-",
+        "cation": "Pt2+",
+        "anion": "SCN-",
+        "formula": "Pt(SCN)2",
+        "name": "platinum(II) thiocyanate"
+      },
+      {
+        "key": "Pt2+|NO2-",
+        "cation": "Pt2+",
+        "anion": "NO2-",
+        "formula": "Pt(NO2)2",
+        "name": "platinum(II) nitrite"
+      },
+      {
+        "key": "Pt2+|BrO3-",
+        "cation": "Pt2+",
+        "anion": "BrO3-",
+        "formula": "Pt(BrO3)2",
+        "name": "platinum(II) bromate"
+      },
+      {
+        "key": "Pt2+|ClO3-",
+        "cation": "Pt2+",
+        "anion": "ClO3-",
+        "formula": "Pt(ClO3)2",
+        "name": "platinum(II) chlorate"
+      },
+      {
+        "key": "Pt2+|IO3-",
+        "cation": "Pt2+",
+        "anion": "IO3-",
+        "formula": "Pt(IO3)2",
+        "name": "platinum(II) iodate"
+      },
+      {
+        "key": "Pt2+|CrO42-",
+        "cation": "Pt2+",
+        "anion": "CrO42-",
+        "formula": "PtCrO4",
+        "name": "platinum(II) chromate"
+      },
+      {
+        "key": "Pt2+|Cr2O72-",
+        "cation": "Pt2+",
+        "anion": "Cr2O72-",
+        "formula": "PtCr2O7",
+        "name": "platinum(II) dichromate"
+      },
+      {
+        "key": "Pt2+|SO32-",
+        "cation": "Pt2+",
+        "anion": "SO32-",
+        "formula": "PtSO3",
+        "name": "platinum(II) sulfite"
+      },
+      {
+        "key": "Pt2+|S2O32-",
+        "cation": "Pt2+",
+        "anion": "S2O32-",
+        "formula": "PtS2O3",
+        "name": "platinum(II) thiosulfate"
+      },
+      {
+        "key": "Hg2+|CN-",
+        "cation": "Hg2+",
+        "anion": "CN-",
+        "formula": "Hg(CN)2",
+        "name": "mercury(II) cyanide"
+      },
+      {
+        "key": "Hg2+|SCN-",
+        "cation": "Hg2+",
+        "anion": "SCN-",
+        "formula": "Hg(SCN)2",
+        "name": "mercury(II) thiocyanate"
+      },
+      {
+        "key": "Hg2+|NO2-",
+        "cation": "Hg2+",
+        "anion": "NO2-",
+        "formula": "Hg(NO2)2",
+        "name": "mercury(II) nitrite"
+      },
+      {
+        "key": "Hg2+|BrO3-",
+        "cation": "Hg2+",
+        "anion": "BrO3-",
+        "formula": "Hg(BrO3)2",
+        "name": "mercury(II) bromate"
+      },
+      {
+        "key": "Hg2+|ClO3-",
+        "cation": "Hg2+",
+        "anion": "ClO3-",
+        "formula": "Hg(ClO3)2",
+        "name": "mercury(II) chlorate"
+      },
+      {
+        "key": "Hg2+|IO3-",
+        "cation": "Hg2+",
+        "anion": "IO3-",
+        "formula": "Hg(IO3)2",
+        "name": "mercury(II) iodate"
+      },
+      {
+        "key": "Hg2+|CrO42-",
+        "cation": "Hg2+",
+        "anion": "CrO42-",
+        "formula": "HgCrO4",
+        "name": "mercury(II) chromate"
+      },
+      {
+        "key": "Hg2+|Cr2O72-",
+        "cation": "Hg2+",
+        "anion": "Cr2O72-",
+        "formula": "HgCr2O7",
+        "name": "mercury(II) dichromate"
+      },
+      {
+        "key": "Hg2+|SO32-",
+        "cation": "Hg2+",
+        "anion": "SO32-",
+        "formula": "HgSO3",
+        "name": "mercury(II) sulfite"
+      },
+      {
+        "key": "Hg2+|S2O32-",
+        "cation": "Hg2+",
+        "anion": "S2O32-",
+        "formula": "HgS2O3",
+        "name": "mercury(II) thiosulfate"
+      },
+      {
+        "key": "Sn2+|CN-",
+        "cation": "Sn2+",
+        "anion": "CN-",
+        "formula": "Sn(CN)2",
+        "name": "tin(II) cyanide"
+      },
+      {
+        "key": "Sn2+|SCN-",
+        "cation": "Sn2+",
+        "anion": "SCN-",
+        "formula": "Sn(SCN)2",
+        "name": "tin(II) thiocyanate"
+      },
+      {
+        "key": "Sn2+|NO2-",
+        "cation": "Sn2+",
+        "anion": "NO2-",
+        "formula": "Sn(NO2)2",
+        "name": "tin(II) nitrite"
+      },
+      {
+        "key": "Sn2+|BrO3-",
+        "cation": "Sn2+",
+        "anion": "BrO3-",
+        "formula": "Sn(BrO3)2",
+        "name": "tin(II) bromate"
+      },
+      {
+        "key": "Sn2+|ClO3-",
+        "cation": "Sn2+",
+        "anion": "ClO3-",
+        "formula": "Sn(ClO3)2",
+        "name": "tin(II) chlorate"
+      },
+      {
+        "key": "Sn2+|IO3-",
+        "cation": "Sn2+",
+        "anion": "IO3-",
+        "formula": "Sn(IO3)2",
+        "name": "tin(II) iodate"
+      },
+      {
+        "key": "Sn2+|CrO42-",
+        "cation": "Sn2+",
+        "anion": "CrO42-",
+        "formula": "SnCrO4",
+        "name": "tin(II) chromate"
+      },
+      {
+        "key": "Sn2+|Cr2O72-",
+        "cation": "Sn2+",
+        "anion": "Cr2O72-",
+        "formula": "SnCr2O7",
+        "name": "tin(II) dichromate"
+      },
+      {
+        "key": "Sn2+|SO32-",
+        "cation": "Sn2+",
+        "anion": "SO32-",
+        "formula": "SnSO3",
+        "name": "tin(II) sulfite"
+      },
+      {
+        "key": "Sn2+|S2O32-",
+        "cation": "Sn2+",
+        "anion": "S2O32-",
+        "formula": "SnS2O3",
+        "name": "tin(II) thiosulfate"
+      },
+      {
+        "key": "V3+|CN-",
+        "cation": "V3+",
+        "anion": "CN-",
+        "formula": "V(CN)3",
+        "name": "vanadium(III) cyanide"
+      },
+      {
+        "key": "V3+|SCN-",
+        "cation": "V3+",
+        "anion": "SCN-",
+        "formula": "V(SCN)3",
+        "name": "vanadium(III) thiocyanate"
+      },
+      {
+        "key": "V3+|NO2-",
+        "cation": "V3+",
+        "anion": "NO2-",
+        "formula": "V(NO2)3",
+        "name": "vanadium(III) nitrite"
+      },
+      {
+        "key": "V3+|BrO3-",
+        "cation": "V3+",
+        "anion": "BrO3-",
+        "formula": "V(BrO3)3",
+        "name": "vanadium(III) bromate"
+      },
+      {
+        "key": "V3+|ClO3-",
+        "cation": "V3+",
+        "anion": "ClO3-",
+        "formula": "V(ClO3)3",
+        "name": "vanadium(III) chlorate"
+      },
+      {
+        "key": "V3+|IO3-",
+        "cation": "V3+",
+        "anion": "IO3-",
+        "formula": "V(IO3)3",
+        "name": "vanadium(III) iodate"
+      },
+      {
+        "key": "V3+|CrO42-",
+        "cation": "V3+",
+        "anion": "CrO42-",
+        "formula": "V2(CrO4)3",
+        "name": "vanadium(III) chromate"
+      },
+      {
+        "key": "V3+|Cr2O72-",
+        "cation": "V3+",
+        "anion": "Cr2O72-",
+        "formula": "V2(Cr2O7)3",
+        "name": "vanadium(III) dichromate"
+      },
+      {
+        "key": "V3+|SO32-",
+        "cation": "V3+",
+        "anion": "SO32-",
+        "formula": "V2(SO3)3",
+        "name": "vanadium(III) sulfite"
+      },
+      {
+        "key": "V3+|S2O32-",
+        "cation": "V3+",
+        "anion": "S2O32-",
+        "formula": "V2(S2O3)3",
+        "name": "vanadium(III) thiosulfate"
+      },
+      {
+        "key": "Cr3+|CN-",
+        "cation": "Cr3+",
+        "anion": "CN-",
+        "formula": "Cr(CN)3",
+        "name": "chromium(III) cyanide"
+      },
+      {
+        "key": "Cr3+|SCN-",
+        "cation": "Cr3+",
+        "anion": "SCN-",
+        "formula": "Cr(SCN)3",
+        "name": "chromium(III) thiocyanate"
+      },
+      {
+        "key": "Cr3+|NO2-",
+        "cation": "Cr3+",
+        "anion": "NO2-",
+        "formula": "Cr(NO2)3",
+        "name": "chromium(III) nitrite"
+      },
+      {
+        "key": "Cr3+|BrO3-",
+        "cation": "Cr3+",
+        "anion": "BrO3-",
+        "formula": "Cr(BrO3)3",
+        "name": "chromium(III) bromate"
+      },
+      {
+        "key": "Cr3+|ClO3-",
+        "cation": "Cr3+",
+        "anion": "ClO3-",
+        "formula": "Cr(ClO3)3",
+        "name": "chromium(III) chlorate"
+      },
+      {
+        "key": "Cr3+|IO3-",
+        "cation": "Cr3+",
+        "anion": "IO3-",
+        "formula": "Cr(IO3)3",
+        "name": "chromium(III) iodate"
+      },
+      {
+        "key": "Cr3+|SO32-",
+        "cation": "Cr3+",
+        "anion": "SO32-",
+        "formula": "Cr2(SO3)3",
+        "name": "chromium(III) sulfite"
+      },
+      {
+        "key": "Cr3+|S2O32-",
+        "cation": "Cr3+",
+        "anion": "S2O32-",
+        "formula": "Cr2(S2O3)3",
+        "name": "chromium(III) thiosulfate"
+      },
+      {
+        "key": "Co3+|CN-",
+        "cation": "Co3+",
+        "anion": "CN-",
+        "formula": "Co(CN)3",
+        "name": "cobalt(III) cyanide"
+      },
+      {
+        "key": "Co3+|SCN-",
+        "cation": "Co3+",
+        "anion": "SCN-",
+        "formula": "Co(SCN)3",
+        "name": "cobalt(III) thiocyanate"
+      },
+      {
+        "key": "Co3+|NO2-",
+        "cation": "Co3+",
+        "anion": "NO2-",
+        "formula": "Co(NO2)3",
+        "name": "cobalt(III) nitrite"
+      },
+      {
+        "key": "Co3+|BrO3-",
+        "cation": "Co3+",
+        "anion": "BrO3-",
+        "formula": "Co(BrO3)3",
+        "name": "cobalt(III) bromate"
+      },
+      {
+        "key": "Co3+|ClO3-",
+        "cation": "Co3+",
+        "anion": "ClO3-",
+        "formula": "Co(ClO3)3",
+        "name": "cobalt(III) chlorate"
+      },
+      {
+        "key": "Co3+|IO3-",
+        "cation": "Co3+",
+        "anion": "IO3-",
+        "formula": "Co(IO3)3",
+        "name": "cobalt(III) iodate"
+      },
+      {
+        "key": "Co3+|CrO42-",
+        "cation": "Co3+",
+        "anion": "CrO42-",
+        "formula": "Co2(CrO4)3",
+        "name": "cobalt(III) chromate"
+      },
+      {
+        "key": "Co3+|Cr2O72-",
+        "cation": "Co3+",
+        "anion": "Cr2O72-",
+        "formula": "Co2(Cr2O7)3",
+        "name": "cobalt(III) dichromate"
+      },
+      {
+        "key": "Co3+|SO32-",
+        "cation": "Co3+",
+        "anion": "SO32-",
+        "formula": "Co2(SO3)3",
+        "name": "cobalt(III) sulfite"
+      },
+      {
+        "key": "Co3+|S2O32-",
+        "cation": "Co3+",
+        "anion": "S2O32-",
+        "formula": "Co2(S2O3)3",
+        "name": "cobalt(III) thiosulfate"
+      },
+      {
+        "key": "Mn4+|CN-",
+        "cation": "Mn4+",
+        "anion": "CN-",
+        "formula": "Mn(CN)4",
+        "name": "manganese(IV) cyanide"
+      },
+      {
+        "key": "Mn4+|SCN-",
+        "cation": "Mn4+",
+        "anion": "SCN-",
+        "formula": "Mn(SCN)4",
+        "name": "manganese(IV) thiocyanate"
+      },
+      {
+        "key": "Mn4+|NO2-",
+        "cation": "Mn4+",
+        "anion": "NO2-",
+        "formula": "Mn(NO2)4",
+        "name": "manganese(IV) nitrite"
+      },
+      {
+        "key": "Mn4+|BrO3-",
+        "cation": "Mn4+",
+        "anion": "BrO3-",
+        "formula": "Mn(BrO3)4",
+        "name": "manganese(IV) bromate"
+      },
+      {
+        "key": "Mn4+|ClO3-",
+        "cation": "Mn4+",
+        "anion": "ClO3-",
+        "formula": "Mn(ClO3)4",
+        "name": "manganese(IV) chlorate"
+      },
+      {
+        "key": "Mn4+|IO3-",
+        "cation": "Mn4+",
+        "anion": "IO3-",
+        "formula": "Mn(IO3)4",
+        "name": "manganese(IV) iodate"
+      },
+      {
+        "key": "Mn4+|CrO42-",
+        "cation": "Mn4+",
+        "anion": "CrO42-",
+        "formula": "Mn(CrO4)2",
+        "name": "manganese(IV) chromate"
+      },
+      {
+        "key": "Mn4+|Cr2O72-",
+        "cation": "Mn4+",
+        "anion": "Cr2O72-",
+        "formula": "Mn(Cr2O7)2",
+        "name": "manganese(IV) dichromate"
+      },
+      {
+        "key": "Mn4+|SO32-",
+        "cation": "Mn4+",
+        "anion": "SO32-",
+        "formula": "Mn(SO3)2",
+        "name": "manganese(IV) sulfite"
+      },
+      {
+        "key": "Mn4+|S2O32-",
+        "cation": "Mn4+",
+        "anion": "S2O32-",
+        "formula": "Mn(S2O3)2",
+        "name": "manganese(IV) thiosulfate"
+      },
+      {
+        "key": "Pt4+|CN-",
+        "cation": "Pt4+",
+        "anion": "CN-",
+        "formula": "Pt(CN)4",
+        "name": "platinum(IV) cyanide"
+      },
+      {
+        "key": "Pt4+|SCN-",
+        "cation": "Pt4+",
+        "anion": "SCN-",
+        "formula": "Pt(SCN)4",
+        "name": "platinum(IV) thiocyanate"
+      },
+      {
+        "key": "Pt4+|NO2-",
+        "cation": "Pt4+",
+        "anion": "NO2-",
+        "formula": "Pt(NO2)4",
+        "name": "platinum(IV) nitrite"
+      },
+      {
+        "key": "Pt4+|BrO3-",
+        "cation": "Pt4+",
+        "anion": "BrO3-",
+        "formula": "Pt(BrO3)4",
+        "name": "platinum(IV) bromate"
+      },
+      {
+        "key": "Pt4+|ClO3-",
+        "cation": "Pt4+",
+        "anion": "ClO3-",
+        "formula": "Pt(ClO3)4",
+        "name": "platinum(IV) chlorate"
+      },
+      {
+        "key": "Pt4+|IO3-",
+        "cation": "Pt4+",
+        "anion": "IO3-",
+        "formula": "Pt(IO3)4",
+        "name": "platinum(IV) iodate"
+      },
+      {
+        "key": "Pt4+|CrO42-",
+        "cation": "Pt4+",
+        "anion": "CrO42-",
+        "formula": "Pt(CrO4)2",
+        "name": "platinum(IV) chromate"
+      },
+      {
+        "key": "Pt4+|Cr2O72-",
+        "cation": "Pt4+",
+        "anion": "Cr2O72-",
+        "formula": "Pt(Cr2O7)2",
+        "name": "platinum(IV) dichromate"
+      },
+      {
+        "key": "Pt4+|SO32-",
+        "cation": "Pt4+",
+        "anion": "SO32-",
+        "formula": "Pt(SO3)2",
+        "name": "platinum(IV) sulfite"
+      },
+      {
+        "key": "Pt4+|S2O32-",
+        "cation": "Pt4+",
+        "anion": "S2O32-",
+        "formula": "Pt(S2O3)2",
+        "name": "platinum(IV) thiosulfate"
+      },
+      {
+        "key": "Sn4+|CN-",
+        "cation": "Sn4+",
+        "anion": "CN-",
+        "formula": "Sn(CN)4",
+        "name": "tin(IV) cyanide"
+      },
+      {
+        "key": "Sn4+|SCN-",
+        "cation": "Sn4+",
+        "anion": "SCN-",
+        "formula": "Sn(SCN)4",
+        "name": "tin(IV) thiocyanate"
+      },
+      {
+        "key": "Sn4+|NO2-",
+        "cation": "Sn4+",
+        "anion": "NO2-",
+        "formula": "Sn(NO2)4",
+        "name": "tin(IV) nitrite"
+      },
+      {
+        "key": "Sn4+|BrO3-",
+        "cation": "Sn4+",
+        "anion": "BrO3-",
+        "formula": "Sn(BrO3)4",
+        "name": "tin(IV) bromate"
+      },
+      {
+        "key": "Sn4+|ClO3-",
+        "cation": "Sn4+",
+        "anion": "ClO3-",
+        "formula": "Sn(ClO3)4",
+        "name": "tin(IV) chlorate"
+      },
+      {
+        "key": "Sn4+|IO3-",
+        "cation": "Sn4+",
+        "anion": "IO3-",
+        "formula": "Sn(IO3)4",
+        "name": "tin(IV) iodate"
+      },
+      {
+        "key": "Sn4+|CrO42-",
+        "cation": "Sn4+",
+        "anion": "CrO42-",
+        "formula": "Sn(CrO4)2",
+        "name": "tin(IV) chromate"
+      },
+      {
+        "key": "Sn4+|Cr2O72-",
+        "cation": "Sn4+",
+        "anion": "Cr2O72-",
+        "formula": "Sn(Cr2O7)2",
+        "name": "tin(IV) dichromate"
+      },
+      {
+        "key": "Sn4+|SO32-",
+        "cation": "Sn4+",
+        "anion": "SO32-",
+        "formula": "Sn(SO3)2",
+        "name": "tin(IV) sulfite"
+      },
+      {
+        "key": "Sn4+|S2O32-",
+        "cation": "Sn4+",
+        "anion": "S2O32-",
+        "formula": "Sn(S2O3)2",
+        "name": "tin(IV) thiosulfate"
+      }
+    ]
+  }
+}

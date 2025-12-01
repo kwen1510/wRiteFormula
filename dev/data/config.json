@@ -1,0 +1,14 @@
+{
+  "debugPanelVisible": false,
+  "startAnimation": true,
+  "scoringRules": {
+    "firstTimePoints": 100,
+    "repeatPoints": 50,
+    "minMultiplier": 1,
+    "maxMultiplier": 3,
+    "multiplierIncrement": 0.25,
+    "maxAttempts": 2,
+    "countdownSeconds": 120,
+    "warningThreshold": 20
+  }
+}

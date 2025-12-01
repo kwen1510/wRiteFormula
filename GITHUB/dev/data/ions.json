@@ -1,0 +1,380 @@
+{
+  "Li+": {
+    "symbol": "Li+",
+    "charge": 1,
+    "type": "cation",
+    "formula": "Li",
+    "html": "Li<sup>+</sup>"
+  },
+  "Na+": {
+    "symbol": "Na+",
+    "charge": 1,
+    "type": "cation",
+    "formula": "Na",
+    "html": "Na<sup>+</sup>"
+  },
+  "K+": {
+    "symbol": "K+",
+    "charge": 1,
+    "type": "cation",
+    "formula": "K",
+    "html": "K<sup>+</sup>"
+  },
+  "Ag+": {
+    "symbol": "Ag+",
+    "charge": 1,
+    "type": "cation",
+    "formula": "Ag",
+    "html": "Ag<sup>+</sup>"
+  },
+  "Be2+": {
+    "symbol": "Be2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Be",
+    "html": "Be<sup>2+</sup>"
+  },
+  "Mg2+": {
+    "symbol": "Mg2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Mg",
+    "html": "Mg<sup>2+</sup>"
+  },
+  "Ca2+": {
+    "symbol": "Ca2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Ca",
+    "html": "Ca<sup>2+</sup>"
+  },
+  "Sr2+": {
+    "symbol": "Sr2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Sr",
+    "html": "Sr<sup>2+</sup>"
+  },
+  "Ba2+": {
+    "symbol": "Ba2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Ba",
+    "html": "Ba<sup>2+</sup>"
+  },
+  "Zn2+": {
+    "symbol": "Zn2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Zn",
+    "html": "Zn<sup>2+</sup>"
+  },
+  "Al3+": {
+    "symbol": "Al3+",
+    "charge": 3,
+    "type": "cation",
+    "formula": "Al",
+    "html": "Al<sup>3+</sup>"
+  },
+  "Cu+": {
+    "symbol": "Cu+",
+    "charge": 1,
+    "type": "cation",
+    "formula": "Cu",
+    "html": "Cu<sup>+</sup>"
+  },
+  "Cu2+": {
+    "symbol": "Cu2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Cu",
+    "html": "Cu<sup>2+</sup>"
+  },
+  "Fe2+": {
+    "symbol": "Fe2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Fe",
+    "html": "Fe<sup>2+</sup>"
+  },
+  "Pb2+": {
+    "symbol": "Pb2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Pb",
+    "html": "Pb<sup>2+</sup>"
+  },
+  "Ni2+": {
+    "symbol": "Ni2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Ni",
+    "html": "Ni<sup>2+</sup>"
+  },
+  "Fe3+": {
+    "symbol": "Fe3+",
+    "charge": 3,
+    "type": "cation",
+    "formula": "Fe",
+    "html": "Fe<sup>3+</sup>"
+  },
+  "Pb4+": {
+    "symbol": "Pb4+",
+    "charge": 4,
+    "type": "cation",
+    "formula": "Pb",
+    "html": "Pb<sup>4+</sup>"
+  },
+  "Ti4+": {
+    "symbol": "Ti4+",
+    "charge": 4,
+    "type": "cation",
+    "formula": "Ti",
+    "html": "Ti<sup>4+</sup>"
+  },
+  "NH4+": {
+    "symbol": "NH4+",
+    "charge": 1,
+    "type": "cation",
+    "formula": "NH4",
+    "html": "NH<sub>4</sub><sup>+</sup>"
+  },
+  "Co2+": {
+    "symbol": "Co2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Co",
+    "html": "Co<sup>2+</sup>"
+  },
+  "Mn2+": {
+    "symbol": "Mn2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Mn",
+    "html": "Mn<sup>2+</sup>"
+  },
+  "Hg2+": {
+    "symbol": "Hg2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Hg",
+    "html": "Hg<sup>2+</sup>"
+  },
+  "Pt2+": {
+    "symbol": "Pt2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Pt",
+    "html": "Pt<sup>2+</sup>"
+  },
+  "Sn2+": {
+    "symbol": "Sn2+",
+    "charge": 2,
+    "type": "cation",
+    "formula": "Sn",
+    "html": "Sn<sup>2+</sup>"
+  },
+  "Cr3+": {
+    "symbol": "Cr3+",
+    "charge": 3,
+    "type": "cation",
+    "formula": "Cr",
+    "html": "Cr<sup>3+</sup>"
+  },
+  "Co3+": {
+    "symbol": "Co3+",
+    "charge": 3,
+    "type": "cation",
+    "formula": "Co",
+    "html": "Co<sup>3+</sup>"
+  },
+  "V3+": {
+    "symbol": "V3+",
+    "charge": 3,
+    "type": "cation",
+    "formula": "V",
+    "html": "V<sup>3+</sup>"
+  },
+  "Mn4+": {
+    "symbol": "Mn4+",
+    "charge": 4,
+    "type": "cation",
+    "formula": "Mn",
+    "html": "Mn<sup>4+</sup>"
+  },
+  "Pt4+": {
+    "symbol": "Pt4+",
+    "charge": 4,
+    "type": "cation",
+    "formula": "Pt",
+    "html": "Pt<sup>4+</sup>"
+  },
+  "Sn4+": {
+    "symbol": "Sn4+",
+    "charge": 4,
+    "type": "cation",
+    "formula": "Sn",
+    "html": "Sn<sup>4+</sup>"
+  },
+  "F-": {
+    "symbol": "F-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "F",
+    "html": "F<sup>-</sup>"
+  },
+  "Cl-": {
+    "symbol": "Cl-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "Cl",
+    "html": "Cl<sup>-</sup>"
+  },
+  "Br-": {
+    "symbol": "Br-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "Br",
+    "html": "Br<sup>-</sup>"
+  },
+  "I-": {
+    "symbol": "I-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "I",
+    "html": "I<sup>-</sup>"
+  },
+  "O2-": {
+    "symbol": "O2-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "O",
+    "html": "O<sup>2-</sup>"
+  },
+  "S2-": {
+    "symbol": "S2-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "S",
+    "html": "S<sup>2-</sup>"
+  },
+  "N3-": {
+    "symbol": "N3-",
+    "charge": 3,
+    "type": "anion",
+    "formula": "N",
+    "html": "N<sup>3-</sup>"
+  },
+  "P3-": {
+    "symbol": "P3-",
+    "charge": 3,
+    "type": "anion",
+    "formula": "P",
+    "html": "P<sup>3-</sup>"
+  },
+  "OH-": {
+    "symbol": "OH-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "OH",
+    "html": "OH<sup>-</sup>"
+  },
+  "NO3-": {
+    "symbol": "NO3-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "NO3",
+    "html": "NO<sub>3</sub><sup>-</sup>"
+  },
+  "CO32-": {
+    "symbol": "CO32-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "CO3",
+    "html": "CO<sub>3</sub><sup>2-</sup>"
+  },
+  "SO42-": {
+    "symbol": "SO42-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "SO4",
+    "html": "SO<sub>4</sub><sup>2-</sup>"
+  },
+  "PO43-": {
+    "symbol": "PO43-",
+    "charge": 3,
+    "type": "anion",
+    "formula": "PO4",
+    "html": "PO<sub>4</sub><sup>3-</sup>"
+  },
+  "BrO3-": {
+    "symbol": "BrO3-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "BrO3",
+    "html": "BrO<sub>3</sub><sup>-</sup>"
+  },
+  "ClO3-": {
+    "symbol": "ClO3-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "ClO3",
+    "html": "ClO<sub>3</sub><sup>-</sup>"
+  },
+  "CN-": {
+    "symbol": "CN-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "CN",
+    "html": "CN<sup>-</sup>"
+  },
+  "IO3-": {
+    "symbol": "IO3-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "IO3",
+    "html": "IO<sub>3</sub><sup>-</sup>"
+  },
+  "NO2-": {
+    "symbol": "NO2-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "NO2",
+    "html": "NO<sub>2</sub><sup>-</sup>"
+  },
+  "SCN-": {
+    "symbol": "SCN-",
+    "charge": 1,
+    "type": "anion",
+    "formula": "SCN",
+    "html": "SCN<sup>-</sup>"
+  },
+  "CrO42-": {
+    "symbol": "CrO42-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "CrO4",
+    "html": "CrO<sub>4</sub><sup>2-</sup>"
+  },
+  "Cr2O72-": {
+    "symbol": "Cr2O72-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "Cr2O7",
+    "html": "Cr<sub>2</sub>O<sub>7</sub><sup>2-</sup>"
+  },
+  "SO32-": {
+    "symbol": "SO32-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "SO3",
+    "html": "SO<sub>3</sub><sup>2-</sup>"
+  },
+  "S2O32-": {
+    "symbol": "S2O32-",
+    "charge": 2,
+    "type": "anion",
+    "formula": "S2O3",
+    "html": "S<sub>2</sub>O<sub>3</sub><sup>2-</sup>"
+  }
+}
