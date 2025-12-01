@@ -201,9 +201,16 @@
       class="start-animation-text block px-6 py-3 text-center opacity-0 scale-75 transition duration-300 transform"></span>
   </div>
 
+  <!-- Debug toggle -->
+  <button id="debug-toggle" type="button"
+    class="fixed right-3 top-3 z-50 rounded-full border border-slate-600 bg-slate-800 p-2 text-xs text-slate-200 shadow hover:bg-slate-700"
+    aria-pressed="true" aria-label="Toggle debug panel" title="Hide debug panel">
+    ⚙
+  </button>
+
   <!-- Debug Panel (Phase 7) -->
   <aside id="debug-panel"
-    class="hidden fixed right-0 top-0 h-screen w-80 overflow-y-auto border-l border-slate-700 bg-slate-800 p-4 text-xs">
+    class="fixed right-0 top-0 h-screen w-80 overflow-y-auto border-l border-slate-700 bg-slate-800 p-4 text-xs">
     <h2 class="mb-4 text-lg font-bold text-amber-400">🔧 Debug Panel</h2>
 
     <!-- Level Info -->
@@ -298,29 +305,29 @@
 
   <div class="mx-auto flex h-full w-full max-w-2xl flex-col gap-2 px-3 sm:px-4 lg:px-5 py-2 sm:py-3">
     <header
-      class="rounded-3xl border-4 border-amber-700/50 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-3 sm:p-4 shadow-lg">
+      class="rounded-3xl border border-amber-600/60 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-3 sm:p-4 shadow-lg">
       <div class="flex flex-wrap items-center justify-between gap-3">
         <div
-          class="rounded-2xl border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-4 sm:px-5 py-2.5 text-center shadow-md">
-          <p class="text-xs font-black uppercase tracking-wider text-amber-300">
+          class="rounded-2xl border border-slate-800/60 bg-slate-900/90 px-4 sm:px-5 py-2.5 text-center text-amber-200">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">
             Score
           </p>
-          <p class="text-xl sm:text-2xl font-black text-amber-100" id="score-display">0</p>
+          <p class="text-xl sm:text-2xl font-semibold" id="score-display">0</p>
         </div>
         <div
-          class="rounded-full border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-4 sm:px-5 py-2.5 text-center shadow-md">
-          <p class="text-xs font-black uppercase tracking-wider text-amber-300">
+          class="rounded-full border border-slate-800/60 bg-slate-900/90 px-4 sm:px-5 py-2.5 text-center text-amber-200">
+          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">
             Streak
           </p>
-          <p class="text-xl sm:text-2xl font-black text-amber-100" id="streak-display">0</p>
+          <p class="text-xl sm:text-2xl font-semibold" id="streak-display">0</p>
         </div>
       </div>
-      <div class="mt-2.5 flex items-center gap-3 text-xs">
-        <div class="h-3 flex-1 rounded-full border-2 border-amber-700/50 bg-amber-200/80 shadow-inner">
-          <div id="timer-bar" class="h-full rounded-full bg-gradient-to-r from-lime-500 to-lime-400 transition-all duration-200" style="width: 100%">
+      <div class="mt-2.5 flex items-center gap-3 text-xs text-slate-700">
+        <div class="h-2.5 flex-1 rounded-full border border-amber-500/60 bg-amber-200/60">
+          <div id="timer-bar" class="h-full rounded-full bg-lime-500 transition-all duration-200" style="width: 100%">
           </div>
         </div>
-        <span class="w-12 text-right font-black text-amber-900" id="timer-display">--</span>
+        <span class="w-12 text-right font-semibold text-amber-700" id="timer-display">--</span>
       </div>
     </header>
 
@@ -476,10 +483,8 @@
         <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-4 border-red-600/60 bg-red-100">
           <span class="text-5xl font-black text-red-600">!</span>
         </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-4">Invalid Selection</h3>
-        <div class="text-base font-semibold text-amber-900 leading-relaxed space-y-1" id="error-message">
-          <p>An error occurred.</p>
-        </div>
+        <h3 class="text-2xl font-black text-slate-900 mb-3">Invalid Selection</h3>
+        <p class="text-base font-medium text-amber-900" id="error-message">An error occurred.</p>
       </div>
       <div class="mt-8 flex justify-center">
         <button id="error-modal-close"

@@ -3846,13 +3846,7 @@ function openErrorModal(message) {
   if (!elements.errorModal || !elements.errorMessage) {
     return;
   }
-  // Split message by common separators and create paragraph elements
-  const parts = message.split(/\s*[•|]\s*/).filter(part => part.trim());
-  if (parts.length > 1) {
-    elements.errorMessage.innerHTML = parts.map(part => `<p>${part.trim()}</p>`).join('');
-  } else {
-    elements.errorMessage.innerHTML = `<p>${message}</p>`;
-  }
+  elements.errorMessage.textContent = message;
   elements.errorModal.classList.remove("invisible", "opacity-0");
   elements.errorModal.classList.add("visible", "opacity-100");
   elements.errorModal.setAttribute("aria-hidden", "false");
