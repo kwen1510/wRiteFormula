@@ -119,6 +119,7 @@ const elements = {
   startButton: document.getElementById("start-session-button"),
   endModal: document.getElementById("end-modal"),
   playAgainButton: document.getElementById("play-again-button"),
+  continueButton: document.getElementById("continue-button"),
   changeLevelButton: document.getElementById("change-level-button"),
   finalScore: document.getElementById("final-score"),
   finalStreak: document.getElementById("final-streak"),
@@ -463,6 +464,17 @@ async function loadConfig() {
 
   scoringRules = { ...defaultScoringRules, ...(state.config.scoringRules || {}) };
   state.config.scoringRules = scoringRules;
+
+  // Override duration from URL parameter if present
+  const durationParam = getUrlParameter('duration');
+  if (durationParam) {
+    const duration = parseInt(durationParam, 10);
+    if (!isNaN(duration) && duration > 0) {
+      scoringRules.countdownSeconds = duration;
+      console.log(`⏱️ Duration overridden via URL: ${duration}s`);
+    }
+  }
+
   state.timeLeft = scoringRules.countdownSeconds;
 
   state.debugPanelVisible = Boolean(state.config.debugPanelVisible);
@@ -475,10 +487,14 @@ async function init() {
   state.currentLevel = getInitialLevel();
 
   // Enable fast mode via URL param (?mode=fast)
+  // Enable fast mode via URL param (?mode=fast) - DEV ONLY
   const modeParam = (getUrlParameter('mode') || '').toLowerCase();
-  state.fastMode = modeParam === 'fast';
+  const isDev = ['localhost', '127.0.0.1'].includes(window.location.hostname);
+
+  state.fastMode = isDev && modeParam === 'fast';
+
   if (state.fastMode) {
-    console.log("[Mode] Fast mode enabled - skipping remediation quizzes.");
+    console.log("[Mode] Fast mode enabled (Dev Only) - skipping remediation quizzes.");
   }
 
   // Initialize new state fields (Phase 8)
@@ -587,6 +603,14 @@ function attachEndModalControls() {
     closeEndModal();
     resetGameState();
     openStartModal();
+  });
+
+  elements.continueButton?.addEventListener("click", () => {
+    closeEndModal();
+    // Continue session: keep score/streak, just reset level board/timer
+    state.sessionActive = true;
+    applyLevel(state.currentLevel);
+    console.log("🔄 Continuing level...");
   });
 }
 
@@ -1245,6 +1269,8 @@ function handleSubmitSelection() {
 
   const validationResult = runSelectionValidations(state.selectedIons);
   if (!validationResult.ok) {
+    handleIncorrectAnswer(); // Reset streak on invalid selection
+    updateScoreHud(); // Update UI immediately
     flashInvalidSelection(validationResult.message);
     return;
   }
@@ -1257,6 +1283,8 @@ function handleSubmitSelection() {
   );
 
   if (!cationEntry || !anionEntry) {
+    handleIncorrectAnswer(); // Reset streak
+    updateScoreHud(); // Update UI immediately
     logMessage("Select at least one cation and one anion before submitting.", "error");
     return;
   }
@@ -1266,6 +1294,8 @@ function handleSubmitSelection() {
 
   const challenge = buildChallenge(cation, anion);
   if (!challenge) {
+    handleIncorrectAnswer(); // Reset streak
+    updateScoreHud(); // Update UI immediately
     flashInvalidSelection("That pairing is not available yet. Try another match.");
     return;
   }
@@ -1961,8 +1991,7 @@ function handleIncorrectAnswer() {
   const oldStreak = state.streakCount;
   const oldMultiplier = getSafeMultiplier(state.streakMultiplier);
 
-  // Reset streak and multiplier
-  // Reset streak and multiplier
+  // Reset streak to 0 and multiplier to minimum
   state.streakCount = 0;
   state.streakMultiplier = scoringRules.minMultiplier || 1.0;
 
@@ -3577,6 +3606,12 @@ function closeModal() {
     elements.modal.classList.remove("visible");
     elements.modal.setAttribute("aria-hidden", "true");
   }, 180);
+
+  // Clear the "Name locked in" feedback message immediately
+  if (elements.remediationFeedback) {
+    elements.remediationFeedback.textContent = "";
+    elements.remediationFeedback.className = "";
+  }
 
   resetIonSelection();
   state.activeChallenge = null;

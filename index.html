@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="data:,">
-  <title>wRiteFormula Prototype</title>
+  <title>wRiteFormula</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fadeIn {
@@ -190,10 +190,14 @@
       pointer-events: none;
       z-index: 9999;
     }
+
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
   </style>
 </head>
 
-<body class="h-screen w-screen bg-slate-900 text-slate-100 overflow-hidden fixed inset-0">
+<body class="h-[100dvh] w-screen bg-slate-900 text-slate-100 overflow-hidden fixed inset-0">
   <canvas id="particle-canvas"></canvas>
   <div id="start-animation"
     class="pointer-events-none fixed inset-0 z-40 flex items-center justify-center bg-slate-900/60 backdrop-blur-md text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[0.25em] sm:tracking-[0.3em] text-amber-100 drop-shadow-lg opacity-0 transition duration-300">
@@ -296,7 +300,7 @@
       </div>
   </aside>
 
-  <div class="mx-auto flex h-full w-full max-w-2xl flex-col gap-2 px-2 sm:px-3 lg:px-4 py-2 pb-safe">
+  <div class="mx-auto flex h-full max-h-[100dvh] w-full max-w-2xl flex-col gap-2 px-2 sm:px-3 lg:px-4 py-2 pb-safe">
     <header
       class="flex-shrink-0 rounded-3xl border-4 border-amber-700/50 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-2 sm:p-3 shadow-lg">
       <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
@@ -317,7 +321,9 @@
       </div>
       <div class="mt-2 flex items-center gap-2 sm:gap-3 text-xs">
         <div class="h-3 flex-1 rounded-full border-2 border-amber-700/50 bg-amber-200/80 shadow-inner">
-          <div id="timer-bar" class="h-full rounded-full bg-gradient-to-r from-lime-500 to-lime-400 transition-all duration-200" style="width: 100%">
+          <div id="timer-bar"
+            class="h-full rounded-full bg-gradient-to-r from-lime-500 to-lime-400 transition-all duration-200"
+            style="width: 100%">
           </div>
         </div>
         <span class="w-12 text-right font-black text-amber-900" id="timer-display">--</span>
@@ -472,10 +478,14 @@
           </div>
         </div>
       </div>
-      <div class="mt-8">
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button id="continue-button"
+          class="flex-1 rounded-2xl border-4 border-amber-900/50 bg-gradient-to-b from-amber-400 to-amber-500 px-6 py-5 text-lg font-black uppercase tracking-widest text-amber-900 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
+          Continue
+        </button>
         <button id="play-again-button"
-          class="w-full rounded-2xl border-4 border-slate-900/50 bg-gradient-to-b from-slate-800 to-slate-900 px-12 py-5 text-lg font-black uppercase tracking-widest text-amber-200 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
-          Play Again
+          class="flex-1 rounded-2xl border-4 border-slate-900/50 bg-gradient-to-b from-slate-800 to-slate-900 px-6 py-5 text-lg font-black uppercase tracking-widest text-amber-200 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
+          Restart
         </button>
       </div>
     </div>
@@ -487,7 +497,8 @@
     <div
       class="w-full max-w-md rounded-3xl border-4 border-amber-900/40 bg-gradient-to-b from-[#f5e6c8] to-[#ede0c4] p-8 shadow-2xl">
       <div class="text-center">
-        <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-4 border-red-600/60 bg-red-100">
+        <div
+          class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-4 border-red-600/60 bg-red-100">
           <span class="text-5xl font-black text-red-600">!</span>
         </div>
         <h3 class="text-2xl font-black text-slate-900 mb-4">Invalid Selection</h3>

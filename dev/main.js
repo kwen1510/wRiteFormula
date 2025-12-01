@@ -114,10 +114,12 @@ const elements = {
   remediationFeedback: document.getElementById("remediation-feedback"),
   acknowledgeButton: document.getElementById("acknowledge-answer"),
   closeModalButton: document.getElementById("close-modal"),
+  loadingModal: document.getElementById("loading-modal"),
   startModal: document.getElementById("start-modal"),
   startButton: document.getElementById("start-session-button"),
   endModal: document.getElementById("end-modal"),
   playAgainButton: document.getElementById("play-again-button"),
+  continueButton: document.getElementById("continue-button"),
   changeLevelButton: document.getElementById("change-level-button"),
   finalScore: document.getElementById("final-score"),
   finalStreak: document.getElementById("final-streak"),
@@ -462,6 +464,17 @@ async function loadConfig() {
 
   scoringRules = { ...defaultScoringRules, ...(state.config.scoringRules || {}) };
   state.config.scoringRules = scoringRules;
+
+  // Override duration from URL parameter if present
+  const durationParam = getUrlParameter('duration');
+  if (durationParam) {
+    const duration = parseInt(durationParam, 10);
+    if (!isNaN(duration) && duration > 0) {
+      scoringRules.countdownSeconds = duration;
+      console.log(`⏱️ Duration overridden via URL: ${duration}s`);
+    }
+  }
+
   state.timeLeft = scoringRules.countdownSeconds;
 
   state.debugPanelVisible = Boolean(state.config.debugPanelVisible);
@@ -473,9 +486,11 @@ async function init() {
   // Set initial level from URL parameter or localStorage
   state.currentLevel = getInitialLevel();
 
-  // Enable fast mode via URL param (?mode=fast)
+  // Enable fast mode via URL param (?mode=fast) - DEV VERSION ONLY
   const modeParam = (getUrlParameter('mode') || '').toLowerCase();
+
   state.fastMode = modeParam === 'fast';
+
   if (state.fastMode) {
     console.log("[Mode] Fast mode enabled - skipping remediation quizzes.");
   }
@@ -527,9 +542,19 @@ async function init() {
     // Initial debug panel update
     updateDebugPanel();
 
+    // Hide loading modal and show start modal
+    if (elements.loadingModal) {
+      elements.loadingModal.classList.add("hidden");
+      elements.loadingModal.setAttribute("aria-hidden", "true");
+    }
     openStartModal();
   } catch (error) {
     console.error("Initialisation error:", error);
+    // Hide loading modal on error too
+    if (elements.loadingModal) {
+      elements.loadingModal.classList.add("hidden");
+      elements.loadingModal.setAttribute("aria-hidden", "true");
+    }
   }
 }
 
@@ -576,6 +601,14 @@ function attachEndModalControls() {
     closeEndModal();
     resetGameState();
     openStartModal();
+  });
+
+  elements.continueButton?.addEventListener("click", () => {
+    closeEndModal();
+    // Continue session: keep score/streak, just reset level board/timer
+    state.sessionActive = true;
+    applyLevel(state.currentLevel);
+    console.log("🔄 Continuing level...");
   });
 }
 
@@ -1134,9 +1167,8 @@ function renderTokensToGrid(tokens) {
   // Render slots
   slots.forEach((slot) => {
     const wrapper = document.createElement("div");
-    // Use w-full h-full to fill the grid cell, but keep aspect-square to ensure circle shape
-    // max-w/max-h ensures it fits within the cell if the cell is rectangular
-    wrapper.className = "flex aspect-square items-center justify-center w-full h-full max-w-full max-h-full";
+    // Each cell is already square due to grid-cols-4 grid-rows-4 on a square container
+    wrapper.className = "flex items-center justify-center w-full h-full";
 
     if (slot.type === "ion") {
       const button = createIonButton(slot.species);
@@ -1144,9 +1176,9 @@ function renderTokensToGrid(tokens) {
       wrapper.appendChild(button);
     } else {
       const hole = document.createElement("div");
-      // Use w-[85%] h-[85%] to be slightly smaller than the cell
+      // Ensure perfect circles with aspect-square
       hole.className =
-        "w-[85%] h-[85%] rounded-full bg-gradient-to-b from-slate-700 to-slate-800 shadow-inner";
+        "aspect-square w-[85%] max-w-[85%] max-h-[85%] rounded-full bg-gradient-to-b from-slate-700 to-slate-800 shadow-inner";
       wrapper.appendChild(hole);
     }
 
@@ -1166,8 +1198,8 @@ function createIonButton(species) {
     species.type === "cation"
       ? "border-amber-600 bg-gradient-to-b from-amber-200 to-amber-300 text-amber-900 shadow-[0_4px_0_0_rgba(180,83,9,0.5)]"
       : "border-slate-400 bg-gradient-to-b from-slate-100 to-slate-200 text-slate-800 shadow-[0_4px_0_0_rgba(71,85,105,0.4)]";
-  // box-border keeps the outer diameter identical to holes; padding removed for consistency
-  button.className = `ion-button w-[85%] h-[85%] box-border inline-flex items-center justify-center rounded-full border-4 ${colorClass} text-center text-sm font-bold shadow-lg transition hover:-translate-y-1 hover:shadow-xl active:translate-y-0`;
+  // Ensure perfect circles with aspect-square and max dimensions
+  button.className = `ion-button aspect-square w-[85%] max-w-[85%] max-h-[85%] box-border inline-flex items-center justify-center rounded-full border-4 ${colorClass} text-center text-sm font-bold shadow-lg transition hover:-translate-y-1 hover:shadow-xl active:translate-y-0`;
 
   // Use HTML formatted version if available, otherwise fallback to plain symbol
   const displayHtml = state.speciesHtml.get(species.primarySymbol) || species.primarySymbol;
@@ -1235,6 +1267,8 @@ function handleSubmitSelection() {
 
   const validationResult = runSelectionValidations(state.selectedIons);
   if (!validationResult.ok) {
+    handleIncorrectAnswer(); // Reset streak on invalid selection
+    updateScoreHud(); // Update UI immediately
     flashInvalidSelection(validationResult.message);
     return;
   }
@@ -1247,6 +1281,8 @@ function handleSubmitSelection() {
   );
 
   if (!cationEntry || !anionEntry) {
+    handleIncorrectAnswer(); // Reset streak
+    updateScoreHud(); // Update UI immediately
     logMessage("Select at least one cation and one anion before submitting.", "error");
     return;
   }
@@ -1256,6 +1292,8 @@ function handleSubmitSelection() {
 
   const challenge = buildChallenge(cation, anion);
   if (!challenge) {
+    handleIncorrectAnswer(); // Reset streak
+    updateScoreHud(); // Update UI immediately
     flashInvalidSelection("That pairing is not available yet. Try another match.");
     return;
   }
@@ -1951,8 +1989,7 @@ function handleIncorrectAnswer() {
   const oldStreak = state.streakCount;
   const oldMultiplier = getSafeMultiplier(state.streakMultiplier);
 
-  // Reset streak and multiplier
-  // Reset streak and multiplier
+  // Reset streak to 0 and multiplier to minimum
   state.streakCount = 0;
   state.streakMultiplier = scoringRules.minMultiplier || 1.0;
 
@@ -3568,6 +3605,12 @@ function closeModal() {
     elements.modal.setAttribute("aria-hidden", "true");
   }, 180);
 
+  // Clear the "Name locked in" feedback message immediately
+  if (elements.remediationFeedback) {
+    elements.remediationFeedback.textContent = "";
+    elements.remediationFeedback.className = "";
+  }
+
   resetIonSelection();
   state.activeChallenge = null;
   updateScoreHud();
@@ -3846,7 +3889,13 @@ function openErrorModal(message) {
   if (!elements.errorModal || !elements.errorMessage) {
     return;
   }
-  elements.errorMessage.textContent = message;
+  // Split message by common separators and create paragraph elements
+  const parts = message.split(/\s*[•|]\s*/).filter(part => part.trim());
+  if (parts.length > 1) {
+    elements.errorMessage.innerHTML = parts.map(part => `<p>${part.trim()}</p>`).join('');
+  } else {
+    elements.errorMessage.innerHTML = `<p>${message}</p>`;
+  }
   elements.errorModal.classList.remove("invisible", "opacity-0");
   elements.errorModal.classList.add("visible", "opacity-100");
   elements.errorModal.setAttribute("aria-hidden", "false");

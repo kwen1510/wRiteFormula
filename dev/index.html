@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="data:,">
-  <title>wRiteFormula Prototype</title>
+  <title>wRiteFormula</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <style>
     @keyframes fadeIn {
@@ -190,10 +190,14 @@
       pointer-events: none;
       z-index: 9999;
     }
+
+    .pb-safe {
+      padding-bottom: env(safe-area-inset-bottom);
+    }
   </style>
 </head>
 
-<body class="h-screen w-screen bg-slate-900 text-slate-100 overflow-hidden fixed inset-0">
+<body class="h-[100dvh] w-screen bg-slate-900 text-slate-100 overflow-hidden fixed inset-0">
   <canvas id="particle-canvas"></canvas>
   <div id="start-animation"
     class="pointer-events-none fixed inset-0 z-40 flex items-center justify-center bg-slate-900/60 backdrop-blur-md text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-[0.25em] sm:tracking-[0.3em] text-amber-100 drop-shadow-lg opacity-0 transition duration-300">
@@ -303,52 +307,56 @@
       </div>
   </aside>
 
-  <div class="mx-auto flex h-full w-full max-w-2xl flex-col gap-2 px-3 sm:px-4 lg:px-5 py-2 sm:py-3">
+  <div class="mx-auto flex h-full max-h-[100dvh] w-full max-w-2xl flex-col gap-2 px-2 sm:px-3 lg:px-4 py-2 pb-safe">
     <header
-      class="rounded-3xl border border-amber-600/60 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-3 sm:p-4 shadow-lg">
-      <div class="flex flex-wrap items-center justify-between gap-3">
+      class="flex-shrink-0 rounded-3xl border-4 border-amber-700/50 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-2 sm:p-3 shadow-lg">
+      <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
         <div
-          class="rounded-2xl border border-slate-800/60 bg-slate-900/90 px-4 sm:px-5 py-2.5 text-center text-amber-200">
-          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">
+          class="rounded-2xl border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-3 sm:px-4 py-2 text-center shadow-md">
+          <p class="text-xs font-black uppercase tracking-wider text-amber-300">
             Score
           </p>
-          <p class="text-xl sm:text-2xl font-semibold" id="score-display">0</p>
+          <p class="text-xl sm:text-2xl font-black text-amber-100" id="score-display">0</p>
         </div>
         <div
-          class="rounded-full border border-slate-800/60 bg-slate-900/90 px-4 sm:px-5 py-2.5 text-center text-amber-200">
-          <p class="text-xs font-semibold uppercase tracking-wide text-amber-400">
+          class="rounded-full border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-3 sm:px-4 py-2 text-center shadow-md">
+          <p class="text-xs font-black uppercase tracking-wider text-amber-300">
             Streak
           </p>
-          <p class="text-xl sm:text-2xl font-semibold" id="streak-display">0</p>
+          <p class="text-xl sm:text-2xl font-black text-amber-100" id="streak-display">0</p>
         </div>
       </div>
-      <div class="mt-2.5 flex items-center gap-3 text-xs text-slate-700">
-        <div class="h-2.5 flex-1 rounded-full border border-amber-500/60 bg-amber-200/60">
-          <div id="timer-bar" class="h-full rounded-full bg-lime-500 transition-all duration-200" style="width: 100%">
+      <div class="mt-2 flex items-center gap-2 sm:gap-3 text-xs">
+        <div class="h-3 flex-1 rounded-full border-2 border-amber-700/50 bg-amber-200/80 shadow-inner">
+          <div id="timer-bar"
+            class="h-full rounded-full bg-gradient-to-r from-lime-500 to-lime-400 transition-all duration-200"
+            style="width: 100%">
           </div>
         </div>
-        <span class="w-12 text-right font-semibold text-amber-700" id="timer-display">--</span>
+        <span class="w-12 text-right font-black text-amber-900" id="timer-display">--</span>
       </div>
     </header>
 
     <main
-      class="flex flex-1 flex-col gap-2 rounded-3xl border-4 border-amber-900/40 bg-[#f5e6c8] p-2 sm:p-3 shadow-2xl overflow-hidden">
+      class="flex flex-1 min-h-0 flex-col gap-2 rounded-3xl border-4 border-amber-900/40 bg-[#f5e6c8] p-2 sm:p-3 shadow-2xl overflow-hidden">
       <!-- Board Grid -->
-      <div id="board-grid" class="flex-1 min-h-0 w-full grid grid-cols-4 grid-rows-4 gap-2 place-items-center">
-        <!-- Grid items will be injected here -->
+      <div class="flex-1 min-h-0 w-full flex items-center justify-center overflow-hidden">
+        <div id="board-grid" class="w-full aspect-square max-h-full grid grid-cols-4 grid-rows-4 gap-1.5 sm:gap-2 p-1">
+          <!-- Grid items will be injected here -->
+        </div>
       </div>
 
       <!-- Selection Tray & Submit -->
-      <div class="mt-auto flex flex-row gap-2 pb-1">
+      <div class="flex-shrink-0 flex flex-row gap-2 pb-1">
         <div id="selection-tray"
-          class="flex h-[4.5rem] flex-1 flex-wrap items-center justify-center gap-2 overflow-y-auto rounded-2xl border-4 border-amber-900/30 bg-gradient-to-b from-amber-800/20 to-amber-900/30 px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.2)] transition-all">
+          class="flex h-16 sm:h-[4.5rem] flex-1 flex-wrap items-center justify-center gap-2 overflow-y-auto rounded-2xl border-4 border-amber-900/30 bg-gradient-to-b from-amber-800/20 to-amber-900/30 px-2 sm:px-3 py-2 shadow-[inset_0_4px_8px_rgba(0,0,0,0.2)] transition-all">
           <span class="text-xs font-semibold uppercase tracking-wide text-amber-800">
             Tap ions to add/remove them from your attempt.
           </span>
         </div>
 
         <button id="submit-selection" disabled
-          class="group relative flex h-[4.5rem] items-center justify-center overflow-hidden rounded-2xl border-4 border-slate-900/50 bg-gradient-to-b from-slate-800 to-slate-900 px-8 text-sm font-black uppercase tracking-widest text-amber-200 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all disabled:opacity-60 disabled:shadow-none disabled:grayscale enabled:hover:scale-[1.02] enabled:hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] enabled:active:translate-y-1 enabled:active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
+          class="group relative flex h-16 sm:h-[4.5rem] items-center justify-center overflow-hidden rounded-2xl border-4 border-slate-900/50 bg-gradient-to-b from-slate-800 to-slate-900 px-6 sm:px-8 text-xs sm:text-sm font-black uppercase tracking-widest text-amber-200 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all disabled:opacity-60 disabled:shadow-none disabled:grayscale enabled:hover:scale-[1.02] enabled:hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] enabled:active:translate-y-1 enabled:active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
           <span class="relative z-10">Submit</span>
           <div
             class="absolute inset-0 -translate-x-full bg-gradient-to-r from-transparent via-amber-400/20 to-transparent transition-transform duration-1000 group-hover:translate-x-full">
@@ -356,6 +364,18 @@
         </button>
       </div>
     </main>
+  </div>
+
+  <div id="loading-modal" class="fixed inset-0 z-50 flex items-center justify-center bg-slate-900/95 px-4"
+    aria-hidden="false">
+    <div
+      class="w-full max-w-lg rounded-3xl border-4 border-amber-900/50 bg-gradient-to-b from-[#f5e6c8] to-[#ede0c4] p-8 text-center shadow-2xl">
+      <div class="mb-6">
+        <div class="mx-auto h-16 w-16 animate-spin rounded-full border-4 border-amber-200 border-t-slate-800"></div>
+      </div>
+      <h2 class="text-3xl font-black text-slate-900">Loading Game...</h2>
+      <p class="mt-3 text-sm font-semibold text-amber-800">Preparing formulas and ions</p>
+    </div>
   </div>
 
   <div id="start-modal" class="fixed inset-0 z-50 hidden items-center justify-center bg-slate-900/95 px-4"
@@ -465,10 +485,14 @@
           </div>
         </div>
       </div>
-      <div class="mt-8">
+      <div class="mt-8 flex flex-col gap-3 sm:flex-row">
+        <button id="continue-button"
+          class="flex-1 rounded-2xl border-4 border-amber-900/50 bg-gradient-to-b from-amber-400 to-amber-500 px-6 py-5 text-lg font-black uppercase tracking-widest text-amber-900 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
+          Continue
+        </button>
         <button id="play-again-button"
-          class="w-full rounded-2xl border-4 border-slate-900/50 bg-gradient-to-b from-slate-800 to-slate-900 px-12 py-5 text-lg font-black uppercase tracking-widest text-amber-200 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
-          Play Again
+          class="flex-1 rounded-2xl border-4 border-slate-900/50 bg-gradient-to-b from-slate-800 to-slate-900 px-6 py-5 text-lg font-black uppercase tracking-widest text-amber-200 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
+          Restart
         </button>
       </div>
     </div>
@@ -480,11 +504,14 @@
     <div
       class="w-full max-w-md rounded-3xl border-4 border-amber-900/40 bg-gradient-to-b from-[#f5e6c8] to-[#ede0c4] p-8 shadow-2xl">
       <div class="text-center">
-        <div class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-4 border-red-600/60 bg-red-100">
+        <div
+          class="mx-auto mb-4 flex h-20 w-20 items-center justify-center rounded-full border-4 border-red-600/60 bg-red-100">
           <span class="text-5xl font-black text-red-600">!</span>
         </div>
-        <h3 class="text-2xl font-black text-slate-900 mb-3">Invalid Selection</h3>
-        <p class="text-base font-medium text-amber-900" id="error-message">An error occurred.</p>
+        <h3 class="text-2xl font-black text-slate-900 mb-4">Invalid Selection</h3>
+        <div class="text-base font-semibold text-amber-900 leading-relaxed space-y-1" id="error-message">
+          <p>An error occurred.</p>
+        </div>
       </div>
       <div class="mt-8 flex justify-center">
         <button id="error-modal-close"
