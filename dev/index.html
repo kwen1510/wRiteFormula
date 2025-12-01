@@ -2,6 +2,15 @@
 <html lang="en">
 
 <head>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-D2R6PF7ZMS"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-D2R6PF7ZMS');
+  </script>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link rel="icon" href="data:,">
@@ -312,14 +321,14 @@
       class="flex-shrink-0 rounded-3xl border-4 border-amber-700/50 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-2 sm:p-3 shadow-lg">
       <div class="flex flex-wrap items-center justify-between gap-2 sm:gap-3">
         <div
-          class="rounded-2xl border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-3 sm:px-4 py-2 text-center shadow-md">
+          class="rounded-full border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-4 sm:px-5 py-2 text-center shadow-md">
           <p class="text-xs font-black uppercase tracking-wider text-amber-300">
             Score
           </p>
           <p class="text-xl sm:text-2xl font-black text-amber-100" id="score-display">0</p>
         </div>
         <div
-          class="rounded-full border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-3 sm:px-4 py-2 text-center shadow-md">
+          class="rounded-full border-4 border-amber-900/40 bg-gradient-to-b from-slate-800 to-slate-900 px-4 sm:px-5 py-2 text-center shadow-md">
           <p class="text-xs font-black uppercase tracking-wider text-amber-300">
             Streak
           </p>
@@ -400,9 +409,6 @@
       <div
         class="relative w-full max-w-3xl transform rounded-3xl border-4 border-amber-900/50 bg-gradient-to-b from-[#f5e6c8] to-[#ede0c4] p-4 text-left shadow-2xl transition-all sm:p-6">
         <header class="mb-3 sm:mb-4">
-          <p class="text-xs uppercase tracking-wide text-amber-700">
-            Quick Check
-          </p>
           <h2 class="text-lg font-semibold text-slate-900 sm:text-2xl" id="remediation-title">
             Identify the correct formula and name.
           </h2>
