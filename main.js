@@ -16,7 +16,53 @@ const defaultScoringRules = {
 
 let scoringRules = { ...defaultScoringRules };
 
-const STORAGE_LEVEL_KEY = "wfCurrentLevel";
+const STORAGE_LEVEL_KEY = "writeFormula_currentLevel_2025";
+const STORAGE_HIGH_SCORE_KEY = "writeFormula_highScore_2025";
+
+// Level color configuration
+const levelColors = {
+  PINK: {
+    levels: [1, 2, 3, 4],
+    border: "border-pink-500/30",
+    gradientFrom: "from-pink-400/20",
+    gradientTo: "to-pink-500/30",
+    textColor: "text-pink-800"
+  },
+  ORANGE: {
+    levels: [5, 6, 7],
+    border: "border-orange-500/30",
+    gradientFrom: "from-orange-400/20",
+    gradientTo: "to-orange-500/30",
+    textColor: "text-orange-800"
+  },
+  GREEN: {
+    levels: [8, 9, 10, 11, 12, 13, 14, 15],
+    border: "border-green-500/30",
+    gradientFrom: "from-green-400/20",
+    gradientTo: "to-green-500/30",
+    textColor: "text-green-800"
+  },
+  BLUE: {
+    levels: [16, 17, 18, 19],
+    border: "border-blue-500/30",
+    gradientFrom: "from-blue-400/20",
+    gradientTo: "to-blue-500/30",
+    textColor: "text-blue-800"
+  },
+  GREY: {
+    levels: [20],
+    border: "border-slate-500/30",
+    gradientFrom: "from-slate-400/20",
+    gradientTo: "to-slate-500/30",
+    textColor: "text-slate-800"
+  },
+  DEFAULT: {
+    border: "border-amber-900/30",
+    gradientFrom: "from-amber-800/20",
+    gradientTo: "to-amber-900/30",
+    textColor: "text-amber-800"
+  }
+};
 
 const state = {
   // Data sources
@@ -42,6 +88,9 @@ const state = {
   streakMultiplier: 1.0,
   streakCount: 0,
   bestStreak: 0,
+
+  // High Score Tracking
+  highScore: 0,
 
   // NEW: Focus Compounds
   currentLevelFocusCompounds: [],
@@ -124,6 +173,8 @@ const elements = {
   finalScore: document.getElementById("final-score"),
   finalStreak: document.getElementById("final-streak"),
   finalRounds: document.getElementById("final-rounds"),
+  finalHighScore: document.getElementById("final-high-score"),
+  highScoreIndicator: document.getElementById("high-score-indicator"),
   errorModal: document.getElementById("error-modal"),
   errorMessage: document.getElementById("error-message"),
   errorModalClose: document.getElementById("error-modal-close"),
@@ -506,6 +557,9 @@ async function init() {
   state.masteredFocusCompounds = new Set();
   state.boardFillTarget = 8; // Start with 8 ions (50% of max)
   state.boardGeneration = 0;
+
+  // Load high score from localStorage
+  loadHighScore();
 
   // Load config (e.g., debug panel visibility)
   await loadConfig();
@@ -1788,9 +1842,8 @@ function renderOptions(container, options, type) {
 function setFeedbackContent(message, useHtml = false) {
   if (!elements.remediationFeedback) return;
 
-  // Style the feedback box
-  // Style the feedback box
-  elements.remediationFeedback.className = "mt-4 rounded-xl border border-rose-500/50 bg-rose-950/30 p-4 text-center text-sm font-medium text-rose-200 shadow-lg backdrop-blur-sm transition-all duration-300 whitespace-pre-line";
+  // Style the feedback box with better text contrast
+  elements.remediationFeedback.className = "mt-4 rounded-xl border-2 border-rose-600/70 bg-rose-100/95 p-4 text-center text-sm font-semibold text-rose-900 shadow-lg transition-all duration-300 whitespace-pre-line";
 
   if (useHtml) {
     elements.remediationFeedback.innerHTML = message;
@@ -1877,6 +1930,7 @@ function handleOptionClick(button, type) {
 
   // Wrong answer - break streak and reset multiplier
   handleIncorrectAnswer();
+  updateScoreHud(); // Update UI immediately to show streak reset
 
   button.disabled = true;
   button.classList.add("border-rose-500", "bg-rose-500/20", "opacity-70");
@@ -2410,10 +2464,14 @@ function checkLevelUpCondition() {
  */
 function levelUp() {
   const nextLevelNum = state.currentLevel + 1;
+  console.log(`[Level Up] Attempting to level up from ${state.currentLevel} to ${nextLevelNum}`);
+  console.log(`[Level Up] Total levels loaded: ${state.levels.length}`);
+  console.log(`[Level Up] Available level numbers:`, state.levels.map(l => l.level));
+
   const nextLevel = state.levels.find((lvl) => lvl.level === nextLevelNum);
 
   if (!nextLevel) {
-    console.log(`[Level Up] Already at max level ${state.currentLevel}`);
+    console.log(`[Level Up] Already at max level ${state.currentLevel} - Level ${nextLevelNum} not found in data`);
     return;
   }
 
@@ -2953,6 +3011,10 @@ function handleTimeExpiry() {
   if (!state.activeChallenge) {
     resetIonSelection();
   }
+
+  // Close remediation modal if it's open
+  closeModal();
+
   console.log(`⏱ Time expired! Final Score: ${state.score}, Best Streak: ${state.bestStreak}, Rounds: ${Math.max(1, state.round - 1)}`);
   openEndModal();
 }
@@ -3007,6 +3069,9 @@ function smoothLevelTransition(nextLevelEntry) {
 
   // Add new ions from the new level
   addNewIonsToBoard(state.removedIonsChargeInfo);
+
+  // Update selection tray colors for new level
+  updateSelectionTrayColors();
 
   console.log(`📈 Transitioned to Level ${nextLevelEntry.level} - ${nextLevelEntry.rationale}`);
   console.log(`[Level ${nextLevelEntry.level}] New focus compounds: ${state.currentLevelFocusCompounds.length}`);
@@ -3618,18 +3683,70 @@ function closeModal() {
   updateScoreHud();
 }
 
+/**
+ * Get the color scheme for the selection tray based on current level
+ */
+function getLevelColorScheme() {
+  const level = state.currentLevel;
+
+  // Find which color group this level belongs to
+  for (const [colorName, config] of Object.entries(levelColors)) {
+    if (colorName === 'DEFAULT') continue;
+    if (config.levels.includes(level)) {
+      return config;
+    }
+  }
+
+  // Return default colors if level not found
+  return levelColors.DEFAULT;
+}
+
+/**
+ * Update the selection tray colors based on current level
+ */
+function updateSelectionTrayColors() {
+  const tray = elements.selectionTray;
+  if (!tray) return;
+
+  const colorScheme = getLevelColorScheme();
+  console.log(`[Tray Color] Level ${state.currentLevel}: Applying ${colorScheme.border}, ${colorScheme.gradientFrom}, ${colorScheme.gradientTo}`);
+
+  // Remove all possible color classes
+  const allBorderClasses = ['border-pink-500/30', 'border-orange-500/30', 'border-green-500/30', 'border-blue-500/30', 'border-slate-500/30', 'border-amber-900/30'];
+  const allGradientFromClasses = ['from-pink-400/20', 'from-orange-400/20', 'from-green-400/20', 'from-blue-400/20', 'from-slate-400/20', 'from-amber-800/20'];
+  const allGradientToClasses = ['to-pink-500/30', 'to-orange-500/30', 'to-green-500/30', 'to-blue-500/30', 'to-slate-500/30', 'to-amber-900/30'];
+
+  tray.classList.remove(...allBorderClasses, ...allGradientFromClasses, ...allGradientToClasses);
+
+  // Add new color classes
+  tray.classList.add(colorScheme.border, colorScheme.gradientFrom, colorScheme.gradientTo);
+
+  console.log(`[Tray Color] Applied. Current classes:`, tray.className);
+
+  // Update text color for placeholder text
+  const placeholder = tray.querySelector('.text-amber-800, .text-pink-800, .text-orange-800, .text-green-800, .text-blue-800, .text-slate-800');
+  if (placeholder) {
+    placeholder.classList.remove('text-pink-800', 'text-orange-800', 'text-green-800', 'text-blue-800', 'text-slate-800', 'text-amber-800');
+    placeholder.classList.add(colorScheme.textColor);
+  }
+}
+
 function updateSelectionTray() {
   const tray = elements.selectionTray;
   if (!tray) {
     return;
   }
 
+  // Update tray colors based on current level
+  updateSelectionTrayColors();
+
   tray.innerHTML = "";
 
   if (state.selectedIons.length === 0) {
+    const colorScheme = getLevelColorScheme();
     const placeholder = document.createElement("span");
     placeholder.className =
-      "text-xs font-semibold uppercase tracking-wide text-amber-500";
+      `text-xs font-semibold uppercase tracking-wide ${colorScheme.textColor}`;
     placeholder.textContent = "Tap ions to add/remove them from your attempt.";
     tray.appendChild(placeholder);
   } else {
@@ -3727,6 +3844,37 @@ function saveLevel(level) {
 
 function clearSavedLevel() {
   // No-op: localStorage disabled - always start fresh on page load
+}
+
+function loadHighScore() {
+  try {
+    const saved = localStorage.getItem(STORAGE_HIGH_SCORE_KEY);
+    if (saved) {
+      const highScore = parseInt(saved, 10);
+      if (!isNaN(highScore) && highScore >= 0) {
+        state.highScore = highScore;
+        console.log(`📊 High Score loaded: ${highScore}`);
+        return;
+      }
+    }
+  } catch (error) {
+    console.warn('Failed to load high score:', error);
+  }
+  state.highScore = 0;
+}
+
+function saveHighScore(score) {
+  try {
+    if (score > state.highScore) {
+      state.highScore = score;
+      localStorage.setItem(STORAGE_HIGH_SCORE_KEY, score.toString());
+      console.log(`🏆 New High Score: ${score}`);
+      return true; // New high score
+    }
+  } catch (error) {
+    console.warn('Failed to save high score:', error);
+  }
+  return false; // Not a new high score
 }
 
 function runSelectionValidations(selection) {
@@ -3839,9 +3987,26 @@ function openEndModal() {
     return;
   }
 
+  // Check and save high score
+  const isNewHighScore = saveHighScore(state.score);
+
   elements.finalScore.textContent = state.score;
   elements.finalStreak.textContent = state.bestStreak ?? state.streakCount ?? 0;
   elements.finalRounds.textContent = Math.max(1, state.round - 1);
+
+  // Update high score display
+  if (elements.finalHighScore) {
+    elements.finalHighScore.textContent = state.highScore;
+  }
+
+  // Show "New High Score!" indicator if applicable
+  if (elements.highScoreIndicator) {
+    if (isNewHighScore && state.score > 0) {
+      elements.highScoreIndicator.classList.remove('hidden');
+    } else {
+      elements.highScoreIndicator.classList.add('hidden');
+    }
+  }
 
   elements.endModal.classList.remove("hidden");
   elements.endModal.classList.add("flex");
