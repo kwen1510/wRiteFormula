@@ -1145,9 +1145,8 @@ function renderTokensToGrid(tokens) {
   // Render slots
   slots.forEach((slot) => {
     const wrapper = document.createElement("div");
-    // Use w-full h-full to fill the grid cell, but keep aspect-square to ensure circle shape
-    // max-w/max-h ensures it fits within the cell if the cell is rectangular
-    wrapper.className = "flex aspect-square items-center justify-center w-full h-full max-w-full max-h-full";
+    // Each cell is already square due to grid-cols-4 grid-rows-4 on a square container
+    wrapper.className = "flex items-center justify-center w-full h-full";
 
     if (slot.type === "ion") {
       const button = createIonButton(slot.species);
@@ -1155,9 +1154,9 @@ function renderTokensToGrid(tokens) {
       wrapper.appendChild(button);
     } else {
       const hole = document.createElement("div");
-      // Use w-[85%] h-[85%] to be slightly smaller than the cell
+      // Ensure perfect circles with aspect-square
       hole.className =
-        "w-[85%] h-[85%] rounded-full bg-gradient-to-b from-slate-700 to-slate-800 shadow-inner";
+        "aspect-square w-[85%] max-w-[85%] max-h-[85%] rounded-full bg-gradient-to-b from-slate-700 to-slate-800 shadow-inner";
       wrapper.appendChild(hole);
     }
 
@@ -1177,8 +1176,8 @@ function createIonButton(species) {
     species.type === "cation"
       ? "border-amber-600 bg-gradient-to-b from-amber-200 to-amber-300 text-amber-900 shadow-[0_4px_0_0_rgba(180,83,9,0.5)]"
       : "border-slate-400 bg-gradient-to-b from-slate-100 to-slate-200 text-slate-800 shadow-[0_4px_0_0_rgba(71,85,105,0.4)]";
-  // box-border keeps the outer diameter identical to holes; padding removed for consistency
-  button.className = `ion-button w-[85%] h-[85%] box-border inline-flex items-center justify-center rounded-full border-4 ${colorClass} text-center text-sm font-bold shadow-lg transition hover:-translate-y-1 hover:shadow-xl active:translate-y-0`;
+  // Ensure perfect circles with aspect-square and max dimensions
+  button.className = `ion-button aspect-square w-[85%] max-w-[85%] max-h-[85%] box-border inline-flex items-center justify-center rounded-full border-4 ${colorClass} text-center text-sm font-bold shadow-lg transition hover:-translate-y-1 hover:shadow-xl active:translate-y-0`;
 
   // Use HTML formatted version if available, otherwise fallback to plain symbol
   const displayHtml = state.speciesHtml.get(species.primarySymbol) || species.primarySymbol;
