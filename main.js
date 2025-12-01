@@ -114,6 +114,7 @@ const elements = {
   remediationFeedback: document.getElementById("remediation-feedback"),
   acknowledgeButton: document.getElementById("acknowledge-answer"),
   closeModalButton: document.getElementById("close-modal"),
+  loadingModal: document.getElementById("loading-modal"),
   startModal: document.getElementById("start-modal"),
   startButton: document.getElementById("start-session-button"),
   endModal: document.getElementById("end-modal"),
@@ -527,9 +528,19 @@ async function init() {
     // Initial debug panel update
     updateDebugPanel();
 
+    // Hide loading modal and show start modal
+    if (elements.loadingModal) {
+      elements.loadingModal.classList.add("hidden");
+      elements.loadingModal.setAttribute("aria-hidden", "true");
+    }
     openStartModal();
   } catch (error) {
     console.error("Initialisation error:", error);
+    // Hide loading modal on error too
+    if (elements.loadingModal) {
+      elements.loadingModal.classList.add("hidden");
+      elements.loadingModal.setAttribute("aria-hidden", "true");
+    }
   }
 }
 
