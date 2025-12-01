@@ -18,6 +18,7 @@ let scoringRules = { ...defaultScoringRules };
 
 const STORAGE_LEVEL_KEY = "writeFormula_currentLevel_2025";
 const STORAGE_HIGH_SCORE_KEY = "writeFormula_highScore_2025";
+const STORAGE_MUTE_KEY = "writeFormula_muteState_2025";
 
 // Level color configuration
 const levelColors = {
@@ -135,6 +136,7 @@ const state = {
 
   // Mode flags
   fastMode: false,
+  isMuted: false,
 
   // Challenge state
   remediationSelection: { formula: null, name: null },
@@ -153,6 +155,12 @@ const elements = {
   streakDisplay: document.getElementById("streak-display"),
   roundIndicator: document.getElementById("round-indicator"),
   particleCanvas: document.getElementById("particle-canvas"),
+  bgmWelcome: document.getElementById("bgm-welcome"),
+  bgmIngame: document.getElementById("bgm-ingame"),
+  sfxCompoundCorrect: document.getElementById("sfx-compound-correct"),
+  sfxCompoundWrong: document.getElementById("sfx-compound-wrong"),
+  sfxIonPositive: document.getElementById("sfx-ion-positive"),
+  sfxIonNegative: document.getElementById("sfx-ion-negative"),
   modal: document.getElementById("remediation-modal"),
   formulaOptions: document.getElementById("formula-options"),
   nameOptions: document.getElementById("name-options"),
@@ -181,7 +189,12 @@ const elements = {
   debugPanel: document.getElementById("debug-panel"),
   debugToggle: document.getElementById("debug-toggle"),
   startAnimation: document.getElementById("start-animation"),
-  startAnimationText: document.getElementById("start-animation-text")
+  startAnimationText: document.getElementById("start-animation-text"),
+  muteButton: document.getElementById("mute-button"),
+  muteIconOn: document.getElementById("mute-icon-on"),
+  muteIconOff: document.getElementById("mute-icon-off"),
+  startModalMuteIconOn: document.getElementById("start-modal-mute-icon-on"),
+  startModalMuteIconOff: document.getElementById("start-modal-mute-icon-off")
 };
 
 function getSafeMultiplier(rawValue) {
@@ -537,13 +550,15 @@ async function init() {
   // Set initial level from URL parameter or localStorage
   state.currentLevel = getInitialLevel();
 
-  // Enable fast mode via URL param (?mode=fast) - DEV VERSION ONLY
+  // Enable fast mode via URL param (?mode=fast)
+  // Enable fast mode via URL param (?mode=fast) - DEV ONLY
   const modeParam = (getUrlParameter('mode') || '').toLowerCase();
+  const isDev = ['localhost', '127.0.0.1'].includes(window.location.hostname);
 
-  state.fastMode = modeParam === 'fast';
+  state.fastMode = isDev && modeParam === 'fast';
 
   if (state.fastMode) {
-    console.log("[Mode] Fast mode enabled - skipping remediation quizzes.");
+    console.log("[Mode] Fast mode enabled (Dev Only) - skipping remediation quizzes.");
   }
 
   // Initialize new state fields (Phase 8)
@@ -558,6 +573,9 @@ async function init() {
 
   // Load high score from localStorage
   loadHighScore();
+
+  // Load mute state from localStorage
+  loadMuteState();
 
   // Load config (e.g., debug panel visibility)
   await loadConfig();
@@ -619,6 +637,16 @@ function attachGlobalControls() {
     const nextState = !state.debugPanelVisible;
     setDebugPanelVisibility(nextState);
   });
+
+  // Mute button in header
+  elements.muteButton?.addEventListener("click", toggleMute);
+
+  // Make start modal mute icon clickable too
+  const startModalMuteContainer = document.querySelector("#start-modal .absolute.top-4.right-4");
+  if (startModalMuteContainer) {
+    startModalMuteContainer.style.cursor = 'pointer';
+    startModalMuteContainer.addEventListener("click", toggleMute);
+  }
 }
 
 function attachModalControls() {
@@ -636,6 +664,113 @@ function attachModalControls() {
   });
 }
 
+/**
+ * Background Music & Sound Effects Controls
+ */
+function playWelcomeBGM() {
+  if (elements.bgmWelcome && !state.isMuted) {
+    stopAllBGM(); // Stop any playing music first
+    elements.bgmWelcome.volume = 0.25;
+    elements.bgmWelcome.play().catch(err => {
+      console.log('Welcome BGM autoplay blocked:', err.message);
+    });
+  }
+}
+
+function playIngameBGM() {
+  if (elements.bgmIngame && !state.isMuted) {
+    stopAllBGM(); // Stop any playing music first
+    elements.bgmIngame.volume = 0.25;
+    elements.bgmIngame.play().catch(err => {
+      console.log('In-game BGM autoplay blocked:', err.message);
+    });
+  }
+}
+
+function stopAllBGM() {
+  if (elements.bgmWelcome) {
+    elements.bgmWelcome.pause();
+    elements.bgmWelcome.currentTime = 0;
+  }
+  if (elements.bgmIngame) {
+    elements.bgmIngame.pause();
+    elements.bgmIngame.currentTime = 0;
+  }
+}
+
+// Mute/Unmute Functions
+function toggleMute() {
+  state.isMuted = !state.isMuted;
+  saveMuteState(state.isMuted);
+  updateMuteButtonUI();
+
+  if (state.isMuted) {
+    // Stop all audio when muting
+    stopAllBGM();
+  } else {
+    // Resume appropriate music when unmuting
+    if (state.sessionActive && !state.timeExpired) {
+      playIngameBGM();
+    } else if (!state.sessionActive) {
+      playWelcomeBGM();
+    }
+  }
+}
+
+function updateMuteButtonUI() {
+  const isMuted = state.isMuted;
+
+  // Update header icons
+  if (elements.muteIconOn && elements.muteIconOff) {
+    if (isMuted) {
+      elements.muteIconOn.classList.add('hidden');
+      elements.muteIconOff.classList.remove('hidden');
+    } else {
+      elements.muteIconOn.classList.remove('hidden');
+      elements.muteIconOff.classList.add('hidden');
+    }
+  }
+
+  // Update start modal icons
+  if (elements.startModalMuteIconOn && elements.startModalMuteIconOff) {
+    if (isMuted) {
+      elements.startModalMuteIconOn.classList.add('hidden');
+      elements.startModalMuteIconOff.classList.remove('hidden');
+    } else {
+      elements.startModalMuteIconOn.classList.remove('hidden');
+      elements.startModalMuteIconOff.classList.add('hidden');
+    }
+  }
+}
+
+// Sound effect functions - optimized to prevent lag
+function playSoundEffect(audioElement, volume = 0.4) {
+  if (audioElement && !state.isMuted) {
+    // Clone the audio node deeply to include <source> elements
+    const sound = audioElement.cloneNode(true);
+    sound.volume = volume;
+    sound.play().catch(err => {
+      console.error("SFX Playback Error:", err);
+    });
+  }
+}
+
+function playCompoundCorrectSound() {
+  playSoundEffect(elements.sfxCompoundCorrect, 0.5);
+}
+
+function playCompoundWrongSound() {
+  playSoundEffect(elements.sfxCompoundWrong, 0.5);
+}
+
+function playIonSound(charge) {
+  if (charge > 0) {
+    playSoundEffect(elements.sfxIonPositive, 0.3);
+  } else if (charge < 0) {
+    playSoundEffect(elements.sfxIonNegative, 0.3);
+  }
+}
+
 function attachStartModalControls() {
   elements.startButton?.addEventListener("click", async () => {
     if (state.sessionActive) {
@@ -643,6 +778,7 @@ function attachStartModalControls() {
     }
     state.sessionActive = true;
     closeStartModal();
+    playIngameBGM(); // Start in-game background music
     resetTimeBudget();
     await playReadyGoAnimation();
     startTimer();
@@ -655,12 +791,14 @@ function attachEndModalControls() {
     closeEndModal();
     resetGameState();
     openStartModal();
+    playWelcomeBGM(); // Play welcome music on restart
   });
 
   elements.continueButton?.addEventListener("click", () => {
     closeEndModal();
     // Continue session: keep score/streak, just reset level board/timer
     state.sessionActive = true;
+    playIngameBGM(); // Resume in-game music when continuing
     applyLevel(state.currentLevel);
     console.log("🔄 Continuing level...");
   });
@@ -1296,6 +1434,10 @@ function handleIonSelection(species, button) {
     return;
   }
 
+  // Play ion sound based on charge
+  const charge = getIonCharge(species);
+  playIonSound(charge);
+
   state.selectionCounter += 1;
   state.selectedIons.push({ id: state.selectionCounter, species, buttonId: tokenId });
   state.selectedButtonIds.add(tokenId);
@@ -1351,6 +1493,9 @@ function handleSubmitSelection() {
     flashInvalidSelection("That pairing is not available yet. Try another match.");
     return;
   }
+
+  // Play positive ion sound for valid pairing
+  playIonSound(1);
 
   state.activeChallenge = challenge;
   if (state.fastMode) {
@@ -1916,8 +2061,10 @@ function handleOptionClick(button, type) {
 
   if (isCorrect) {
     progress.solved = true;
-    updateColumnTries(type);
+    state.remediationSelection[type] = value;
     markOptionResult(type, correctValue, "success");
+    // Play positive ion sound for correct answer
+    playIonSound(1);
     elements.remediationFeedback.className = "mt-4 rounded-xl border border-lime-500/50 bg-lime-950/30 p-4 text-center text-sm font-medium text-lime-200 shadow-lg backdrop-blur-sm transition-all duration-300 whitespace-pre-line";
     elements.remediationFeedback.textContent = type === "formula"
       ? "Formula locked in. Now choose the correct name."
@@ -1937,6 +2084,9 @@ function handleOptionClick(button, type) {
     0,
     maxAttempts - progress.attempts
   );
+
+  // Play negative ion sound for wrong answer
+  playIonSound(-1);
 
   // Get specific feedback for this wrong answer
   const feedbackMap = type === "formula"
@@ -2066,6 +2216,9 @@ function completeChallengeSuccess() {
     return;
   }
 
+  // Play correct compound sound
+  playCompoundCorrectSound();
+
   // Build compound key for tracking
   const compoundKey = `${challenge.cation.primarySymbol}|${challenge.anion.primarySymbol}`;
 
@@ -2098,6 +2251,9 @@ function handleRemediationFailure() {
   }
 
   state.challengeStatus = "failed";
+  // Play wrong compound sound
+  playCompoundWrongSound();
+
   // Note: Streak already reset by handleIncorrectAnswer() when wrong answer was clicked
   console.log(`✗ Failed challenge. Score: ${state.score}`);
 
@@ -2287,12 +2443,6 @@ function checkLevelUpCondition() {
 
   // Actually, to avoid code duplication, let's just use the switch for UI text and rely on getUnmetLevelRequirements for logic?
   // Or better, let's rewrite the switch to use getUnmetLevelRequirements implicitly or explicitly.
-
-  // Let's keep the original switch for UI text generation to ensure no regression in display, 
-  // but use the new function for logic verification where possible or just trust the refactor.
-  // Wait, the user wants the logic extracted to HELP REPLENISHMENT.
-  // So I can keep the switch here for UI, but I MUST use getUnmetLevelRequirements in replenishBoard.
-  // However, to be clean, I should use the same logic.
 
   // Let's stick to the original implementation for checkLevelUpCondition for now to minimize risk of breaking UI,
   // but ADD getUnmetLevelRequirements as a separate helper.
@@ -3441,7 +3591,7 @@ function updateSolvableCompounds() {
 
   cations.forEach(cat => {
     anions.forEach(an => {
-      const key = `${cat.primarySymbol}|${an.primarySymbol}`;
+      const key = `${cat.primarySymbol}|${an.anion}`;
       if (state.compoundPairings.has(key)) {
         // Check stoichiometry
         const cCharge = Math.abs(cat.chargeMagnitude);
@@ -3848,10 +3998,10 @@ function loadHighScore() {
   try {
     const saved = localStorage.getItem(STORAGE_HIGH_SCORE_KEY);
     if (saved) {
-      const highScore = parseInt(saved, 10);
-      if (!isNaN(highScore) && highScore >= 0) {
-        state.highScore = highScore;
-        console.log(`📊 High Score loaded: ${highScore}`);
+      const parsed = parseInt(saved, 10);
+      if (!isNaN(parsed) && parsed >= 0) { // Changed > 0 to >= 0 to allow 0 as a valid high score
+        state.highScore = parsed;
+        console.log(`📊 High Score loaded: ${state.highScore}`);
         return;
       }
     }
@@ -3859,6 +4009,27 @@ function loadHighScore() {
     console.warn('Failed to load high score:', error);
   }
   state.highScore = 0;
+}
+
+function loadMuteState() {
+  try {
+    const saved = localStorage.getItem(STORAGE_MUTE_KEY);
+    if (saved !== null) {
+      state.isMuted = saved === 'true';
+      console.log(`Loaded mute state: ${state.isMuted}`);
+      updateMuteButtonUI();
+    }
+  } catch (error) {
+    console.warn('Failed to load mute state:', error);
+  }
+}
+
+function saveMuteState(isMuted) {
+  try {
+    localStorage.setItem(STORAGE_MUTE_KEY, isMuted.toString());
+  } catch (error) {
+    console.warn('Failed to save mute state:', error);
+  }
 }
 
 function saveHighScore(score) {
@@ -3966,9 +4137,13 @@ function openStartModal() {
   }
   state.sessionActive = false;
   stopTimer();
+  playWelcomeBGM(); // Play welcome music when start modal opens
   elements.startModal.classList.remove("hidden");
   elements.startModal.classList.add("flex");
   elements.startModal.setAttribute("aria-hidden", "false");
+
+  // Play welcome music when start modal opens
+  playWelcomeBGM();
 }
 
 function closeStartModal() {
@@ -3984,6 +4159,9 @@ function openEndModal() {
   if (!elements.endModal) {
     return;
   }
+
+  // Play welcome music when game ends
+  playWelcomeBGM();
 
   // Check and save high score
   const isNewHighScore = saveHighScore(state.score);
@@ -4054,6 +4232,9 @@ function openErrorModal(message) {
   if (!elements.errorModal || !elements.errorMessage) {
     return;
   }
+  // Play compound wrong sound
+  playCompoundWrongSound();
+
   // Split message by common separators and create paragraph elements
   const parts = message.split(/\s*[•|]\s*/).filter(part => part.trim());
   if (parts.length > 1) {
