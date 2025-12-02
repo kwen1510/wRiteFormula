@@ -50,7 +50,6 @@ The `dev/` folder contains a development version of the application with the fol
 | Feature | Main App | Dev App |
 |---------|----------|---------|
 | **Debug Panel** | Hidden by default (can be toggled) | Visible by default |
-| **Google Analytics** | Enabled | Enabled (same) |
 | **Functionality** | Production-ready | Development/testing version |
 | **Purpose** | Student-facing | Developer testing |
 
