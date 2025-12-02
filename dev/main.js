@@ -20,6 +20,30 @@ const STORAGE_LEVEL_KEY = "writeFormula_currentLevel_2025";
 const STORAGE_HIGH_SCORE_KEY = "writeFormula_highScore_2025";
 const STORAGE_MUTE_KEY = "writeFormula_muteState_2025";
 
+// Parse URL parameters for teacher-configured sessions
+function parseURLParameters() {
+  const params = new URLSearchParams(window.location.search);
+  const overrides = {};
+
+  // Parse duration parameter
+  if (params.has('duration')) {
+    const duration = parseInt(params.get('duration'), 10);
+    if (!isNaN(duration) && duration > 0) {
+      overrides.duration = duration;
+    }
+  }
+
+  // Parse level parameter
+  if (params.has('level')) {
+    const level = parseInt(params.get('level'), 10);
+    if (!isNaN(level) && level >= 1 && level <= 20) {
+      overrides.level = level;
+    }
+  }
+
+  return overrides;
+}
+
 // Level color configuration
 const levelColors = {
   PINK: {
@@ -194,7 +218,9 @@ const elements = {
   muteIconOn: document.getElementById("mute-icon-on"),
   muteIconOff: document.getElementById("mute-icon-off"),
   startModalMuteIconOn: document.getElementById("start-modal-mute-icon-on"),
-  startModalMuteIconOff: document.getElementById("start-modal-mute-icon-off")
+  startModalMuteIconOff: document.getElementById("start-modal-mute-icon-off"),
+  endModalMuteIconOn: document.getElementById("end-modal-mute-icon-on"),
+  endModalMuteIconOff: document.getElementById("end-modal-mute-icon-off")
 };
 
 function getSafeMultiplier(rawValue) {
@@ -547,8 +573,20 @@ async function loadConfig() {
 }
 
 async function init() {
+  // Parse URL parameters for teacher-configured sessions
+  const urlOverrides = parseURLParameters();
+
+  // Apply duration override if present
+  if (urlOverrides.duration) {
+    scoringRules.countdownSeconds = urlOverrides.duration;
+    console.log(`[Teacher Config] Duration set to ${urlOverrides.duration} seconds`);
+  }
+
   // Set initial level from URL parameter or localStorage
-  state.currentLevel = getInitialLevel();
+  state.currentLevel = urlOverrides.level || getInitialLevel();
+  if (urlOverrides.level) {
+    console.log(`[Teacher Config] Starting level set to ${urlOverrides.level}`);
+  }
 
   // Enable fast mode via URL param (?mode=fast)
   // Enable fast mode via URL param (?mode=fast) - DEV ONLY
@@ -647,6 +685,12 @@ function attachGlobalControls() {
     startModalMuteContainer.style.cursor = 'pointer';
     startModalMuteContainer.addEventListener("click", toggleMute);
   }
+
+  // Make end modal mute icon clickable too
+  const endModalMuteContainer = document.getElementById("end-modal-mute-button");
+  if (endModalMuteContainer) {
+    endModalMuteContainer.addEventListener("click", toggleMute);
+  }
 }
 
 function attachModalControls() {
@@ -711,7 +755,8 @@ function toggleMute() {
     // Resume appropriate music when unmuting
     if (state.sessionActive && !state.timeExpired) {
       playIngameBGM();
-    } else if (!state.sessionActive) {
+    } else {
+      // Play welcome music if not in active session OR if time has expired (end screen)
       playWelcomeBGM();
     }
   }
@@ -739,6 +784,17 @@ function updateMuteButtonUI() {
     } else {
       elements.startModalMuteIconOn.classList.remove('hidden');
       elements.startModalMuteIconOff.classList.add('hidden');
+    }
+  }
+
+  // Update end modal icons
+  if (elements.endModalMuteIconOn && elements.endModalMuteIconOff) {
+    if (isMuted) {
+      elements.endModalMuteIconOn.classList.add('hidden');
+      elements.endModalMuteIconOff.classList.remove('hidden');
+    } else {
+      elements.endModalMuteIconOn.classList.remove('hidden');
+      elements.endModalMuteIconOff.classList.add('hidden');
     }
   }
 }
@@ -2268,8 +2324,9 @@ function handleRemediationFailure() {
     (state.challengeProgress?.name.attempts ?? 0);
 
   const challenge = state.activeChallenge;
-  elements.remediationFeedback.textContent =
-    `Correct formula: ${challenge.correctFormula} • Correct name: ${challenge.correctName}.`;
+  const formattedFormula = challenge.correctFormula.replace(/(\d+)/g, "<sub>$1</sub>");
+  elements.remediationFeedback.innerHTML =
+    `Correct formula: ${formattedFormula}<br>Correct name: ${challenge.correctName}`;
   elements.acknowledgeButton.classList.remove("hidden");
 
   revealCorrectAnswer("formula");

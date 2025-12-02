@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" href="data:,">
+    <title>wRiteFormula - Teacher Console</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://cdn.jsdelivr.net/npm/qrcodejs@1.0.0/qrcode.min.js"></script>
+    <style>
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: scale(0.95);
+            }
+
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+
+        .fade-in {
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        /* Custom dropdown arrow */
+        select {
+            appearance: none;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 24 24' stroke='%2378350f'%3E%3Cpath stroke-linecap='round' stroke-linejoin='round' stroke-width='3' d='M19 9l-7 7-7-7'/%3E%3C/svg%3E");
+            background-repeat: no-repeat;
+            background-position: right 1rem center;
+            background-size: 1.5em 1.5em;
+            padding-right: 3rem;
+        }
+
+        /* Custom dropdown styling */
+        .custom-dropdown {
+            position: relative;
+        }
+
+        .dropdown-selected {
+            cursor: pointer;
+            min-height: 44px; /* Minimum touch target size */
+        }
+
+        .dropdown-options {
+            position: absolute;
+            top: 100%;
+            left: 0;
+            right: 0;
+            max-height: min(300px, 60vh);
+            overflow-y: auto;
+            z-index: 100;
+            margin-top: 0.25rem;
+            -webkit-overflow-scrolling: touch; /* Smooth scrolling on iOS */
+        }
+
+        .dropdown-option {
+            cursor: pointer;
+            transition: all 0.15s;
+            min-height: 44px; /* Minimum touch target size */
+        }
+
+        .dropdown-option:hover {
+            background-color: rgba(251, 191, 36, 0.2) !important;
+        }
+
+        /* Ensure buttons have adequate touch targets */
+        button {
+            min-height: 44px;
+            touch-action: manipulation; /* Prevents double-tap zoom on buttons */
+        }
+
+        /* Improve text selection on mobile */
+        input, select {
+            font-size: 16px; /* Prevents zoom on iOS when focusing inputs */
+        }
+
+        @media (max-width: 640px) {
+            /* Smaller QR code on mobile */
+            #qrcode {
+                max-width: 100%;
+            }
+            
+            /* Better spacing for mobile */
+            .dropdown-selected {
+                padding: 0.75rem;
+            }
+            
+            .dropdown-option {
+                padding: 0.75rem !important;
+            }
+        }
+    </style>
+</head>
+
+<body
+    class="bg-gradient-to-br from-slate-900 via-slate-800 to-slate-900 min-h-screen flex items-center justify-center p-3 sm:p-4 md:p-6">
+    <div class="w-full max-w-2xl">
+        <!-- Header -->
+        <header class="text-center mb-4 sm:mb-6 md:mb-8">
+            <h1 class="text-3xl xs:text-4xl sm:text-5xl font-black text-amber-400 mb-2">wRiteFormula</h1>
+            <p class="text-base sm:text-lg md:text-xl text-amber-200/80 font-semibold">Teacher Console</p>
+        </header>
+
+        <!-- Main Card -->
+        <div
+            class="rounded-2xl sm:rounded-3xl border-4 border-amber-700/50 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-4 sm:p-6 md:p-8 shadow-2xl">
+
+            <!-- Configuration Section -->
+            <div class="space-y-4 sm:space-y-6">
+                <h2 class="text-xl sm:text-2xl font-black text-slate-900 text-center mb-4 sm:mb-6">Configure Game Session</h2>
+
+                <!-- Duration Selector -->
+                <div>
+                    <label for="duration" class="block text-xs sm:text-sm font-bold uppercase tracking-wide text-amber-900 mb-2">
+                        Game Duration
+                    </label>
+                    <select id="duration"
+                        class="w-full rounded-xl border-4 border-amber-900/40 bg-white px-3 sm:px-4 py-3 text-base sm:text-lg font-semibold text-slate-900 shadow-md focus:border-amber-900/60 focus:outline-none focus:ring-2 focus:ring-amber-500">
+                        <option value="60">1 minute</option>
+                        <option value="120" selected>2 minutes</option>
+                        <option value="180">3 minutes</option>
+                        <option value="240">4 minutes</option>
+                        <option value="300">5 minutes</option>
+                        <option value="420">7 minutes</option>
+                        <option value="600">10 minutes</option>
+                    </select>
+                </div>
+
+                <!-- Starting Level Selector -->
+                <div>
+                    <div class="flex items-center justify-between mb-2 flex-wrap gap-2">
+                        <label for="level" class="text-xs sm:text-sm font-bold uppercase tracking-wide text-amber-900">
+                            Starting Level
+                        </label>
+                        <button id="open-guide-btn" type="button"
+                            class="flex items-center gap-1 text-amber-900 hover:text-amber-700 transition-colors px-2 py-1"
+                            title="View all levels and descriptions">
+                            <svg class="h-4 w-4 sm:h-5 sm:w-5" fill="currentColor" viewBox="0 0 20 20">
+                                <path
+                                    d="M9 4.804A7.968 7.968 0 005.5 4c-1.255 0-2.443.29-3.5.804v10A7.969 7.969 0 015.5 14c1.669 0 3.218.51 4.5 1.385A7.962 7.962 0 0114.5 14c1.255 0 2.443.29 3.5.804v-10A7.968 7.968 0 0014.5 4c-1.255 0-2.443.29-3.5.804V12a1 1 0 11-2 0V4.804z" />
+                            </svg>
+                            <span class="text-xs font-semibold">View Guide</span>
+                        </button>
+                    </div>
+                    <div class="custom-dropdown">
+                        <div id="level-selected"
+                            class="dropdown-selected w-full rounded-xl border-4 border-amber-900/40 bg-white px-3 sm:px-4 py-3 text-sm sm:text-base font-semibold text-slate-900 shadow-md focus:border-amber-900/60 focus:outline-none focus:ring-2 focus:ring-amber-500 flex items-center justify-between gap-2">
+                            <div class="flex-1 min-w-0">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 1</div>
+                                <div class="text-xs text-slate-500 mt-1 line-clamp-1">Introduce charge balance and basic rules</div>
+                            </div>
+                            <svg class="h-5 w-5 text-amber-900 flex-shrink-0" fill="none" stroke="currentColor"
+                                viewBox="0 0 24 24">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M19 9l-7 7-7-7" />
+                            </svg>
+                        </div>
+                        <div id="level-options"
+                            class="dropdown-options hidden w-full rounded-xl border-4 border-amber-900/40 bg-white shadow-md">
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="1">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 1</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce charge balance and basic rules</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="2">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 2</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce simple non-1:1 ratios</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="3">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 3</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce slightly more difficult ratio (3:2)
+                                </div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="4">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 4</div>
+                                <div class="text-xs text-slate-500 mt-1">Reinforce more difficult ratios (2:3, 3:2)
+                                </div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="5">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 5</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce common variable O.S. metals</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="6">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 6</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise naming compounds with variable O.S.
+                                    metals</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="7">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 7</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise naming compounds with variable O.S.
+                                    metals</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="8">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 8</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce ammonium</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="9">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 9</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce carbonate and sulfate</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="10">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 10</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce nitrate and hydroxide</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="11">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 11</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise common polyatomic anions with
+                                    monatomic, fixed O.S. metals and ammonium</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="12">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 12</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise variable O.S. metals with common
+                                    polyatomic anions</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="13">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 13</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce phosphate</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="14">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 14</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise variable O.S. metals and ammonium with
+                                    common polyatomic anions</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="15">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 15</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise variable O.S. metals and ammonium with
+                                    common monatomic and polyatomic anions</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="16">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 16</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce less common variable O.S. metals
+                                </div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="17">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 17</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce more less common variable O.S.
+                                    metals</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="18">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 18</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce less common polyatomic anions</div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="19">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 19</div>
+                                <div class="text-xs text-slate-500 mt-1">Introduce more less common polyatomic anions
+                                </div>
+                            </div>
+                            <div class="dropdown-option p-3 sm:p-4 border-b border-amber-900/20 last:border-b-0"
+                                data-value="20">
+                                <div class="text-sm sm:text-base font-bold text-slate-900">Level 20</div>
+                                <div class="text-xs text-slate-500 mt-1">Revise variable O.S. metals and ammonium with
+                                    less common polyatomic anions</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Generate Button -->
+                <button id="generate-btn"
+                    class="w-full rounded-xl sm:rounded-2xl border-4 border-amber-900/50 bg-gradient-to-b from-amber-400 to-amber-500 px-4 sm:px-6 py-3 sm:py-4 text-lg sm:text-xl font-black uppercase tracking-widest text-amber-900 shadow-[0_6px_0_0_rgba(0,0,0,0.3)] transition-all hover:scale-[1.02] hover:shadow-[0_8px_0_0_rgba(0,0,0,0.3)] active:translate-y-1 active:shadow-[0_2px_0_0_rgba(0,0,0,0.3)]">
+                    Generate Link
+                </button>
+            </div>
+
+            <!-- Generated Link Section (Hidden by default) -->
+            <div id="result-section" class="hidden mt-6 sm:mt-8 space-y-4 sm:space-y-6 fade-in">
+                <hr class="border-2 border-amber-900/20">
+
+                <!-- Link Display -->
+                <div>
+                    <label class="block text-xs sm:text-sm font-bold uppercase tracking-wide text-amber-900 mb-2">
+                        Shareable Link
+                    </label>
+                    <div class="flex flex-col sm:flex-row gap-2">
+                        <input id="generated-link" type="text" readonly
+                            class="flex-1 rounded-xl border-4 border-green-600/40 bg-green-50/50 px-3 sm:px-4 py-3 text-xs sm:text-sm font-mono text-slate-900 shadow-md">
+                        <button id="copy-btn"
+                            class="rounded-xl border-4 border-green-600/40 bg-gradient-to-b from-green-400 to-green-500 px-4 sm:px-6 py-3 font-black text-green-900 shadow-md transition-all hover:scale-105 active:scale-95 whitespace-nowrap">
+                            <span id="copy-text">Copy</span>
+                        </button>
+                    </div>
+                    <p class="mt-2 text-xs text-amber-900/70 text-center">Click the link to copy it to your clipboard
+                    </p>
+                </div>
+
+                <!-- QR Code Display -->
+                <div>
+                    <label class="block text-xs sm:text-sm font-bold uppercase tracking-wide text-amber-900 mb-2 text-center">
+                        QR Code
+                    </label>
+                    <div class="flex justify-center">
+                        <div id="qrcode" class="rounded-xl sm:rounded-2xl border-4 border-amber-900/40 bg-white p-3 sm:p-4 shadow-lg max-w-full"></div>
+                    </div>
+                    <p class="mt-2 text-xs text-amber-900/70 text-center">Students can scan this QR code to join the
+                        game</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <footer class="mt-4 sm:mt-6 text-center">
+            <a href="../index.html" class="text-amber-300 hover:text-amber-200 font-semibold transition-colors text-sm sm:text-base inline-block py-2">
+                ← Back to Game
+            </a>
+        </footer>
+    </div>
+
+    <!-- Level Guide Modal -->
+    <div id="level-guide-modal" class="hidden fixed inset-0 z-50 flex items-center justify-center p-3 sm:p-4 bg-black/60"
+        style="backdrop-filter: blur(4px);">
+        <div
+            class="relative w-full max-w-4xl max-h-[95vh] sm:max-h-[90vh] rounded-2xl sm:rounded-3xl border-4 border-amber-700/50 bg-gradient-to-b from-amber-200 via-amber-100 to-amber-200 p-4 sm:p-6 md:p-8 shadow-2xl overflow-hidden flex flex-col">
+            <!-- Modal Header -->
+            <div class="flex items-center justify-between mb-4 sm:mb-6">
+                <h2 class="text-xl sm:text-2xl md:text-3xl font-black text-slate-900">Level Guide</h2>
+                <button id="close-modal-btn" class="rounded-full p-2 hover:bg-amber-300/50 transition-colors flex-shrink-0">
+                    <svg class="h-5 w-5 sm:h-6 sm:w-6 text-amber-900" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M6 18L18 6M6 6l12 12" />
+                    </svg>
+                </button>
+            </div>
+
+            <!-- Modal Content (Scrollable) -->
+            <div class="flex-1 overflow-y-auto pr-1 sm:pr-2 -webkit-overflow-scrolling-touch">
+                <div class="space-y-3 sm:space-y-4">
+                    <!-- Pink Group -->
+                    <div class="rounded-xl border-3 border-pink-500/50 bg-pink-100/80 p-3 sm:p-4 md:p-5">
+                        <h3 class="text-base sm:text-lg font-black text-pink-900 mb-2 sm:mb-3">Monatomic cations of metals with fixed O.S. +
+                            monatomic anions</h3>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <p><span class="font-bold text-pink-900">Level 1:</span> <span
+                                    class="text-slate-800">Introduce charge balance and basic rules</span></p>
+                            <p><span class="font-bold text-pink-900">Level 2:</span> <span
+                                    class="text-slate-800">Introduce simple non-1:1 ratios</span></p>
+                            <p><span class="font-bold text-pink-900">Level 3:</span> <span
+                                    class="text-slate-800">Introduce slightly more difficult ratio (3:2)</span></p>
+                            <p><span class="font-bold text-pink-900">Level 4:</span> <span
+                                    class="text-slate-800">Reinforce more difficult ratios (2:3, 3:2)</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Orange Group -->
+                    <div class="rounded-xl border-3 border-orange-500/50 bg-orange-100/80 p-3 sm:p-4 md:p-5">
+                        <h3 class="text-base sm:text-lg font-black text-orange-900 mb-2 sm:mb-3">Monatomic cations of metals with variable
+                            O.S. + monatomic anions</h3>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <p><span class="font-bold text-orange-900">Level 5:</span> <span
+                                    class="text-slate-800">Introduce common variable O.S. metals</span></p>
+                            <p><span class="font-bold text-orange-900">Level 6:</span> <span
+                                    class="text-slate-800">Revise naming compounds with variable O.S. metals</span></p>
+                            <p><span class="font-bold text-orange-900">Level 7:</span> <span
+                                    class="text-slate-800">Revise naming compounds with variable O.S. metals</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Green Group -->
+                    <div class="rounded-xl border-3 border-green-500/50 bg-green-100/80 p-3 sm:p-4 md:p-5">
+                        <h3 class="text-base sm:text-lg font-black text-green-900 mb-2 sm:mb-3">Monatomic/polyatomic cations + anions</h3>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <p><span class="font-bold text-green-900">Level 8:</span> <span
+                                    class="text-slate-800">Introduce ammonium</span></p>
+                            <p><span class="font-bold text-green-900">Level 9:</span> <span
+                                    class="text-slate-800">Introduce carbonate and sulfate</span></p>
+                            <p><span class="font-bold text-green-900">Level 10:</span> <span
+                                    class="text-slate-800">Introduce nitrate and hydroxide</span></p>
+                            <p><span class="font-bold text-green-900">Level 11:</span> <span
+                                    class="text-slate-800">Revise common polyatomic anions with monatomic, fixed O.S.
+                                    metals and ammonium [N(A)]</span></p>
+                            <p><span class="font-bold text-green-900">Level 12:</span> <span
+                                    class="text-slate-800">Revise variable O.S. metals with common polyatomic anions
+                                    [N(A)]</span></p>
+                            <p><span class="font-bold text-green-900">Level 13:</span> <span
+                                    class="text-slate-800">Introduce phosphate</span></p>
+                            <p><span class="font-bold text-green-900">Level 14:</span> <span
+                                    class="text-slate-800">Revise variable O.S. metals and ammonium with common
+                                    polyatomic anions [Express]</span></p>
+                            <p><span class="font-bold text-green-900">Level 15:</span> <span
+                                    class="text-slate-800">Revise variable O.S. metals and ammonium with common
+                                    monatomic and polyatomic anions [Express]</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Blue Group -->
+                    <div class="rounded-xl border-3 border-blue-500/50 bg-blue-100/80 p-3 sm:p-4 md:p-5">
+                        <h3 class="text-base sm:text-lg font-black text-blue-900 mb-2 sm:mb-3">Less common monatomic/polyatomic cations +
+                            anions</h3>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <p><span class="font-bold text-blue-900">Level 16:</span> <span
+                                    class="text-slate-800">Introduce less common variable O.S. metals</span></p>
+                            <p><span class="font-bold text-blue-900">Level 17:</span> <span
+                                    class="text-slate-800">Introduce more less common variable O.S. metals</span></p>
+                            <p><span class="font-bold text-blue-900">Level 18:</span> <span
+                                    class="text-slate-800">Introduce less common polyatomic anions</span></p>
+                            <p><span class="font-bold text-blue-900">Level 19:</span> <span
+                                    class="text-slate-800">Introduce more less common polyatomic anions</span></p>
+                        </div>
+                    </div>
+
+                    <!-- Grey Group -->
+                    <div class="rounded-xl border-3 border-slate-500/50 bg-slate-100/80 p-3 sm:p-4 md:p-5">
+                        <h3 class="text-base sm:text-lg font-black text-slate-900 mb-2 sm:mb-3">Revise variable O.S. metals and ammonium with
+                            less common polyatomic anions</h3>
+                        <div class="space-y-2 text-xs sm:text-sm">
+                            <p><span class="font-bold text-slate-900">Level 20:</span> <span
+                                    class="text-slate-800">Revise variable O.S. metals and ammonium with less common
+                                    polyatomic anions</span></p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        const durationSelect = document.getElementById('duration');
+        const levelSelected = document.getElementById('level-selected');
+        const levelOptions = document.getElementById('level-options');
+        const generateBtn = document.getElementById('generate-btn');
+        const resultSection = document.getElementById('result-section');
+        const generatedLinkInput = document.getElementById('generated-link');
+        const copyBtn = document.getElementById('copy-btn');
+        const copyText = document.getElementById('copy-text');
+        const qrcodeContainer = document.getElementById('qrcode');
+        const openGuideBtn = document.getElementById('open-guide-btn');
+        const closeModalBtn = document.getElementById('close-modal-btn');
+        const levelGuideModal = document.getElementById('level-guide-modal');
+
+        let currentQRCode = null;
+        let selectedLevel = '1';
+
+        // Custom dropdown functionality
+        levelSelected.addEventListener('click', (e) => {
+            e.stopPropagation();
+            levelOptions.classList.toggle('hidden');
+        });
+
+        // Close dropdown when clicking outside
+        document.addEventListener('click', () => {
+            levelOptions.classList.add('hidden');
+        });
+
+        // Handle option selection
+        document.querySelectorAll('.dropdown-option').forEach(option => {
+            option.addEventListener('click', (e) => {
+                e.stopPropagation();
+                const value = option.getAttribute('data-value');
+                const levelText = option.querySelector('div:first-child').textContent;
+                const descText = option.querySelector('div:last-child').textContent;
+
+                selectedLevel = value;
+                levelSelected.innerHTML = `
+                    <div class="flex-1 min-w-0">
+                        <div class="text-sm sm:text-base font-bold text-slate-900">${levelText}</div>
+                        <div class="text-xs text-slate-500 mt-1 line-clamp-1">${descText}</div>
+                    </div>
+                    <svg class="h-5 w-5 text-amber-900 flex-shrink-0" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                            d="M19 9l-7 7-7-7" />
+                    </svg>
+                `;
+                levelOptions.classList.add('hidden');
+            });
+        });
+
+        // Modal controls
+        openGuideBtn.addEventListener('click', () => {
+            levelGuideModal.classList.remove('hidden');
+            document.body.style.overflow = 'hidden';
+        });
+
+        closeModalBtn.addEventListener('click', () => {
+            levelGuideModal.classList.add('hidden');
+            document.body.style.overflow = 'auto';
+        });
+
+        // Close modal when clicking backdrop
+        levelGuideModal.addEventListener('click', (e) => {
+            if (e.target === levelGuideModal) {
+                levelGuideModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        // Close modal with Escape key
+        document.addEventListener('keydown', (e) => {
+            if (e.key === 'Escape' && !levelGuideModal.classList.contains('hidden')) {
+                levelGuideModal.classList.add('hidden');
+                document.body.style.overflow = 'auto';
+            }
+        });
+
+        generateBtn.addEventListener('click', generateLink);
+        copyBtn.addEventListener('click', copyLink);
+        generatedLinkInput.addEventListener('click', copyLink);
+
+        function generateLink() {
+            const duration = durationSelect.value;
+            const level = selectedLevel;
+
+            // Generate URL with parameters
+            const baseUrl = 'https://writeformulagame.com';
+            const url = `${baseUrl}?duration=${duration}&level=${level}`;
+
+            // Display the link
+            generatedLinkInput.value = url;
+
+            // Generate QR code
+            qrcodeContainer.innerHTML = ''; // Clear previous QR code
+            // Responsive QR code size based on screen width
+            const qrSize = window.innerWidth < 640 ? 180 : 200;
+            currentQRCode = new QRCode(qrcodeContainer, {
+                text: url,
+                width: qrSize,
+                height: qrSize,
+                colorDark: '#78350f', // amber-900
+                colorLight: '#ffffff',
+                correctLevel: QRCode.CorrectLevel.H
+            });
+
+            // Show result section
+            resultSection.classList.remove('hidden');
+
+            // Scroll to results
+            setTimeout(() => {
+                resultSection.scrollIntoView({ behavior: 'smooth', block: 'nearest' });
+            }, 100);
+        }
+
+        function copyLink() {
+            const link = generatedLinkInput.value;
+
+            // Copy to clipboard
+            navigator.clipboard.writeText(link).then(() => {
+                // Show success feedback
+                copyText.textContent = 'Copied!';
+                copyBtn.classList.add('bg-gradient-to-b', 'from-lime-400', 'to-lime-500');
+                copyBtn.classList.remove('bg-gradient-to-b', 'from-green-400', 'to-green-500');
+
+                // Reset after 2 seconds
+                setTimeout(() => {
+                    copyText.textContent = 'Copy';
+                    copyBtn.classList.remove('bg-gradient-to-b', 'from-lime-400', 'to-lime-500');
+                    copyBtn.classList.add('bg-gradient-to-b', 'from-green-400', 'to-green-500');
+                }, 2000);
+            }).catch(err => {
+                console.error('Failed to copy:', err);
+                alert('Failed to copy link. Please copy manually.');
+            });
+        }
+    </script>
+</body>
+
+</html>
